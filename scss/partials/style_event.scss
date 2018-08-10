@@ -1,0 +1,819 @@
+/**********************************
+*                                 *
+*      2018 배민찬 프로모션           *
+*                                 *
+**********************************/
+
+/***** [2018-05-21] 신규 웰컴패키지 리뉴얼 ******/
+.new-welcome{
+  position: relative;
+  img {display: block; width: 100%;}
+  h1, h2, p{position: absolute; top: 0; left: -3000px; font-size: 1px;}
+  .blind {
+    position: absolute; left: -3000px; top: 0;
+    z-index: -1;
+  }
+  .main-title{
+    position: relative; padding-top: 117.5%;
+    background: #f0ede5;
+    .img-bind{
+      position: fixed; left: 0; top: 0; right: 0; padding-top: 44px;
+    }
+    &.app{
+      padding-top: 105.5%;
+      .img-bind{
+        padding-top: 0;
+      }
+    }
+  }
+  .content-wrap{
+    position: relative; overflow: hidden; z-index: 50000;
+    background: #f0f2f5;
+    .btn-area{margin: 0 16px 40px;}
+    a{
+      display: block;
+      &.food-item{margin: 0 16px 12px;}
+      &.btn-large{
+        width: 100%; height: 60px;
+        font-family: "Noto Sans KR Bold", sans-serif;
+        letter-spacing: -0.05em; font-size: 17px; text-align: center; line-height: 60px;
+      }
+      &.btn_mint_line{margin-top: 6px;}
+    }
+    .swiper-container{
+      .swiper-pagination{
+        .swiper-pagination-bullet{
+          margin: 0 3px;
+        }
+        .swiper-pagination-bullet-active{
+          opacity: 1;
+          background: $color-mint;
+        }
+      }
+    }
+  }
+  .welcome-deal{
+    overflow: hidden; background: #fff;
+    .btn-area{
+      .btn-coupon{
+        line-height: 1.0em; padding: 15px 0;
+        span{
+          font-family: "Noto Sans KR", sans-serif; font-size: 11px; letter-spacing: -0.05em;
+          display: block; margin-top: 1px;
+        }
+      }
+    }
+  }
+  .welcome-coupon{
+    overflow: hidden;
+  }
+  .recommend{
+    overflow: hidden; background: #fff;
+    & > img{
+      padding: 0 16px;
+      @include box-sizing;
+    }
+    .swiper-container{
+      padding-bottom: 32px;
+      .swiper-pagination{bottom: 8px;}
+    }
+  }
+  .why-baeminchan{
+    .swiper-container{
+      margin: 0 16px 6px;
+      li{
+        .btn{margin-top: 30px;}
+      }
+      .swiper-pagination{bottom: 72px;}
+    }
+    a.welcome-go-home{
+      display: block; background: #e4e7ec; padding: 40px 0;
+      img{width: 142px; margin: 0 auto;}
+    }
+  }
+}
+
+/***** [2017-12-21] 요일별 할인 이벤트 *****/
+.today-chance{
+  background: url(../../web/m/promotion/today-chance/calendar-bg.png) no-repeat center top #fff;
+  background-size: 100% auto;
+  img{display: block; width: 100%;}
+  h1 + p{margin-bottom: 18.5%;}
+  .menu-item{
+    overflow: hidden; display: block; position: relative;
+    margin: 0 11%;
+    &::after{
+      content: '';
+      display: block; width: 100%; padding-top: 79.5%;
+      position: absolute; top: 0; left: 0;
+      background: url(../../web/m/promotion/today-chance/ico-hover.png) center bottom no-repeat rgba(0,0,0, 0.65);
+      background-size: 100% auto;
+      opacity: 0;
+      transition: all 0.3s;
+    }
+    &:hover::after, &:focus::after{
+      opacity: 1;
+      background-position: center center;
+    }
+    .menu-info{
+      position: absolute; left: 0; top: 0; z-index: -1;
+    }
+  }
+  .today{margin-bottom: 5%;}
+  .none-menu-box{overflow: hidden; margin: 0 11%;}
+}
+
+/***** [2017-12-28] 푸드트립 통영 *****/
+.foodtrip-tongyeong {
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #fff;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .food-item {
+    margin-bottom: 27px;
+  }
+  .btn-more {
+    width: 87.333333%;
+    margin: auto;
+  }
+}
+
+/***** [2018-01-11] 윤주의 슬로우레시피 *****/
+.yj-pick-3rd {
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #fff5d7;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .btn-more {
+    padding: 0 25px;
+    font-size: 0;
+  }
+}
+
+/***** [2018-01-18] 설 기획 *****/
+.lunar-new-year{
+  overflow: hidden; padding-bottom: 10%; border-bottom: 5px solid #cab6a6;
+  background: url(../../web/m/promotion/lunar-new-year/pattern-bg.jpg) repeat left top;
+  background-size: 38px auto;
+  img{display: block; width: 100%;}
+  .hide, .menu-info, .sub-title h3, .sub-title p{position: absolute; left: -3000px; top: 0; z-index: -1;}
+  .set-menu{
+    position: relative; overflow: hidden;
+    border-top: 5px solid #cab6a6;
+    h2{position: absolute; left: 0; top: 0; width: 100%; z-index: 100;}
+    ul.menu-list{
+      margin-top: 14.66%;
+      li{position: relative; margin-bottom: 13.6%;}
+    }
+  }
+  .single-menu{
+    border-top: 5px solid #cab6a6;
+    .sub-title{position: relative;}
+    ul.menu-list{
+      overflow: hidden;
+      li{width: 50%; float: left;}
+    }
+  }
+  .btn-more{display: block; margin: 8% 7.7% 0;}
+}
+
+/***** [2018-01-23] 윤식당 시즌2 기획전 *****/
+.younskitchen-2nd{
+  background: #fae6b4;
+  img{display: block; width: 100%;}
+  .title{
+    overflow: hidden;
+    background: url(../../web/m/promotion/younskitchen-2nd/main-title-bg.png) no-repeat center top;
+    background-size: 100%;
+    .vod-box{
+      position: relative; margin-top: -7%;
+      padding: 7.6% 11.35% 20.39%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      background: url(../../web/m/promotion/younskitchen-2nd/vod-box-bg-v2.png) no-repeat center top;
+      background-size: 100%;
+      .vod-bind{
+        position: relative; width: 100%; padding-top: 56.25%;
+        iframe {position: absolute; left: 0; top: 0;}
+      }
+    }
+  }
+  .menu-box{
+    ul.menu-list{
+      li{
+        a{
+          position: relative; display: block; overflow: hidden;
+          h3, p{position: absolute; top: 0; left: -3000px; z-index: -1;}
+        }
+      }
+      &.signature li:first-child{margin-bottom: 18px;}
+    }
+    .btn-more{display: block; margin: 0 15%; margin-bottom: 36px;}
+  }
+  .benefit{
+    position: relative; overflow: hidden; background: #dcc8a0;
+    dl{position: absolute; top: 0; left: -3000px; z-index: -1;}
+    .btn-join{display: block; margin: 0 13% 15%;}
+  }
+}
+
+/***** [2018-02-01] 푸드트립 강원도 *****/
+.foodtrip-gangwondo {
+  text-align: center;
+  background-color: #fff5d7;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .foodtrip-gangwondo-body {
+    padding-bottom: 70px;
+    background: url('../../web/m/promotion/foodtrip-gangwondo/bg-body.jpg') 0 0 repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    .food-item, .btn-more {padding: 0 2.666666%;}
+  }
+}
+
+/***** [2018-02-27] 셰프콜라보 *****/
+.chef-collabo-1st {
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: #eeebe4;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .chef-collabo-section {
+    .item-section {
+      &.section1,
+      &.section3 {padding-right: 6.666666%;}
+      &.section2 {padding-left: 6.666666%;}
+      .food-item {
+
+        &+.food-item {margin-top: 40px;}
+        &.item1 {margin-top: -4px;}
+      }
+    }
+    .btn-more,
+    .btn-all {padding: 0 6.66666%;}
+    .btn-more {margin-top: 20px;}
+    .btn-all {margin-top: 12px;}
+  }
+}
+
+/***** [2018-03-27] 셰프콜라보 *****/
+.chef-collabo-2nd {
+  text-align: center;
+  background-color: #f2e7e0;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .chef-collabo-section {
+    &.has-bg {
+      background: #22b6c2;
+      padding-bottom: 65px;
+    }
+    .item-section {
+      &.section1,
+      &.section3 {padding-right: 2.5%;}
+      &.section2 {padding-left: 2.5%;}
+      .food-item {
+        &+.food-item {margin-top: 20px;}
+        &.item1 {margin-top: -4px;}
+      }
+    }
+    .btn-more {margin-top: 34px;}
+    .btn-all {margin-bottom: 60px;}
+    .btn-stamp {
+      margin-top: 38px;
+    }
+  }
+}
+
+/***** [2018-03-08] 앱런칭 2주년 *****/
+.second-anniversary {
+  text-align: center;
+  background-color: #fff5b4;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .food-section {
+    padding: 0 2.666666% 0 4%;
+    .food-item {
+      margin-bottom: 50px;
+      &:first-child {
+        margin-top: -60px;
+      }
+    }
+  }
+  .btn-more {
+    width: 92%;
+    margin: 60px auto;
+  }
+}
+
+/***** [2018-03-15] 전주 푸드트립 *****/
+.foodtrip-jeonju {
+  padding-bottom: 65px;
+  text-align: center;
+  background: url(../../web/m/promotion/foodtrip-jeonju/img-bg.jpg) 0 0 repeat;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .foodtrip-jeonju-body {
+    h2 {padding-top: 10px;}
+    .food-item {
+      margin-bottom: 25px;
+      padding: 0 1.333333% 0 2.666666%;
+    }
+    .btn-more {
+      width: 84%;
+      margin: auto;
+    }
+  }
+}
+
+/***** [2018-04-03] 시그니처 *****/
+.signature {
+  background: #fff;
+  img {
+    width:100%;
+  }
+  .signature-contents {
+    position: relative;
+    padding-bottom: 85px;
+  }
+  &::after {
+    content:'';
+    display: block;
+    position: absolute;
+    bottom: 1.2%;
+    right: 10%;
+    width: 79px;
+    height: 40px;
+    background: url(../../web/m/promotion/signature/ico-logo-bmc.png) no-repeat;
+    background-size: cover;
+  }
+}
+
+/***** [2018-04-09] 제주 푸드트립 *****/
+.foodtrip-jeju {
+  text-align: center;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+/***** [2018-04-19] 제철박스 5월 *****/
+.season-may {
+  text-align: center;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .btn-area {
+    background:#e3e2ec;
+    padding:0 7% 20%;
+  }
+}
+
+/***** [2018-04-27] 셰프콜라보 *****/
+.chef-collabo-3rd {
+  text-align: center;
+  background-color: #eceef4;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .chef-collabo-section {
+    .item-section {
+      padding: 0 3.5%;
+      .food-item {
+        &+.food-item {margin-top: 8%;}
+        &.item1 {margin-top: -4px;}
+      }
+    }
+    .btn-more {margin-top: 10%;}
+    .btn-all {margin-bottom: 16%;}
+    .event-notice {
+      background: #0f939e;
+    }
+  }
+}
+
+/***** [2018-05-09] 충청도 푸트드립 *****/
+.foodtrip-chungcheong {
+  text-align: center;
+  background-color: #eee6d7;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .foodtrip-chungcheong-contents {
+    .food-item {
+      padding: 0 3.5%;
+    }
+    .btn-more {
+      margin: 10% 0;
+      padding: 0 3.5%;
+    }
+  }
+}
+
+/***** [2018-05-16] 제철박스 6월 *****/
+.season-june {
+  background: #ffffff;
+  text-align: center;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .season-header {
+    background: #94e5e1;
+  }
+  .parallax-container {
+    position:relative;
+    overflow:hidden;
+    height:600px;
+    .parallax {
+      position: absolute;
+      top:0; right:0;
+      bottom:0; left:0;
+      img {
+        position: absolute;
+        height: auto;
+        left: 50%;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+  }
+  @media (min-width: 768px){
+    .parallax-container {
+      height:100vh;
+      .parallax {
+        img {
+          width: 80%;
+          min-width: 80%;
+        }
+      }
+    }
+  }
+  .content-section {
+    .item-section {
+      position: relative;
+      margin: -15% 0 15%;
+      .item {
+        position: absolute;
+        width: 70%;
+        animation: move 6s ease-in-out infinite;
+        &.item1 {top: 10%; right: -50%;}
+        &.item2-1 {top: -12%; left: -43%;}
+        &.item2-2 {top: 0; right: -46%;}
+        &.item3 {top: -15%; left: -42%;}
+        &.item4-1 {top: -10%; left: -33%;}
+        &.item4-2 {top: -28%; right: -30%;}
+        &.item5-1 {top: 0; left: -44%;}
+        &.item5-2 {top: -20%; right: -40%;}
+      }
+      .food-item {
+        padding: 0 3.5%;
+      }
+    }
+  }
+  .btn-area {
+    padding:0 7% 20%;
+  }
+  @keyframes move {
+    0% {transform: translateY(0); -webkit-transform: translateY(0);}
+    50% {transform: translateY(-50px); -webkit-transform: translateY(-50px);}
+    100% {transform: translateY(0); -webkit-transform: translateY(0);}
+  }
+  .progressBarContainer {
+    content:'';
+    overflow: hidden;
+    position: fixed;
+    display: table;
+    table-layout: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1%;
+    margin-bottom: 0;
+    background: #ffffff;
+    .progressBar {
+      float: left;
+      width: 0;
+      max-width: 100%;
+      height: 100%;
+      z-index: 99;
+      background: #4fd0e1;
+      -webkit-transition: width .6s ease;
+      -o-transition: width .6s ease;
+      transition: width .6s ease;
+    }
+  }
+}
+
+/***** [2018-05-28] 셰프콜라보 *****/
+.chef-collabo-4th {
+  text-align: center;
+  background-color: #fdf1e1;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .chef-collabo-section {
+    background-color: #fdf1e1;
+    .item-section {
+      padding: 0 3.5% 10%;
+      background: #ffffff;
+      .food-item {
+        &+.food-item {margin-top: 8%;}
+        &.item1 {margin-top: -4px;}
+      }
+    }
+    .btn-more {
+      padding: 3% 18% 11%;
+    }
+    .btn-all {margin-bottom: 16%;}
+  }
+}
+
+/***** [2018-05-30] 상반기 결산 기획전 *****/
+.first-half-year{
+  position: relative; background: #fff; padding-bottom: 50px;
+  .content-wrap{
+    position: relative;
+    img{display: block; width: 100%;}
+    h1, p, dl{
+      position: absolute; left: 0; top: 0; z-index: -1;
+    }
+    a{position: relative; display: block; overflow: hidden;}
+    .btn-area{
+      padding: 5.5% 2%;
+    }
+  }
+}
+
+/***** [2018-06-05] 부산 푸트드립 *****/
+.foodtrip-busan {
+  text-align: center;
+  background-color: #fff5d8;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {display: block;}
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .foodtrip-busan-contents {
+    padding: 0 3%;
+    .intro {padding-top: 8%;}
+    h2 {padding-top: 10%;}
+    h3 {
+      padding: 7% 0 3%;
+      &.set-tlt {
+        padding: 13% 0 3%;
+      }
+    }
+    .food-item {padding-bottom: 4%;}
+    .btn-more {
+      margin: 8% 0;
+      padding: 0 3.5%;
+    }
+  }
+}
+
+/***** [2018-06-15] 제철박스 7월 *****/
+.season-july {
+  text-align: center;
+  background: #fff5ea;
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  a {
+    display: block;
+  }
+  .blind {
+    position: absolute;
+    z-index: -1;
+  }
+  .content-wrap {
+    .food-item {padding:5% 4% 0;}
+    .food-item + h3 {
+      padding-top: 10%;
+    }
+  }
+  .btn-area {padding:10% 4% 20%;}
+  .progressBarContainer {
+    content:'';
+    overflow: hidden;
+    position: fixed;
+    display: table;
+    table-layout: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1%;
+    margin-bottom: 0;
+    background: #fff5ea;
+    .progressBar {
+      float: left;
+      width: 0;
+      max-width: 100%;
+      height: 100%;
+      z-index: 99;
+      background: #f8700d;
+      -webkit-transition: width .6s ease;
+      -o-transition: width .6s ease;
+      transition: width .6s ease;
+    }
+  }
+}
+
+/***** [2018-06-27] 셰프콜라보 5 *****/
+.chef-collabo-5th {
+  background: #1e283c;
+  img{display: block; width: 100%;}
+  a{display: block;}
+  .blind {position: absolute; z-index: -1;}
+  .chef-collabo-section{
+    overflow: hidden; padding: 0 5.5%;
+    .item-section {
+      .food-item{position: relative; margin-bottom: 12%;}
+      .btn-more{margin-bottom: 18%;}
+    }
+    &.last{
+      .btn-more{margin-bottom: 0;}
+    }
+  }
+  .btn-all {padding: 0 5.5%; margin-bottom: 21.5%;}
+}

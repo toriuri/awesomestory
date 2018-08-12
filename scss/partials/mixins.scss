@@ -20,6 +20,7 @@ $color-mint : #2ac1bc; //배민찬 민트
   border-radius: $radius;
 }
 
+
 // Browser Prefixes
 @mixin transform ($transforms){
   -webkit-transform: $transforms;

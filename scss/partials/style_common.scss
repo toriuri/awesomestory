@@ -8,33 +8,29 @@
   font-family:'Noto Sans KR Light';
   font-style:normal;
   font-weight:300;
-  src:url('https://cdn.bmf.kr/font/notosans/notokr-light.woff2') format('woff2'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-light.woff') format('woff'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-light.otf') format('opentype');
+  src:url('../fonts/notokr-light.woff') format('woff'),
+  url('../fonts/notokr-light.eot') format('opentype');
 }
 @font-face{
   font-family:'Noto Sans KR';
   font-style:normal;
   font-weight:400;
-  src:url('https://cdn.bmf.kr/font/notosans/notokr-regular.woff2') format('woff2'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-regular.woff') format('woff'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-regular.otf') format('opentype');
+  src:url('../fonts/notokr-regular.woff') format('woff'),
+  url('../fonts/notokr-regular.eot') format('opentype');
 }
 @font-face{
   font-family:'Noto Sans KR Medium';
   font-style:normal;
   font-weight:400;
-  src:url('https://cdn.bmf.kr/font/notosans/notokr-medium.woff2') format('woff2'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-medium.woff') format('woff'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-medium.otf') format('opentype');
+  src:url('../fonts/notokr-medium.woff') format('woff'),
+  url('../fonts/notokr-medium.eot') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR Bold';
   font-style: normal;
   font-weight: 400;
-  src: url('https://cdn.bmf.kr/font/notosans/notokr-bold.woff2') format('woff2'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-bold.woff') format('woff'),
-  url('https://cdn.bmf.kr/font/notosans/notokr-bold.otf') format('opentype');
+  src:url('../fonts/notokr-bold.woff') format('woff'),
+  url('../fonts/notokr-bold.eot') format('opentype');
 }
 
 /* reset */
@@ -51,9 +47,10 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  margin:0; padding:0;
-  border:0;
+  margin: 0; padding: 0;
+  border: 0;
   font-weight: normal;
+  box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -63,20 +60,14 @@ html {-webkit-text-size-adjust: none;}
 body {
   -webkit-text-size-adjust: none;
   word-break: break-all;
-  font-size: 13px;
-  font-family: sans-serif;
-  /* background: #ededed; */
-  /* background: #e8ecf0; */
-  background: #f2f2f2;
-  &.bg_white {
-    background: #ffffff;
-  }
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 13px; color: #000; line-height: 16px;
+  background: #fff;
 }
 
 ol, ul, li {list-style:none;}
 blockquote, q {quotes:none;}
 table {border-collapse:collapse; border-spacing:0;}
-img {vertical-align:top;}
 
 /* common */
 input[type=checkbox],
@@ -102,9 +93,9 @@ input[type=search]::-webkit-search-cancel-button {display: none;} /* 아이폰 �
 textarea:focus {color:#444 !important;}
 
 select {
-  height:34px; padding:0 28px 0 10px;
-  color:#444; font-size:12px; vertical-align:middle;
-  border:1px solid #c1c1c1;
+  height: 34px; padding: 0 28px 0 10px;
+  color: #333; font-size: 13px; vertical-align:middle;
+  border:1px solid #e1e1e1;
   background:url('../../web/m/common/ic_select_arr.png') no-repeat right center #fff;
   background-size: 25px 9px;
   -webkit-appearance: none;
@@ -117,15 +108,19 @@ select {
 a {color:inherit; text-decoration:none;}
 a:hover, a:active, a:focus {background:none; text-decoration:none;}
 
-.blind, hr{display: block; overflow: hidden; position: absolute; top: 0; left: -9999em; width: 0.1%; height: 0.1%; line-height: 0.1%; font-size: 0.1%;}
-.hidden {visibility:hidden; overflow:hidden; width:0 !important; height:0 !important; margin:0 !important; padding:0 !important; font-size:0 !important;}
+.blind, hr{
+  display: block;
+  overflow: hidden;
+  position: absolute; top: 0; left: -9999em;
+  width: 0.1%; height: 0.1%;
+  line-height: 0.1%; font-size: 0.1%;
+}
 
-.point_color {color: $color-mint!important;} /* 포인트 컬러 */
-.number {font-family: sans-serif;} /* 숫자폰트 */
 .input {
   height: 40px; padding: 0 10px;
   border: 1px solid #e1e1e1; background: #fff;
-  font-family: "Noto Sans KR", sans-serif; letter-spacing: -0.05em; color: #444; vertical-align: middle;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.05em; color: #444; vertical-align: middle;
   @include box-sizing;
   &:focus {color: #444 !important;}
 }
@@ -156,9 +151,6 @@ a:hover, a:active, a:focus {background:none; text-decoration:none;}
 }
 .textarea::-webkit-textarea-placeholder {color:#bfbfbf !important;}
 
-.empty {padding:45px 0 45px 0 !important; font-size:11px; color:#363636; text-align:center;}
-td.empty {padding: 100px 0 !important;}
-
 /* common - select */
 .select_custom_default {
   position: relative;
@@ -173,47 +165,12 @@ td.empty {padding: 100px 0 !important;}
   }
 }
 
-/** 이경선임 진행 부분 **/
-/* Hybrid App */
-body.hybrid,
-body.hybrid button,
-body.hybrid input,
-body.hybrid select,
-body.hybrid textarea,
-body.hybrid .btn {max-width: 100%;}
-
-/* common */
-.block_ele {display: block; width: 100%;}
-.clearfix {}
-.clearfix:before,
-.clearfix:after {display:table;content:"";line-height:0;}
-.clearfix:after {clear:both;}
-.one_line {display: inline-block; white-space: nowrap;}
-
-.ir_icon,
-.ir_icon:hover,
-.ir_icon:active,
-.ir_icon:focus {
-  background-image: url("../../web/m/common/ir_icon.png");
-  background-repeat: no-repeat;
-  background-size: 70px auto;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .ir_icon,
-  .ir_icon:hover,
-  .ir_icon:active,
-  .ir_icon:focus {background-image: url("../../web/m/common/ir_icon_2x.png");}
-}
-
 /* 버튼 공통 스타일  */
-button{
-  font-family: "Noto Sans KR Bold", sans-serif; border: none;
-  @include border-radius(0);
-}
 .btn{
-  display: inline-block; font-family: "Noto Sans KR", sans-serif; border: none;
+  display: inline-block; font-family: "Noto Sans KR", sans-serif;
+  border: none;
   @include box-sizing;
-  span{display: inline-block; margin-top: -1px; font-size: 15px;}
+  @include border-radius(0);
 }
 
 .btn_gray{border: none; background: #aaa9a7; color: #fff;}
@@ -251,40 +208,6 @@ button{
   width: 100%; height: 60px; font-size: 17px;
   font-family: "Noto Sans KR Bold", sans-serif;
 }
-.btn_tb_in{font-size: 12px; padding: 4px 8px; margin: 0 1px; text-align: center;}
-
-/* [2016-05-23] 회원가입 축하 혜택 버튼 */
-.btn_join_benefit {width: 100%; height: 60px; font-size: 18px; font-weight: bold;}
-a.btn_join_benefit {line-height: 60px;}
-.btn_dark_mint{border: none; background: #14928e; color: #fff;}
-.btn_dark_mint:hover, .btn_dark_mint:focus{background: #128480;}
-
-/* common - button */
-.btn_area, .btn_area_block, .btn_area_bisection {overflow: hidden;}
-.btn_block, .btn_area_block .btn, .btn_area_bisection .btn {
-  display: block; height: 60px; padding: 18px 0; border: 0;
-  font-family: "Noto Sans KR Bold", sans-serif; color: #fff; font-size: 18px;
-  @include box-sizing;
-}
-.btn_block, .btn_area_block .btn {width: 100%;}
-.btn_area_bisection .btn {float: left; width: 50%;}
-
-.btn.w40{float: left; width: 40%;}
-.btn.w60{float: left; width: 60%;}
-
-.fLeft{float: left;}
-.fRight{float: right;}
-
-.mt10{margin-top: 10px!important;}
-.mt30{margin-top: 30px;}
-
-.mb10{margin-bottom: 10px; }
-.mb20{margin-bottom: 20px; }
-.mb100{margin-bottom: 100px; }
-
-.bf_mint{color: $color-mint;}
-.bf_red{color: #f45452;}
-
 
 /***** 라디오 버튼, 체크박스 스타일 수정 ******/
 .custom_input{display: inline-block; margin-right: 10px;}
@@ -383,153 +306,186 @@ a.btn_join_benefit {line-height: 60px;}
 /* hover style just for information */
 .bf_input + label:hover:before {border: 1px solid $color-mint !important;}
 
-/* Paging */
-.pagination {position: relative; margin: 10px auto; text-align: center; font-size: 0; line-height: 0;}
-.pagination .num {margin:0 8px; vertical-align: middle;}
-.pagination .num a {display: inline-block; margin:0 1px; padding:10px 14px; vertical-align: middle; color: #888; font-size: 12px;}
-.pagination .num a:hover {color: #0fbfb9; font-weight:bold;}
-.pagination .num a.current {color: #0fbfb9; font-weight:bold;}
-.btn-paging {overflow: hidden; display: inline-block; width: 20px; height: 20px; vertical-align: middle; font-size: 0; line-height: 0; background: url(../../web/m/common/btn_paging.png) no-repeat; background-size:45px;}
-.btn-paging:hover {background: url(../../web/m/common/btn_paging.png) no-repeat;background-size:45px;}
-.btn-paging.prev {background-position: 7px -30px;}
-.btn-paging.prev.dimmed {background-position: 7px 3px;}
-.btn-paging.next {background-position: -30px -30px;}
-.btn-paging.next.dimmed {background-position:-30px 3px;}
 
 
-/*///////////////////////////////////////////////////////////////////////////////////
-//
-//  layout
-//
-///////////////////////////////////////////////////////////////////////////////////*/
-
-/* layout */
-#wrapper {position: relative; min-width:320px; width:100%;}
-#layout {position:relative; min-width:320px; width:100%;}
-#container{overflow: hidden; min-height: 200px;}
-.content{position: relative; overflow: hidden; min-height: 200px;}
-
-#dimmed {display:none; position:absolute; top:0; left:0; z-index:50; width:100%; height:100%; background:none;}
-
-/* sub title
-.sub_title {padding:10px 0; border-bottom:1px solid #ccc; background:#edeee9; color:#444; font-size:20px; font-weight:bold; text-align:center;}
-.sub_title_member {padding:10px 0; border-bottom:none; background:#fff; color:#444; font-size:20px; font-weight:bold; text-align:center;}
-*/
-
-/* sub nav
-.sub_nav {padding:8px 10px; background:#edeee9;}
-.sub_nav .location {overflow:hidden;}
-.sub_nav .location a {float:left; color:#888; font-size:14px; line-height:20px;}
-.sub_nav .location a .last_cate {color:#444; font-size:14px; line-height:inherit;}
-.sub_nav .location img {float:left; position:relative; height:8px; padding:6px 5px; line-height:14px; vertical-align:middle;}
-*/
-
-/*********** 상단 띠 배너 ***********/
-.m_main_top_banner{
-  position:relative;
-  a{
-    display: block; background-color: #a3a29d;
-    img {display:block; margin: 0 auto; height: 65px;}
-  }
-  .btn_top_banner_close {
-    position:absolute; right: 50%; top:20px; margin-right: -157px; z-index:2;
-    display:block; overflow:hidden; width:25px; height:25px;
-    text-indent: -9999em; border: 0; cursor: pointer; background: transparent;
-  }
+/***** layout *****/
+#wrapper {
+  position: relative; margin: 0 auto;
+  min-width: 320px; max-width: 750px;
+  width:100%;
 }
 
-/*********** 헤더바 ***********/
 #header{
   position: relative;
-  font-family: 'Noto Sans KR', sans-serif; color: #222;
-  &.header-fixed{
-    position: fixed;
-    left: 0; top: 0; right: 0; z-index: 1000;
+  height: 38px;
+  h1{
+     text-align: center;
+    a{
+      display: inline-block;
+      height: 38px; padding: 8px 0 7px;
+      @include box-sizing;
+      img{height: 23px;}
+    }
   }
-  .header-bar{
-    position: relative; height: 44px; text-align:center;
-    background: #fff; z-index: 5;
-    box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-    -moz-box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-    -webkit-box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
 
-    &.transparent{
-      background: none;
-      position: fixed; left: 0; top: 0;
-      width: 100%; height: 44px;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
-      h1{opacity: 0;}
-    }
+  a.btn-menu{
+    overflow: hidden;
+    position: absolute; left: 13px; top: 7px;
+    width: 24px; height: 24px; text-indent: -3000px;
+    background: url(../images/common/ic-menu-24-normal@2x.png) no-repeat center center;
+    background-size: 24px;
+  }
+  a.btn-cart{
+    overflow: hidden;
+    position: absolute; right: 16px; top: 7px;
+    width: 24px; height: 24px; text-indent: -3000px;
+    background: url(../images/common/ic-cart-24-normal@2x.png) no-repeat center center;
+    background-size: 24px;
+  }
+}
 
-    .bmc-logo a{
-      display:inline-block;
-      height: 44px; padding: 4px 0 2px;
-      @include box-sizing;
-      img{height: 35px;}
-    }
-    .header-title{
-      display:inline-block;
-      height: 44px; padding: 14px 0;
-      font-size: 16px; text-align:center;
-      @include box-sizing;
-    }
+#container{
+  position: relative;
+  min-height: 300px;
+}
+.content{
+  position: relative;
+}
 
-    .btn-menu,
-    .btn-search,
-    .btn-basket,
-    .btn-back,
-    .btn-close{
-      display: block; overflow: hidden;
-      position: absolute; top: 6px; z-index: 100;
-      height: 32px; text-indent: -9999px;
-      background: url(../../web/m/common/ico-header.png) no-repeat left top;
-      background-size: auto 64px;
-    }
-    .btn-menu{
-      left: 12px; width: 40px; background-position: 0 0;
-      &:active, &:focus{
-        background-position: 0 -32px;
+#footer{
+  position: relative;
+  background: #f7f7f7;
+  padding: 22px 20px; font-size: 8px;
+  h2{
+    font-family: "Noto Sans KR Medium", sans-serif;
+    font-size: 11px;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 9px; margin-bottom: 11px;
+  }
+  ul li{
+    line-height: 19px;
+  }
+  .copyright{
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 10px; margin-top: 11px;
+  }
+}
+
+/***** [main page content] *****/
+.main-slogan{
+  font-size: 12px;
+  line-height: 16px; text-align: center;
+  padding: 20px 0 34px;
+  strong{color: #0082c9;}
+}
+
+.content{
+  h2.title{
+    font-family: "Noto Sans KR Medium", sans-serif;
+    font-size: 18px; padding: 0 16px;
+  }
+
+  .build-book{
+    position: relative;
+    width: 100%; min-height: 254px;
+    background: url(../images/contents/main-visual@2x.png) no-repeat center center;
+    background-size: cover;
+    padding-left: 16px; margin-top: 16px;
+    .text-box{
+      position: absolute;
+      left: 16px; bottom: 16px;
+      h1{
+        font-family: "Noto Sans KR Bold", sans-serif;
+        font-size: 14px; margin-bottom: 7px;
+        & + p{
+          font-size: 12px; margin-bottom: 12px;
+        }
+      }
+      a.btn-build{
+        font-family: "Noto Sans KR Medium", sans-serif;
+        position: relative; display: block;
+        width: 140px; height: 36px;
+        background: #fee734;
+        font-size: 13px; text-align: left; line-height: 38px;
+        padding-left: 24px;
+        @include border-radius(18px);
+        box-shadow: 0 0 10px rgba(0,0,0, 0.6);
+        &::after{
+          content: '';
+          display: block;
+          width: 16px; height: 16px;
+          background: url(../images/common/ic-arrow-btn-16@2x.png) no-repeat center center;
+          background-size: 16px;
+          position: absolute; right: 10px; top: 50%;
+          margin-top: -8px;
+        }
       }
     }
-    .btn-search{
-      right: 51px; width: 35px; background-position: -40px 0;
-      &:active, &:focus{
-        background-position: -40px -32px;
-      }
+  }
+
+  p.text{
+    font-size: 13px;
+    padding: 32px 0 10px; margin: 10px 16px 36px;
+    background-image: url(../images/common/ic-quotes-left@2x.png), url(../images/common/ic-quotes-right@2x.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    em{
+      display: inline-block;
+      font-family: "Noto Sans KR Medium", sans-serif;
+      font-size: 14px; font-style: normal; color: #0082c9; margin-bottom: 11px;
     }
-    .btn-basket{
-      right: 16px; width: 35px; background-position: -75px 0;
-      &:active, &:focus{
-        background-position: -75px -32px;
-      }
-      .count{
-        position: absolute; top: 0; right: 0; z-index: 10;
-        min-width: 16px; height: 16px; padding: 0 3px 0; background: $color-mint;
-        font-family: "Noto Sans KR", sans-serif;
-        font-size: 11px; color: #fff; text-align: center; letter-spacing: -0.05em; line-height: 1.7em; text-indent: 0;
-        @include border-radius(8px);
-        @include box-sizing;
-      }
-      &.white{
-        background-position: -174px 0;
-      }
+    strong{
+      font-family: "Noto Sans KR Bold", sans-serif;
+      color: #0082c9;
     }
-    .btn-back{
-      left: 12px; width: 32px; background-position: -110px 0;
-      &:active, &:focus{
-        background-position: -110px -32px;
-      }
-      &.white{
-        background-position: -142px 0;
-      }
+  }
+  h3.title{
+    font-family: "Noto Sans KR Medium", sans-serif;
+    font-size: 16px; text-align: center;
+    margin-bottom: 23px;
+  }
+  .count-box{
+    margin-bottom: 60px;
+    font-size: 38px; color: #00bdf1; text-align: center;
+    span{
+      display: inline-block;
+      width: 38px; height: 57px; margin-right: 0px;
+      background: #00bdf1;
+      font-family: "Noto Sans KR Bold", sans-serif;
+      font-size: 38px; color: #fff; line-height: 60px;
+      @include border-radius(5px);
     }
-    .btn-close{
-      right: 16px; width: 25px; background-position: -142px -32px;
+  }
+
+  .instar-list{
+    overflow: hidden; margin: 10px 10px 24px 16px;
+    li{
+      display: inline-block;
+      float: left; width: 105px; margin-right: 6px;
+      a{
+        display: block;
+        .instar-thumb{
+          width: 105px; height: 105px; margin-bottom: 5px;
+          background: #f7f7f7;
+          img{display: block; width: 100%;}
+        }
+        .instar-tag{
+          font-size: 11px; color: #0082c9;
+          min-height: 46px;
+        }
+      }
     }
   }
 }
+
+
+
+
+
+
+
 
 /****** 헤더, 서브 슬라이드 네비게이션 ******/
 .header-navi{
@@ -563,88 +519,6 @@ a.btn_join_benefit {line-height: 60px;}
       }
     }
   }
-}
-
-/****** 서브페이지 타이틀 ******/
-.header_tlt {
-  position:relative;
-  overflow:hidden;
-  width:100%; height: 33px;
-  background: #fff;
-  z-index: 100;
-  box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-  h2{
-    color: #222; font-size: 13px; text-align: center; padding: 8px 15px;
-  }
-}
-
-/********** footer ***********/
-#footer{
-  overflow: hidden; background: #fff; padding-bottom: 20px;
-  .cscenter{
-    margin-bottom:16px; padding: 17px 12px 15px; text-align:center; color:#fff; background: #9ea2ab;
-    h2{margin-bottom:0;font-size: 14px; font-weight: bold;}
-    p.call_number{
-      margin-bottom: 6px;
-      a{font-size:25px; color:#fff; font-weight: bold; font-family: sans-serif; line-height:1.1;}
-      &.txt{font-size: 13px; line-height: 1.4em;}
-    }
-    ul.link_cs{
-      overflow: hidden; margin-top: 16px;
-      li{
-        float: left; width:50%; background: #fff;
-        @include box-sizing;
-        &:first-child {border-right:1px solid #d0d2d6}
-        a{
-          display: block; line-height:39px; font-size: 13px; color: #71757c;
-          &:hover, &:active {color:#0fbfb9;}
-        }
-        &.v_app {float:inherit; width:100%; border-right: none;}
-      }
-    }
-  }
-  ul.link_company{
-    overflow: hidden; margin-bottom: 17px; text-align: center;
-    li{
-      display:inline-block;
-      &::before {
-        content:'';
-        display:inline-block; width: 1px; height: 10px; background: #d1d1d1;
-      }
-      &:first-child:before {display:none;}
-      a{
-        padding: 0 7px 0 9px; font-size: 13px; color: #333;
-        &:hover, &:active {color:#0fbfb9;}
-      }
-      &:last-child a{color: #000; font-weight: bold;}
-    }
-  }
-  .foot_info{
-    overflow: hidden; margin-bottom: 20px; padding: 0 12px; font-size: 12px; letter-spacing: -0.02em; line-height: 17px; color: #aaa; text-align: justify;
-    h2{
-      margin-bottom: 5px; font-size: 12px; font-weight: bold;}
-    ul{
-      overflow: hidden;
-      li{
-        display: inline-block; float: left;
-        &::after{
-          content:'';
-          display:inline-block; width: 1px; height: 8px; background: #e1e1e1;
-          position: relative; top: 0;
-          margin: 0 8px 0 8px;
-        }
-        &:last-child::after{display: none;}
-      }
-    }
-    a{
-      text-decoration: underline;
-      &:hover, &:active {color: #222;}
-    }
-    address{display: inline; font-style: normal;}
-  }
-  .copyright, .bottom_copy {margin-top: 12px;}
 }
 
 /***** top scroller *****/

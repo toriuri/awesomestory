@@ -1,1 +1,149 @@
-#wrapper{position:relative;margin:0 auto;min-width:320px;max-width:750px;width:100%}#header{position:relative;z-index:9999;height:38px;background:#fff}#header h1{text-align:center}#header h1 a{display:inline-block;height:38px;padding:8px 0 7px}#header h1 a img{height:23px}#header a.btn-menu{overflow:hidden;position:absolute;left:13px;top:7px;width:24px;height:24px;text-indent:-3000px;background:url(/_cdn/images/common/ic-menu-24-normal@2x.png) no-repeat center center;background-size:24px}#header a.btn-cart{overflow:hidden;position:absolute;right:16px;top:7px;width:24px;height:24px;text-indent:-3000px;background:url(/_cdn/images/common/ic-cart-24-normal@2x.png) no-repeat center center;background-size:24px}#container{position:relative}.content{position:relative;min-height:100px;border:1px solid #f00}#footer{position:relative;background:#f7f7f7;padding:16px 20px;font-size:8px}#footer ul.footer-lnb{overflow:hidden;border-bottom:1px solid #d8d8d8;padding-bottom:11px;margin-bottom:14px}#footer ul.footer-lnb li{float:left}#footer ul.footer-lnb li a{display:block;margin-right:20px;font-size:11px}#footer ul.footer-lnb li a strong{font-family:"Noto Sans KR Medium", sans-serif}#footer h2{font-family:"Noto Sans KR Bold", sans-serif;font-size:11px;margin-bottom:4px}#footer ul.footer-info li{line-height:19px}#footer .copyright{text-align:center;border-top:1px solid #d8d8d8;padding-top:10px;margin-top:11px}#snb-menu{display:none;position:fixed;top:0;left:-100%;z-index:100000;width:260px;max-width:85%;height:100%;background:#3f96d4}@media screen and (min-width: 320px), (orientation: landscape){#snb-menu #snb_menu{width:320px}}#snb-menu .area{position:relative;width:100%;height:100%;overflow-y:auto;-webkit-overflow-scrolling:touch}#snb-menu .area .snb-header h1{text-align:center;padding:18px 0;margin-bottom:60px;border-bottom:1px solid #72afda}#snb-menu .area .snb-header h1 img{display:inline-block;width:96px}#snb-menu .area .snb-header .btn-snb-close{display:block;overflow:hidden;position:absolute;right:6px;top:6px;width:24px;height:24px;text-indent:-3000px;background:url(/_cdn/images/common/ic-close-line-20-normal@2x.png) no-repeat center center;background-size:20px}#snb-menu .area .snb-menu-list li{margin-bottom:20px}#snb-menu .area .snb-menu-list li a{display:block;border:1px solid #f00;font-family:"Noto Sans KR Medium", sans-serif;font-size:14px;color:#fff;letter-spacing:-0.03px;line-height:2.0em;padding:0 20px}#snb-menu .area .snb-footer{position:absolute;left:0;bottom:24px;width:100%;text-align:center}#snb-menu .area .snb-footer li{display:inline-block}#snb-menu .area .snb-footer li a{display:block;border:1px solid #f00;font-size:12px;color:#fff}#snb-menu .area .snb-footer li a::after{content:'|';display:inline-block;color:rgba(246,246,246,0.5);padding:0 10px}#snb-menu .area .snb-footer li:last-child a:after{display:none}
+/***** layout *****/
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 750px;
+  width: 100%; }
+
+#header {
+  position: relative;
+  z-index: 9999;
+  height: 38px;
+  background: #fff; }
+  #header h1 {
+    text-align: center; }
+    #header h1 a {
+      display: inline-block;
+      height: 38px;
+      padding: 8px 0 7px; }
+      #header h1 a img {
+        height: 23px; }
+  #header a.btn-menu {
+    overflow: hidden;
+    position: absolute;
+    left: 13px;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    text-indent: -3000px;
+    background: url(/_cdn/images/common/ic-menu-24-normal@2x.png) no-repeat center center;
+    background-size: 24px; }
+  #header a.btn-cart {
+    overflow: hidden;
+    position: absolute;
+    right: 16px;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    text-indent: -3000px;
+    background: url(/_cdn/images/common/ic-cart-24-normal@2x.png) no-repeat center center;
+    background-size: 24px; }
+
+#container {
+  position: relative; }
+
+.content {
+  position: relative;
+  min-height: 100px; }
+
+#footer {
+  position: relative;
+  background: #f7f7f7;
+  padding: 16px 20px;
+  font-size: 8px; }
+  #footer ul.footer-lnb {
+    overflow: hidden;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 11px;
+    margin-bottom: 14px; }
+    #footer ul.footer-lnb li {
+      float: left; }
+      #footer ul.footer-lnb li a {
+        display: block;
+        margin-right: 20px;
+        font-size: 11px; }
+        #footer ul.footer-lnb li a strong {
+          font-family: "Noto Sans KR Medium", sans-serif; }
+  #footer h2 {
+    font-family: "Noto Sans KR Bold", sans-serif;
+    font-size: 11px;
+    margin-bottom: 4px; }
+  #footer ul.footer-info li {
+    line-height: 19px; }
+  #footer .copyright {
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+    padding-top: 10px;
+    margin-top: 11px; }
+
+/***** SNB Menu *****/
+#snb-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  z-index: 100000;
+  width: 260px;
+  max-width: 85%;
+  height: 100%;
+  background: #3f96d4; }
+  @media screen and (min-width: 320px), (orientation: landscape) {
+    #snb-menu #snb_menu {
+      width: 320px; } }
+  #snb-menu .area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
+    #snb-menu .area .snb-header h1 {
+      text-align: center;
+      padding: 18px 0;
+      margin-bottom: 60px;
+      border-bottom: 1px solid #72afda; }
+      #snb-menu .area .snb-header h1 img {
+        display: inline-block;
+        width: 96px; }
+    #snb-menu .area .snb-header .btn-snb-close {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      right: 6px;
+      top: 6px;
+      width: 24px;
+      height: 24px;
+      text-indent: -3000px;
+      background: url(/_cdn/images/common/ic-close-line-20-normal@2x.png) no-repeat center center;
+      background-size: 20px; }
+    #snb-menu .area .snb-menu-list li {
+      margin-bottom: 20px; }
+      #snb-menu .area .snb-menu-list li a {
+        display: block;
+        border: 1px solid #f00;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: -0.03px;
+        line-height: 2.0em;
+        padding: 0 20px; }
+    #snb-menu .area .snb-footer {
+      position: absolute;
+      left: 0;
+      bottom: 24px;
+      width: 100%;
+      text-align: center; }
+      #snb-menu .area .snb-footer li {
+        display: inline-block; }
+        #snb-menu .area .snb-footer li a {
+          display: block;
+          border: 1px solid #f00;
+          font-size: 12px;
+          color: #fff; }
+          #snb-menu .area .snb-footer li a::after {
+            content: '|';
+            display: inline-block;
+            color: rgba(246, 246, 246, 0.5);
+            padding: 0 10px; }
+        #snb-menu .area .snb-footer li:last-child a:after {
+          display: none; }

@@ -81,18 +81,159 @@
 		<!-- //SNB 좌측 카테고리 메뉴 -->
 
     <div id="container">
-	    <h1 class="" style="padding: 50px 0;">
-		    책만들기
-	    </h1>
+			<section class="product-top-slide">
+				<h1 class="blind">책소개 배너</h1>
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<img src="/_cdn/images/sample/@main-banner1.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="/_cdn/images/sample/@main-banner2.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="/_cdn/images/sample/@main-banner3.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="/_cdn/images/sample/@main-banner4.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="/_cdn/images/sample/@main-banner5.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="/_cdn/images/sample/@main-banner6.jpg" alt="">
+						</li>
+					</ul>
+					<div class="swiper-pagination custom"></div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				</div>
+				<script>
+          var swiper = new Swiper('.swiper-container', {
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'fraction',
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+				</script>
 
-	    <section class="content">
-		    <h2 class="title">우리 아이 이름</h2>
+				<dl>
+					<dt>내 이름이 도망갔어</dt>
+					<dd class="description">이름에 따라 스토리가 달라지는 하나 뿐인 이야기</dd>
+					<dd class="price">25,000원</dd>
+				</dl>
+			</section>
 
+	    <section class="content input-child-name">
+		    <form>
+			    <div class="input-block">
+				    <label for="child-name">
+					    <h2 class="title">우리 아이 이름</h2>
+				    </label>
+				    <input type="text" name="child-name" id="child-name" placeholder="성 제외 두글자(외자는 성 포함)" class="aws-input">
+			    </div>
+			    <ul>
+				    <li class="list-block">
+					    <input type="radio" name="gender" id="girl" class="radio-gender" checked>
+					    <label for="girl" class="girl">여자아이</label>
+				    </li>
+				    <li class="list-block">
+					    <input type="radio" name="gender" id="boy" class="radio-gender">
+					    <label for="boy" class="boy">남자아이</label>
+				    </li>
+			    </ul>
+		    </form>
+
+		    <div class="btn-area">
+			    <button type="button" class="btn btn-blue btn-large" onClick="location.href='preview.html'">스토리 미리보기</button>
+		    </div>
 	    </section>
 
-	    <div class="btn-area">
-		    <button type="button" class="btn btn-blue btn-large" onClick="location.href='preview.html'">스토리 미리보기</button>
-	    </div>
+	    <section class="content book-intro">
+		    <div class="tab-container">
+			    <ul class="tab-list">
+				    <li rel="tab1" class="on">책소개</li>
+				    <li rel="tab2">구매후기</li>
+			    </ul>
+
+			    <div id="tab1" class="tab-content" style="display: block;">
+				    <h1 class="blind">책소개 탭</h1>
+				    <div class="content-box">
+					    <div class="img-bind">
+						    <img src="/_cdn/images/contents/@sample-img1.jpg" alt="">
+					    </div>
+					    <h2 class="sub-title">이름마다 변하는 스토리</h2>
+					    <p>
+						    이름의 자음, 모음에 따라 스토리가 바뀌네요.<br>
+						    우리 서하의 ㅅ, ㅓ ,ㅎ, ㅏ 는<br>
+						    스컹크, 거위, 하마, 라마를 만나 찾았대요.
+					    </p>
+				    </div>
+
+				    <div class="content-box">
+					    <div class="img-bind">
+						    <img src="/_cdn/images/contents/@sample-img2.jpg" alt="">
+					    </div>
+					    <h2 class="sub-title">엄마, 내 이름이 나왔어요!</h2>
+					    <p>
+						    아이는 마법 같은 책이라고 얘기해요.<br>
+						    요즘 부쩍 자기 얘기를 많이 하네요.<br>
+						    사춘기가 오면 나누지 못할 소중한 대화에요.
+					    </p>
+				    </div>
+
+				    <div class="content-box">
+					    <div class="img-bind">
+						    <img src="/_cdn/images/contents/@sample-img3.jpg" alt="">
+					    </div>
+					    <h2 class="sub-title">밝혀지는 반전,<br>모험의 조력자는 바로바로...</h2>
+					    <p>
+						    이엔딩에 자기와 아빠가 나오니 깜짝!<br>
+						    (아빠는 엄마, 고모, 할머니 등 변경 가능해요.)<br>
+						    그리고는... 감동적인 이야기를 들으며 눈물 펑펑 흘리는 우리 애기.<br>
+						    원래 이렇게 감수성이 풍부했었나?<br>
+						    온 가족이 함께 울었어요.
+					    </p>
+				    </div>
+
+				    <div class="content-box">
+					    <h2 class="sub-title">보물처럼 간직할 거래요.</h2>
+					    <div class="img-bind">
+						    <img src="/_cdn/images/contents/@sample-img4.jpg" alt="">
+					    </div>
+				    </div>
+
+			    </div>
+
+			    <div id="tab2" class="tab-content" style="display: none;">
+
+						여기는 구매후기
+
+			    </div>
+
+		    </div>
+
+		    <script>
+          $(function () {
+            $(".tab-content").hide();
+            $(".tab-content:first").show();
+
+            $("ul.tab-list li").click(function () {
+              $("ul.tab-list li").removeClass("on");
+              $(this).addClass("on");
+              $(".tab-content").hide()
+              var activeTab = $(this).attr("rel");
+              $("#" + activeTab).fadeIn()
+            });
+          });
+		    </script>
+	    </section>
+
+
 
     </div>
 

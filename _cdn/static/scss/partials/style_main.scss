@@ -1,0 +1,346 @@
+/***** [2018-03-22] 신규 상품검색페이지 *****/
+
+/* 검색어 입력폼 */
+.search-form{
+  label{
+    position: relative; display: block; margin: 16px;
+    .del{
+      display: none;
+      overflow: hidden; position: absolute; top: 0; right: 0;
+      width: 48px; height: 100%; border: none; text-indent: -3000px;
+      background: url(../../web/m/common/ic-form-delete.png) no-repeat center center;
+      background-size: 25px;
+    }
+  }
+  .search-input{
+    width: 100%; height: 48px; padding: 0 40px 0 40px;
+    border: 1px solid $color-mint;
+    background: url(../../web/m/common/bf-icon-search.png) no-repeat 12px center #fff;
+    background-size: 20px;
+    font-size: 15px; color: #121212; vertical-align: middle;
+    &::-webkit-input-placeholder{color: #bfbfbf;}
+    &::-moz-placeholder{color: #bfbfbf;}
+    @include box-sizing;
+    &:focus{
+      & + .del{display: block;}
+    }
+  }
+}
+
+/* 상품검색 탭 */
+.search-tab-container{
+  font-family: "Noto Sans KR", sans-serif; letter-spacing: -0.05em;
+  margin: 0 16px 16px;
+  .tab-list{
+    overflow: hidden;
+    li{
+      float: left; width: 50%; padding: 14px 0 12px;
+      font-size: 15px; color: #737373; line-height: 1.5em; text-align: center;
+      background: #e6e6e6;
+      @include box-sizing;
+      &.on{
+        background: $color-mint; color: #fff;
+        font-family: "Noto Sans KR Bold", sans-serif;
+      }
+    }
+  }
+
+  /* 검색어 목록 박스 */
+  .tab-content{
+    position: relative; font-size: 15px;
+    p{ /* 최근 검색어가 없을 경우 */
+      font-size: 15px; color: #333; text-align: center;
+      padding: 150px 0;
+    }
+    ul{
+      background: #fff;
+      li{
+        position: relative;
+        border-bottom: 1px solid #e6e6e6;
+        a{
+          display: block; color: #333; line-height: 1.5em;
+          @include ellipsis;
+          @include box-sizing;
+        }
+      }
+      &.recommend-list li{
+        a{
+          padding: 15px 15px 11px;
+          span{display: inline-block; width: 15px; margin-right: 12px; text-align: center;}
+        }
+        &:nth-child(1) a,
+        &:nth-child(2) a,
+        &:nth-child(3) a{color: $color-mint; font-family: "Noto Sans KR Bold", sans-serif;}
+      }
+      &.recent-list li{
+        a{padding: 15px 90px 11px 16px;}
+        .date{
+          position: absolute; top: 50%; right: 48px;
+          @include translate(0, -43%);
+          color: #bfbfbf; line-height: 1.5em; text-align: right;
+        }
+        .del{
+          position: absolute; top: 0; right: 0;
+          width: 48px; height: 100%;
+          background: url(../../web/m/common/ico-list-delete.png) no-repeat center center;
+          background-size: 16px;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+/***** 메인 슬라이드 배너 *****/
+.main-banner-slide{
+  position: relative; overflow: hidden;
+  background: #ccc; margin-bottom: 13px; text-align: center; color: #fff;
+  li.swiper-slide{
+    a{display: block; position: relative;}
+    .gradation-bg{
+      position: absolute; left: 0; top: 0;
+      width: 100%; height:100%;
+      background: -moz-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 2%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 2%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 2%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      h2, p{
+        width: 78%; text-align: left;
+        @include ellipsis;
+      }
+      h2{
+        position: absolute; left: 15px; bottom: 12px;
+        font-family: "Noto Sans KR Bold", sans-serif; font-size: 20px;
+      }
+      p{
+        position: absolute; left: 15px; bottom: 40px;
+        font-size: 15px;
+      }
+    }
+  }
+  .swiper-pagination.main-banner-pagination{
+    position: absolute; bottom: 14px; right: 15px; left: inherit;
+    width: 14%; font-size: 14px; text-align: right;
+    .swiper-pagination-current{font-weight: bold;}
+    .swiper-pagination-total{color: #bdbdbd;}
+  }
+}
+
+/***** 메인 이벤트 배너 *****/
+.main-event-banner{
+  margin-bottom: 13px;
+  a{
+    display: block; overflow: hidden; position: relative;
+    p{position: absolute; z-index: -1;}
+  }
+}
+
+/***** 메인 탭메뉴 *****/
+.main-category-tab{
+  overflow: hidden; border-bottom: 2px solid $color-mint; background: #e8ecf0; z-index: 1000;
+  li{
+    width: 20%; float: left;
+    &:last-child a{margin-right: 0;}
+
+    a{
+      display: block; overflow: hidden; height: 62px; margin-right: 1px;
+      color: #595959; font-size: 12px; text-align: center; background: #fff;
+      span.icon{
+        display: block; width: 31px; height: 31px; margin: 6px auto 5px;
+        background: url(../../web/m/common/main-category-tab-v2.png) no-repeat;
+        background-size: auto 62px;
+      }
+    }
+    &.side-dish a span.icon{background-position: 0 top;}
+    &.soup a span.icon{background-position: -31px top;}
+    &.main-courses a span.icon{background-position: -62px top;}
+    &.kids a span.icon{background-position: -93px top;}
+    &.set-of-side a span.icon{background-position: -124px top;}
+    &.fresh a span.icon{background-position: -155px top;}
+    &.refreshment a span.icon{background-position: -186px top;}
+
+    &.on a{
+      background: $color-mint; color: #fff;
+      span.icon{
+        background-image: url(../../web/m/common/main-category-tab-v2.png);
+        background-size: auto 62px;
+      }
+    }
+    &.side-dish.on a span.icon{background-position: 0 bottom;}
+    &.soup.on a span.icon{background-position: -31px bottom;}
+    &.main-courses.on a span.icon{background-position: -62px bottom;}
+    &.kids.on a span.icon{background-position: -93px bottom;}
+    &.set-of-side.on a span.icon{background-position: -124px bottom;}
+    &.fresh.on a span.icon{background-position: -155px bottom;}
+    &.refreshment.on a span.icon{background-position: -186px bottom;}
+  }
+}
+
+/***** 메인 카테고리 타이틀 *****/
+.main-category-title{
+  background: $color-mint; height: 37px;
+  font-size: 17px; font-weight: 500; text-align: center; color: #fff; line-height: 40px;
+  @include box-sizing;
+}
+
+/***** 상태 뱃지 ******/
+.badge-area{
+  overflow: hidden;
+  .badge{
+    display: inline-block; float: left;
+    min-width: 60px; min-height: 18px; margin: 0; padding: 3px 4px 1px;
+    color: #fff; font-size: 11px; line-height: 1.3em; text-align: center;
+    @include border-radius(0);
+    @include box-sizing;
+
+    &.event{background: rgba(198, 168, 165, 0.95);}
+    &.launching{background: rgba(205, 150, 150, 0.95);}
+    &.gift{background: rgba(157, 143, 142, 0.95);}
+    &.best{background: rgba(145, 169, 190, 0.95);}
+    &.coupon{background: rgba(121, 146, 154, 0.95);}
+    &.free{background: rgba(103, 171, 169, 0.95);}
+    &.finish{background: rgba(102, 102, 102, 0.95);}
+    &.stock{background: rgba(102, 102, 102, 0.95);}
+    &.soldout{background: rgba(64, 64, 64, 0.95);}
+  }
+}
+
+/***** 메인 상품목록 박스 *****/
+.main-category-box{
+  margin-bottom: 45px;
+  &:last-child{margin-bottom: 15px;}
+}
+
+/***** 신규 섬네일 *****/
+.product-list{
+  overflow: hidden; background: #fff; padding: 15px;
+  li{
+    position: relative; margin-bottom: 30px;
+    a{
+      position: relative; display: block;
+      .thumb{
+        display: block; overflow: hidden; position: relative;
+        padding-top: 59.42%;
+        margin-bottom: 8px;
+        &.class-loading {
+          background: #f2f2f2 url(../../web/m/common/bg-no-img.png) center center no-repeat;
+          -webkit-background-size: cover;
+          background-size: cover;
+          img {opacity: 0;}
+        }
+        img{
+          display: block; width: 100%; height: auto;
+          position: absolute; left: 0; top: 50%;
+          @include translate(0, -50%);
+          &.loaded {
+            opacity: 1;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+          }
+        }
+        &::after{
+          content: "";
+          position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+          width: 100%; height: 100%;
+          border: 1px solid rgba(0,0,0, 0.1);
+          @include box-sizing;
+        }
+      }
+      .badge-area{
+        position: absolute; left: 0; bottom: 0;
+        width: 100%;
+      }
+      .product-info{
+        .name{
+          font-size: 17px; color: #333; letter-spacing: -0.06em; margin-bottom: 2px;
+          font-family: "Noto Sans KR Medium", sans-serif;
+          @include ellipsis;
+        }
+        .text{
+          font-size: 14px; color: #999;
+          @include ellipsis;
+        }
+        .star-rating{
+          overflow: hidden; padding-top: 5px; padding-bottom: 3px;
+          .review-score-bg{
+            position: relative; float: left; overflow: hidden;
+            width: 72px; height: 13px;
+            background: url(../../web/m/common/ico-star.png) no-repeat left top;
+            background-size: 72px;
+            .review-score{
+              position: absolute; left: 0; top: 0;
+              width: 100%; height: 100%; text-indent: -3000px;
+              background: url(../../web/m/common/ico-star.png) no-repeat left bottom;
+              background-size: 72px;
+            }
+          }
+          .review-count{
+            font-size: 14px; color: #999;
+            padding-left: 77px; position: relative; top: -1px;
+          }
+        }
+        .price{
+          @include box-sizing;
+          .sale-price{
+            font-size: 14px; color: $color-mint;
+            strong{
+              font-family: "Noto Sans KR Bold", sans-serif; font-weight: 900; font-size: 21px;
+              display: inline-block; position: relative; top: 1px;
+            }
+          }
+          .original-price{
+            font-size: 14px; color: #bfbfbf; padding-left: 5px;
+          }
+        }
+      }
+
+    }
+    .btn-cart{
+      overflow: hidden; display: block; width: 72px; height: 36px; text-indent: -3000px;
+      background: url(../../web/m/common/ico-btn-list-cart.png) no-repeat center center $color-mint;
+      background-size: 24px;
+      position: absolute; right: 0; bottom: 0;
+      &:hover, &:focus{background-color: #279999;}
+    }
+    .thumb-badge{
+      position: absolute; left: 0; top: 0; z-index: 100;
+      font-family: "Noto Sans KR Bold", sans-serif; color: #fff; text-align: center; font-size: 16px; line-height: 32px;
+
+      /* 베스트30 랭킹뱃지 */
+      &.ranking{
+        width: 30px; height: 30px;
+        background: rgba(251, 103, 103, 0.9);
+      }
+      /* 할인율 뱃지 */
+      &.sale{
+        width: 44px; height: 44px;
+        background: rgba(251, 103, 103, 0.9);
+        line-height: 44px;
+        .unit{font-size: 11px;}
+      }
+    }
+  }
+}
+
+/***** 메인 상품 더보기 버튼 영역  *****/
+.main-category-box{
+  a.btn-more{
+    position: relative;
+    display: block; height: 50px;
+    background: #fff; border-top: 1px solid #e8ecf0;
+    font-size: 16px; text-align: center; padding-top: 17px;
+    @include box-sizing;
+    strong{font-weight: bold;}
+    &::after{
+      content: '';
+      display: inline-block;
+      margin-left: 4px;
+      vertical-align: middle;
+      margin-top: -3px;
+      width: 18px; height: 18px;
+      background: url(../../web/m/common/bf-icon-more.png) no-repeat center center;
+      background-size: 18px;
+    }
+  }
+}

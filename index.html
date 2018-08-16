@@ -2,29 +2,83 @@
 <html lang="ko">
 
 <head>
-  <title>어썸스토리 | 내이름이도망갔어</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, minimal-ui, maximum-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="no">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="keywords" content="자존감동화, 맞춤동화책, 어썸스토리, 내이름이도망갔어, 개인화 동화책">
-  <meta name="author" content="키즈테크랩">
-  <link rel="stylesheet" type="text/css" href="css/app.css" />
+	<title>어썸스토리 | 내이름이도망갔어</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, minimal-ui, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="자존감동화, 맞춤동화책, 어썸스토리, 내이름이도망갔어, 개인화 동화책">
+	<meta name="author" content="키즈테크랩">
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/web/image/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="/_cdn/static/css/app.css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/_cdn/js/cssuseragent/2.1.31/cssua.min.js"></script>
+	<script type="text/javascript" src="/_cdn/js/sticky-kit/sticky-kit.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/_cdn/js/swiper-4.3.5/css/swiper.min.css">
+	<script type="text/javascript" src="/_cdn/js/swiper-4.3.5/js/swiper.min.js"></script>
+
+	<link  type="text/css" rel="stylesheet" href="/_cdn/js/magnific-popup/magnific-popup.css">
+	<script type="text/javascript" src="/_cdn/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
 </head>
 
-<body>
-  <div id="wrapper">
-    <header id="header">
-      <h1>
-	      <a role="button" href="/">
-		      <img src="images/common/awesome-story-logo@2x.png" alt=어썸스토리">
-	      </a>
-      </h1>
-      <a role="button" href="#" class="btn-menu">메뉴</a>
-	    <a role="button" href="#" class="btn-cart">장바구니</a>
-    </header>
+
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    // Sticky
+    $(".sticky-header").stick_in_parent({
+      parent: $("#wrapper")
+    });
+
+  });
+
+</script>
+
+	<body>
+	<div id="wrapper">
+		<header id="header" class="sticky-header">
+			<h1>
+				<a role="button" href="/">
+					<img src="/_cdn/images/common/awesomestory-logo@2x.png" alt=어썸스토리">
+				</a>
+			</h1>
+			<a role="button" href="#snb-menu" class="btn-menu" id="snb-open">메뉴</a>
+			<a role="button" href="order/cart.html" class="btn-cart">장바구니</a>
+		</header>
+
+		<!-- SNB 좌측 카테고리 메뉴 -->
+		<nav id="snb-menu">
+			<div class="area">
+
+				<div class="snb-header">
+					<h1><img src="_cdn/images/common/awesomestory-logo-snb@2x.png" alt="어썸스토리"></h1>
+					<a role="button" href="#" class="btn-snb-close">슬라이드 메뉴 닫기</a>
+				</div>
+
+				<h2 class="blind">테마존</h2>
+				<ul class="snb-menu-list">
+					<li><a href="http://www.daum.net">내 이름이 도망갔어</a></li>
+					<li><a href="http://www.naver.com">어썸스토리 소개</a></li>
+					<li><a href="http://www.google.com">주문조회</a></li>
+					<li><a href="http://www.nate.com">자주묻는 질문</a></li>
+				</ul>
+
+				<ul class="snb-footer">
+					<li><a href="https://www.awesomestory.co.kr/terms">이용약관</a></li>
+					<li><a href="https://www.awesomestory.co.kr/privacy">개인정보처리방침</a></li>
+				</ul>
+
+			</div>
+		</nav>
+		<!-- //SNB 좌측 카테고리 메뉴 -->
 
     <div id="container">
 	    <h1 class="main-slogan">
@@ -32,13 +86,13 @@
 		    우리 아이가 주인공이 되는 <strong>#자존감동화</strong>
 	    </h1>
 
-	    <section class="content">
+	    <section class="content about-book">
 		    <h2 class="title">책소개</h2>
 		    <div class="build-book">
 			    <div class="text-box">
 				    <h1>내 이름이 도망갔어</h1>
 				    <p>사라진 내 이름을 찾아 모험을 떠나자!</p>
-				    <a role="button" href="#" class="btn-build">만들어 보기</a>
+				    <a role="button" href="/product/product.html" class="btn btn-yellow btn-build">만들어 보기</a>
 			    </div>
 		    </div>
 		    <p class="text">
@@ -57,13 +111,13 @@
 		    </div>
 	    </section>
 
-	    <section class="content">
+	    <section class="content instar">
 		    <h2 class="title">#Instagram</h2>
 		    <ul class="instar-list">
 			    <li>
-				    <a role="button" href="#">
+				    <a role="button" href="#instar-popup" class="open-popup-link">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap1@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap1@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #3살 #사진동화
@@ -73,7 +127,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap2@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap2@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #7살  #폭풍눈물 #감동
@@ -83,7 +137,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap3@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap3@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #5살  #한글관심 #이름쓰기
@@ -93,7 +147,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap4@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap4@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #3살 #사진동화
@@ -103,7 +157,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap5@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap5@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #7살  #폭풍눈물 #감동
@@ -113,7 +167,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap6@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap6@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #5살  #한글관심 #이름쓰기
@@ -123,7 +177,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap7@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap7@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #3살 #사진동화
@@ -133,7 +187,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap8@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap8@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #7살  #폭풍눈물 #감동
@@ -143,7 +197,7 @@
 			    <li>
 				    <a role="button" href="#">
 					    <div class="instar-thumb">
-						    <img src="images/sample/bitmap9@2x.png" alt="">
+						    <img src="_cdn/images/sample/bitmap9@2x.png" alt="">
 					    </div>
 					    <p class="instar-tag">
 						    #5살  #한글관심 #이름쓰기
@@ -154,9 +208,16 @@
 
 	    </section>
     </div>
+
     <footer id="footer">
+
+	    <ul class="footer-lnb">
+		    <li><a href="https://www.awesomestory.co.kr/terms">이용약관</a></li>
+		    <li><a href="https://www.awesomestory.co.kr/privacy"><strong>개인정보처리방침</strong></a></li>
+	    </ul>
+
       <h2>(주)어썸스토리</h2>
-      <ul>
+      <ul class="footer-info">
         <li>대표이사 : 김규철</li>
         <li>고객센터 : <a href="tel:010-9959-3814">010-9959-3814</a></li>
         <li>메일주소 : <a href="mailto:company@awesomestory.co.kr">company@awesomestory.co.kr</a></li>
@@ -167,6 +228,23 @@
       <p class="copyright">COPYRIGHT &copy;2018 NIZBUY Inc. ALL RIGHT RESERVED.</p>
     </footer>
   </div>
+
+	<script>
+    $('.open-popup-link').magnificPopup({
+      type:'inline',
+      midClick: true
+    });
+	</script>
+
+	<div class="aws-popup mfp-hide" id="instar-popup">
+		<div class="popup-wrap">
+			<div class="wrap">
+
+				<img src="/_cdn/images/sample/instar@2x.png" alt="">
+
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

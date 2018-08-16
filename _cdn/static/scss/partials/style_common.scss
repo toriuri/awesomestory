@@ -8,29 +8,29 @@
   font-family:'Noto Sans KR Light';
   font-style:normal;
   font-weight:300;
-  src:url('../fonts/notokr-light.woff') format('woff'),
-  url('../fonts/notokr-light.eot') format('opentype');
+  src:url('/_cdn/fonts/notokr-light.woff') format('woff'),
+  url('/_cdn/fonts/notokr-light.eot') format('opentype');
 }
 @font-face{
   font-family:'Noto Sans KR';
   font-style:normal;
   font-weight:400;
-  src:url('../fonts/notokr-regular.woff') format('woff'),
-  url('../fonts/notokr-regular.eot') format('opentype');
+  src:url('/_cdn/fonts/notokr-regular.woff') format('woff'),
+  url('/_cdn/fonts/notokr-regular.eot') format('opentype');
 }
 @font-face{
   font-family:'Noto Sans KR Medium';
   font-style:normal;
   font-weight:400;
-  src:url('../fonts/notokr-medium.woff') format('woff'),
-  url('../fonts/notokr-medium.eot') format('opentype');
+  src:url('/_cdn/fonts/notokr-medium.woff') format('woff'),
+  url('/_cdn/fonts/notokr-medium.eot') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR Bold';
   font-style: normal;
   font-weight: 400;
-  src:url('../fonts/notokr-bold.woff') format('woff'),
-  url('../fonts/notokr-bold.eot') format('opentype');
+  src:url('/_cdn/fonts/notokr-bold.woff') format('woff'),
+  url('/_cdn/fonts/notokr-bold.eot') format('opentype');
 }
 
 /* reset */
@@ -61,7 +61,7 @@ body {
   -webkit-text-size-adjust: none;
   word-break: break-all;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 13px; color: #000; line-height: 16px;
+  font-size: 13px; color: #000; line-height: 1.6em;
   background: #fff;
 }
 
@@ -166,51 +166,36 @@ a:hover, a:active, a:focus {background:none; text-decoration:none;}
 }
 
 /* 버튼 공통 스타일  */
+.btn-area{
+  padding: 0 16px 16px;
+}
 .btn{
-  display: inline-block; font-family: "Noto Sans KR", sans-serif;
-  border: none;
+  display: inline-block; border: none;
+  font-family: "Noto Sans KR", sans-serif;
   @include box-sizing;
   @include border-radius(0);
 }
-
-.btn_gray{border: none; background: #aaa9a7; color: #fff;}
-.btn_gray:hover, .btn_gray:focus{background: #8a8885;}
-
-.btn_lgray{border: none; background: #918e87; color: #fff;}
-.btn_lgray:hover, .btn_lgray:focus{background: #8a8885;}
-
-.btn_darkgray{border: none; background: #737373; color: #fff;}
-.btn_darkgray:hover, .btn_darkgray:focus{background: #5c5c5c;}
-
-.btn_disabled{border: none; background: #bfbfbf; color: #fff;}
-.btn_disabled:hover, .btn_disabled:focus{background: #b7b7b7;}
-
-.btn_green{border: 1px solid #50942e; background: #66a348; color: #fff;}
-.btn_green:hover, .btn_green:focus{border: 1px solid #3a6c08; background: #390;}
-
-.btn_red{border: 1px solid #99360e; background: #d54617; color: #fff;}
-.btn_red:hover, .btn_red:focus{border: 1px solid #942a15; background: #c93f11;}
-
-.btn_orange{border: 1px solid #d04d20; background: #d04d20; color: #fff;}
-.btn_orange:hover, .btn_orange:focus{border: 1px solid #bf4015; background: #bf4015;}
-
-.btn_mint{border: none; background: $color-mint; color: #fff;}
-.btn_mint:hover, .btn_mint:focus{background: #17aba6;}
-
-.btn_mint_line {background: #fff; border:1px solid #2ac1bc; color: #2ac1bc;}
-.btn_mint_line:hover, .btn_mint_line:focus{background: #f4f4f4;}
-
-.btn_white{border: 1px solid #ccc; background: #fff; color: #aaa9a7;}
-.btn_white:hover, .btn_white:focus{background: #f4f4f4;}
-
-/***** [18-05-11] 공통 버튼 사이즈 *****/
-.btn-large, .btn_big{
-  width: 100%; height: 60px; font-size: 17px;
+.btn-large{
+  width: 100%; height: 40px;
   font-family: "Noto Sans KR Bold", sans-serif;
+  font-size: 14px; letter-spacing: 0;
+  @include border-radius(20px);
+  @include box-s(0px,7px, 10px, rgba(0,0,0,0.2));
+  &:hover, &:focus{
+    @include box-s(0,0, 0, rgba(0,0,0,0));
+  }
 }
 
+.btn-blue{
+  border: none; background: #20beef; color: #fff;
+  &:hover, &:focus{background: #1797bd;}
+  &[disabled]{
+    background: #6ad7f4;
+  }
+}
+
+
 /***** 라디오 버튼, 체크박스 스타일 수정 ******/
-.custom_input{display: inline-block; margin-right: 10px;}
 
 /* 라디오 버튼, 체크박스 기본 구조 */
 .bf_input[type="radio"]:not(:checked), .bf_input[type="radio"]:checked,
@@ -308,71 +293,11 @@ a:hover, a:active, a:focus {background:none; text-decoration:none;}
 
 
 
-/***** layout *****/
-#wrapper {
-  position: relative; margin: 0 auto;
-  min-width: 320px; max-width: 750px;
-  width:100%;
-}
 
-#header{
-  position: relative;
-  height: 38px;
-  h1{
-     text-align: center;
-    a{
-      display: inline-block;
-      height: 38px; padding: 8px 0 7px;
-      @include box-sizing;
-      img{height: 23px;}
-    }
-  }
 
-  a.btn-menu{
-    overflow: hidden;
-    position: absolute; left: 13px; top: 7px;
-    width: 24px; height: 24px; text-indent: -3000px;
-    background: url(../images/common/ic-menu-24-normal@2x.png) no-repeat center center;
-    background-size: 24px;
-  }
-  a.btn-cart{
-    overflow: hidden;
-    position: absolute; right: 16px; top: 7px;
-    width: 24px; height: 24px; text-indent: -3000px;
-    background: url(../images/common/ic-cart-24-normal@2x.png) no-repeat center center;
-    background-size: 24px;
-  }
-}
 
-#container{
-  position: relative;
-  min-height: 300px;
-}
-.content{
-  position: relative;
-}
 
-#footer{
-  position: relative;
-  background: #f7f7f7;
-  padding: 22px 20px; font-size: 8px;
-  h2{
-    font-family: "Noto Sans KR Medium", sans-serif;
-    font-size: 11px;
-    border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 9px; margin-bottom: 11px;
-  }
-  ul li{
-    line-height: 19px;
-  }
-  .copyright{
-    text-align: center;
-    border-top: 1px solid #d8d8d8;
-    padding-top: 10px; margin-top: 11px;
-  }
-}
-
-/***** [main page content] *****/
+/***** main page content *****/
 .main-slogan{
   font-size: 12px;
   line-height: 16px; text-align: center;
@@ -381,15 +306,10 @@ a:hover, a:active, a:focus {background:none; text-decoration:none;}
 }
 
 .content{
-  h2.title{
-    font-family: "Noto Sans KR Medium", sans-serif;
-    font-size: 18px; padding: 0 16px;
-  }
-
   .build-book{
     position: relative;
     width: 100%; min-height: 254px;
-    background: url(../images/contents/main-visual@2x.png) no-repeat center center;
+    background: url(/_cdn/images/contents/main-visual@2x.png) no-repeat center center;
     background-size: cover;
     padding-left: 16px; margin-top: 16px;
     .text-box{
@@ -415,7 +335,7 @@ a:hover, a:active, a:focus {background:none; text-decoration:none;}
           content: '';
           display: block;
           width: 16px; height: 16px;
-          background: url(../images/common/ic-arrow-btn-16@2x.png) no-repeat center center;
+          background: url(/_cdn/images/common/ic-arrow-btn-16@2x.png) no-repeat center center;
           background-size: 16px;
           position: absolute; right: 10px; top: 50%;
           margin-top: -8px;
@@ -427,7 +347,7 @@ a:hover, a:active, a:focus {background:none; text-decoration:none;}
   p.text{
     font-size: 13px;
     padding: 32px 0 10px; margin: 10px 16px 36px;
-    background-image: url(../images/common/ic-quotes-left@2x.png), url(../images/common/ic-quotes-right@2x.png);
+    background-image: url(/_cdn/images/common/ic-quotes-left@2x.png), url(/_cdn/images/common/ic-quotes-right@2x.png);
     background-position: left top, right bottom;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -480,46 +400,31 @@ a:hover, a:active, a:focus {background:none; text-decoration:none;}
   }
 }
 
-
-
-
-
-
-
-
-/****** 헤더, 서브 슬라이드 네비게이션 ******/
-.header-navi{
-  position:relative; overflow:hidden;
-  width: 100%; height: 39px; background: #fff; z-index: 1001;
-  box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0, 0.1);
-  .navi-inner{
-    position: absolute; top: 0; left: 0;
-    width: 100%; height: 69px;
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+/***** 공통팝업 *****/
+.aws-popup{
+  position: relative;
+  .popup-wrap {
+    padding: 16px;
+    img{display: block; width: 100%;}
   }
-  ul.slide-navi{
-    white-space: nowrap; background: #fff;
-    li{
-      display: inline-block;
-      min-width: 20%; text-align: center; margin-left: -4px;
-      @include box-sizing;
-      a{
-        display: inline-block;
-        height: 39px; padding: 13px 6px 0; margin: 0;
-        font-size: 15px; color: #232323;
-        border-bottom: 3px solid #fff;
-        @include box-sizing;
-        &.now, &:active, &:focus{
-          font-weight: bold; color: $color-mint;
-          border-bottom: 3px solid $color-mint;
-        }
-      }
-    }
+  .mfp-close{
+    text-indent: -3000px;
+    opacity: 1.0;
+    width: 30px; height: 30px;
+    background: url(/_cdn/images/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
+    background-size: 30px;
+    position: absolute;
+    top: auto; right: 13px; bottom: -28px;
   }
 }
+
+h2.title{
+  font-family: "Noto Sans KR Medium", sans-serif;
+  font-size: 18px; padding: 0 16px; margin: 40px 0 24px;
+}
+
+
+
 
 /***** top scroller *****/
 #scroller{

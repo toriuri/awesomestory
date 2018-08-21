@@ -37,7 +37,7 @@
 }
 .content{
   position: relative;
-  min-height: 100px;
+  min-height: 90px;
 }
 
 #footer{
@@ -72,64 +72,70 @@
 }
 
 /***** SNB Menu *****/
-#snb-menu{
-  display: none;
-  position: fixed; top: 0; left: -100%; z-index: 100000;
-  width: 260px; max-width: 85%; height:100%;
-  background: #3f96d4;
-  @media screen and (min-width: 320px), (orientation: landscape) {
-    #snb_menu {width: 320px;}
-  }
 
-  .area{
-    position:relative;
-    width: 100%; height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    .snb-header{
-      h1{
-        text-align: center; padding: 18px 0; margin-bottom: 60px;
-        border-bottom: 1px solid #72afda;
-        img{display: inline-block; width: 96px;}
-      }
-      .btn-snb-close{
-        display: block; overflow: hidden;
-        position: absolute; right: 6px; top: 6px;
-        width: 24px; height: 24px; text-indent: -3000px;
-        background: url(/_cdn/images/common/ic-close-line-20-normal@2x.png) no-repeat center center;
-        background-size: 20px;
+.menu-over{
+  display: none;
+  width: 100%; height: 100%;
+  position: fixed; left: 0; top: 0; z-index: 9999;
+  background: rgba(0, 0,0, 0.5);
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  transition: all ease 1s;
+}
+.menu{
+  position: fixed;
+  top: 0; left: -100%; z-index: 10000;
+  width: 260px; max-width: 90%; height: 100%;
+  background: #3f96d4;
+  box-shadow: 1px 0 5px rgba(0,0,0,0.7);
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+
+  @media screen and (min-width: 320px), (orientation: landscape) {
+    .menu {width: 320px;}
+  }
+  .snb-header{
+    h1{
+      text-align: center; padding: 18px 0; margin-bottom: 60px;
+      border-bottom: 1px solid #72afda;
+      img{display: inline-block; width: 96px;}
+    }
+    .close-menu{
+      display: block; overflow: hidden;
+      position: absolute; right: 6px; top: 6px;
+      width: 24px; height: 24px; text-indent: -3000px;
+      background: url(/_cdn/images/common/ic-close-line-20-normal@2x.png) no-repeat center center;
+      background-size: 20px;
+    }
+  }
+  .snb-menu-list{
+    li{
+      margin-bottom: 20px;
+      a{
+        display: block;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 14px; color: #fff; letter-spacing: -0.03px; line-height: 2.0em;
+        padding: 0 20px;
       }
     }
-    .snb-menu-list{
-      li{
-        margin-bottom: 20px;
-        a{
-          display: block; border: 1px solid #f00;
-          font-family: "Noto Sans KR Medium", sans-serif;
-          font-size: 14px; color: #fff; letter-spacing: -0.03px; line-height: 2.0em;
-          padding: 0 20px;
-        }
+  }
+  .snb-footer{
+    position: absolute; left: 0; bottom: 24px; z-index: 10000;
+    width: 100%; text-align: center;
+    li{
+      display: inline-block;
+      a{
+        display: block;
+        font-size: 12px; color: #fff;
       }
-    }
-    .snb-footer{
-      position: absolute; left: 0; bottom: 24px;
-      width: 100%; text-align: center;
-      li{
-        display: inline-block;
+      &:first-child{
         a{
-          display: block; border: 1px solid #f00;
-          font-size: 12px; color: #fff;
           &::after{
-            content: '|';
+            content: '';
             display: inline-block;
-            color: rgba(246, 246, 246, 0.5); padding: 0 10px;
-          }
-        }
-        &:last-child{
-          a{
-            &:after{
-              display: none;
-            }
+            width: 1px; height: 10px;
+            background: rgba(246, 246, 246, 0.5); margin: 0 10px;
           }
         }
       }

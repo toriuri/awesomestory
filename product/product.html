@@ -205,7 +205,10 @@
 				<dl>
 					<dt>내 이름이 도망갔어</dt>
 					<dd class="description">이름에 따라 스토리가 달라지는 하나 뿐인 이야기</dd>
-					<dd class="price">25,000원</dd>
+					<dd class="price">
+						<strong class="sale-price">22,000원</strong>
+						<del class="original-price">25,000원</del>
+					</dd>
 				</dl>
 			</section>
 
@@ -249,7 +252,10 @@
 				    <h1 class="blind">책소개 탭</h1>
 				    <div class="content-box">
 					    <div class="img-bind">
-						    <img src="/_cdn/images/contents/@sample-img1.jpg" alt="">
+						    <img src="/_cdn/images/contents/intro-img1.jpg" alt="">
+						    <div class="img-deco">
+							    <img src="/_cdn/images/contents/intro-deco.png" alt="">
+						    </div>
 					    </div>
 					    <h2 class="sub-title">이름마다 변하는 스토리</h2>
 					    <p>
@@ -261,7 +267,7 @@
 
 				    <div class="content-box">
 					    <div class="img-bind">
-						    <img src="/_cdn/images/contents/@sample-img2.jpg" alt="">
+						    <img src="/_cdn/images/contents/intro-img2.jpg" alt="">
 					    </div>
 					    <h2 class="sub-title">엄마, 내 이름이 나왔어요!</h2>
 					    <p>
@@ -273,7 +279,7 @@
 
 				    <div class="content-box">
 					    <div class="img-bind">
-						    <img src="/_cdn/images/contents/@sample-img3.jpg" alt="">
+						    <img src="/_cdn/images/contents/intro-img3.jpg" alt="">
 					    </div>
 					    <h2 class="sub-title">밝혀지는 반전,<br>모험의 조력자는 바로바로...</h2>
 					    <p>
@@ -288,7 +294,7 @@
 				    <div class="content-box">
 					    <h2 class="sub-title">보물처럼 간직할 거래요.</h2>
 					    <div class="img-bind">
-						    <img src="/_cdn/images/contents/@sample-img4.jpg" alt="">
+						    이미지 영역
 					    </div>
 				    </div>
 
@@ -298,44 +304,39 @@
 				    <h1 class="blind">구매후기 탭</h1>
 						<ul class="review-list">
 							<li>
-								<div class="author">
-									<strong class="name">예준이 엄마</strong> 님
-								</div>
-
-								<div class="star-score-bg">
-									<div class="star-score" style="width: 100%;">5점 만점에 5점</div>
-								</div>
-
-								<p class="review-text">
-									우리 아이가 가장 좋아하는 책이 되었어요. 읽자마자 폭풍 눈물~~~
-								</p>
+								<a role="button" href="#review-popup" class="open-popup-link">
+									<div class="img-thumb">
+										<img src="/_cdn/images/sample/bitmap1@2x.png" alt="">
+									</div>
+									<p class="review-text">
+										<strong class="author">@taddy</strong>
+										우리 아이가 가장 좋아하는 책이 되었어요. 읽자마자 폭풍 눈물~~~
+									</p>
+								</a>
 							</li>
 							<li>
-								<div class="author">
-									<strong class="name">서아 선생님</strong> 님
-								</div>
-
-								<div class="star-score-bg">
-									<div class="star-score" style="width: 80%;">5점 만점에 4점</div>
-								</div>
-
-								<p class="review-text">
-									어린이집 생일 선물로 딱이에요!! 서아 부모님도 너무 좋아하시고
-									다음에 다른 아이 생일때도 이 책으로 부탁하신다고 ㅎㅎ
-								</p>
+								<a role="button" href="#">
+									<div class="img-thumb">
+										<img src="/_cdn/images/sample/bitmap2@2x.png" alt="">
+									</div>
+									<p class="review-text">
+										<strong class="author">@mytoriuri</strong>
+										어린이집 생일 선물로 딱이에요!! 서아 부모님도 너무 좋아하시고
+										다음에 다른 아이 생일때도 이 책으로 부탁하신다고 ㅎㅎ
+									</p>
+								</a>
 							</li>
 							<li>
-								<div class="author">
-									<strong class="name">지호 아빠</strong> 님
-								</div>
-
-								<div class="star-score-bg">
-									<div class="star-score" style="width: 70%;">5점 만점에 3.5점</div>
-								</div>
-
-								<p class="review-text">
-									너무 좋아하며 평생 간직할 거라고 하네요.
-								</p>
+								<a role="button" href="#">
+									<div class="img-thumb">
+										<img src="/_cdn/images/sample/bitmap3@2x.png" alt="">
+									</div>
+									<p class="review-text">
+										<strong class="author">@awesome</strong>
+										너무 좋아하며 평생 간직할 거라고 하네요. 어린이집 생일 선물로 딱이에요!! 서아 부모님도 너무 좋아하시고
+										다음에 다른 아이 생일때도 이 책으로 부탁하신다고 말이 더 길어지면 말줄임이 표시가 날와라아아아아아아
+									</p>
+								</a>
 							</li>
 						</ul>
 
@@ -343,25 +344,41 @@
 
 		    </div>
 
-		    <script>
-          $(function () {
-            $(".tab-content").hide();
-            $(".tab-content:first").show();
-
-            $("ul.tab-list li").click(function () {
-              $("ul.tab-list li").removeClass("on");
-              $(this).addClass("on");
-              $(".tab-content").hide()
-              var activeTab = $(this).attr("rel");
-              $("#" + activeTab).fadeIn()
-            });
-          });
-		    </script>
 	    </section>
 
     </div>
 
   </div>
+
+	<script>
+    $(function () {
+      $(".tab-content").hide();
+      $(".tab-content:first").show();
+
+      $("ul.tab-list li").click(function () {
+        $("ul.tab-list li").removeClass("on");
+        $(this).addClass("on");
+        $(".tab-content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+      });
+    });
+
+    $('.open-popup-link').magnificPopup({
+      type:'inline',
+      midClick: true
+    });
+	</script>
+
+	<div class="aws-popup mfp-hide" id="review-popup">
+		<div class="popup-wrap">
+			<div class="wrap">
+
+				<img src="/_cdn/images/sample/instar@2x.png" alt="">
+
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>

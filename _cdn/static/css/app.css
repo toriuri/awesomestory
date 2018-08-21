@@ -841,7 +841,13 @@ select {
           margin-right: 16px; }
           .book-intro .tab-container .tab-content ul.review-list li a .img-thumb img {
             display: block;
-            width: 100%; }
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            -webkit-transform: translate(0, -50%);
+            -moz-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
           .book-intro .tab-container .tab-content ul.review-list li a .img-thumb:after {
             content: '';
             display: block;
@@ -1216,6 +1222,89 @@ select {
           bottom: 21px;
           font-size: 10px;
           color: #9b9b9b; }
+
+/* 책에 인쇄될 페이지 */
+.add-book-acce h2.title {
+  margin: 32px 0 16px; }
+
+.add-book-acce ul.book-acce-list {
+  padding: 0 16px; }
+  .add-book-acce ul.book-acce-list li {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 16px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=4px, Color='#33000000'); }
+    .add-book-acce ul.book-acce-list li:hover:after, .add-book-acce ul.book-acce-list li:focus:after, .add-book-acce ul.book-acce-list li.on:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #0082c9;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .add-book-acce ul.book-acce-list li .img-area {
+      overflow: hidden;
+      position: relative;
+      padding-top: 64.02%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+      .add-book-acce ul.book-acce-list li .img-area img {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        transform: translate(0, -50%); }
+    .add-book-acce ul.book-acce-list li dl {
+      position: relative;
+      padding: 23px 14px 22px; }
+      .add-book-acce ul.book-acce-list li dl dt {
+        font-size: 18px;
+        margin-bottom: 13px; }
+      .add-book-acce ul.book-acce-list li dl dd.description {
+        font-size: 13px;
+        color: #9b9b9b; }
+      .add-book-acce ul.book-acce-list li dl dd.price {
+        position: absolute;
+        right: 16px;
+        top: 22px; }
+        .add-book-acce ul.book-acce-list li dl dd.price .sale-price {
+          float: right;
+          display: inline-block;
+          font-family: "Noto Sans KR Bold", sans-serif;
+          font-size: 14px;
+          color: #0082c9;
+          padding-left: 8px; }
+        .add-book-acce ul.book-acce-list li dl dd.price .original-price {
+          position: relative;
+          top: 1px;
+          font-size: 11px;
+          color: #9b9b9b; }
+  @media (min-width: 500px) and (orientation: landscape) {
+    .add-book-acce ul.book-acce-list {
+      overflow: hidden;
+      text-align: center; }
+      .add-book-acce ul.book-acce-list li {
+        display: inline-block;
+        width: 47%;
+        text-align: left;
+        margin-right: 16px; }
+        .add-book-acce ul.book-acce-list li:last-child {
+          margin-right: 0; } }
 
 /* 결제 수단 */
 .payment {

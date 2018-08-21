@@ -604,6 +604,7 @@ select {
     .instar .instar-list li a {
       display: block; }
       .instar .instar-list li a .instar-thumb {
+        position: relative;
         width: 105px;
         height: 105px;
         margin-bottom: 5px;
@@ -611,6 +612,18 @@ select {
         .instar .instar-list li a .instar-thumb img {
           display: block;
           width: 100%; }
+        .instar .instar-list li a .instar-thumb:after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          position: absolute;
+          left: 0;
+          top: 0;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
       .instar .instar-list li a .instar-tag {
         font-size: 11px;
         color: #0082c9;
@@ -667,15 +680,23 @@ select {
     padding: 24px 16px 20px; }
     .product-top-slide dl dt {
       font-family: "Noto Sans KR Bold", sans-serif;
-      font-size: 14px;
-      margin-bottom: 6px; }
+      font-size: 14px; }
     .product-top-slide dl dd {
       font-size: 12px; }
       .product-top-slide dl dd.description {
-        color: #9b9b9b; }
-      .product-top-slide dl dd.price {
+        color: #9b9b9b;
+        margin-bottom: 6px; }
+      .product-top-slide dl dd.price .sale-price {
+        display: inline-block;
         font-family: "Noto Sans KR Bold", sans-serif;
-        color: #0082c9; }
+        font-size: 14px;
+        color: #0082c9;
+        padding-right: 5px; }
+      .product-top-slide dl dd.price .original-price {
+        position: relative;
+        top: -1px;
+        font-size: 11px;
+        color: #9b9b9b; }
 
 /* 우리 아이 이름 */
 .input-child-name {
@@ -780,10 +801,20 @@ select {
   .book-intro .tab-container .tab-content .content-box {
     padding-bottom: 35px; }
     .book-intro .tab-container .tab-content .content-box .img-bind {
-      margin-bottom: 23px; }
+      position: relative;
+      margin-bottom: 23px;
+      min-height: 100px;
+      background: #f8f8f8;
+      text-align: center;
+      line-height: 100px; }
       .book-intro .tab-container .tab-content .content-box .img-bind img {
         display: block;
         width: 100%; }
+      .book-intro .tab-container .tab-content .content-box .img-bind .img-deco {
+        width: 19.14%;
+        position: absolute;
+        right: 5%;
+        top: 66%; }
     .book-intro .tab-container .tab-content .content-box h2.sub-title {
       font-family: "Noto Sans KR Bold", sans-serif;
       font-size: 16px;
@@ -796,36 +827,43 @@ select {
     padding: 0 16px; }
     .book-intro .tab-container .tab-content ul.review-list li {
       overflow: hidden;
-      padding: 23px 0 20px;
-      border-bottom: 1px solid #efeff4;
-      /* 작성자 */
-      /* 별점 */ }
-      .book-intro .tab-container .tab-content ul.review-list li .author {
-        float: left;
-        font-size: 12px;
-        margin-bottom: 5px; }
-        .book-intro .tab-container .tab-content ul.review-list li .author strong {
-          font-family: "Noto Sans KR Bold", sans-serif; }
-      .book-intro .tab-container .tab-content ul.review-list li .star-score-bg {
-        position: relative;
-        float: right;
-        display: inline-block;
-        width: 65px;
-        height: 13px;
-        background: url(/_cdn/images/common/ic-review-star.png) no-repeat left top;
-        background-size: auto 26px; }
-        .book-intro .tab-container .tab-content ul.review-list li .star-score-bg .star-score {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          text-indent: -3000px;
-          background: url(/_cdn/images/common/ic-review-star.png) no-repeat left bottom;
-          background-size: auto 26px; }
-      .book-intro .tab-container .tab-content ul.review-list li .review-text {
-        font-size: 12px;
-        clear: both; }
+      padding: 16px 0;
+      border-bottom: 1px solid #efeff4; }
+      .book-intro .tab-container .tab-content ul.review-list li a {
+        display: block;
+        overflow: hidden; }
+        .book-intro .tab-container .tab-content ul.review-list li a .img-thumb {
+          position: relative;
+          float: left;
+          width: 105px;
+          height: 105px;
+          background: #f7f7f7;
+          margin-right: 16px; }
+          .book-intro .tab-container .tab-content ul.review-list li a .img-thumb img {
+            display: block;
+            width: 100%; }
+          .book-intro .tab-container .tab-content ul.review-list li a .img-thumb:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left: 0;
+            top: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+        .book-intro .tab-container .tab-content ul.review-list li a .review-text {
+          font-size: 12px;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical; }
+          .book-intro .tab-container .tab-content ul.review-list li a .review-text strong {
+            display: block;
+            margin-bottom: 5px;
+            font-family: "Noto Sans KR Bold", sans-serif; }
 
 /* 내 아이 책 미리보기 */
 .book-preview-slide {

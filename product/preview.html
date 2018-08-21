@@ -314,91 +314,92 @@
 
 		</div>
 
-		<script>
-      $(function () {
-        $(".tab-content").hide();
-        $(".tab-content:first").show();
-
-        $("ul.tab-list li").click(function () {
-          $("ul.tab-list li").removeClass("on");
-          $(this).addClass("on");
-          $(".tab-content").hide()
-          var activeTab = $(this).attr("rel");
-          $("#" + activeTab).fadeIn()
-        });
-      });
-
-      $('.open-popup-link').magnificPopup({
-        type:'inline',
-        midClick: true
-      });
-		</script>
-
-		<!-- 캐릭터 변경 팝업 -->
-		<div class="aws-popup mfp-hide" id="change-character-popup">
-			<div class="popup-wrap">
-				<div class="wrap">
-
-					<h1>‘ㅗ’의 스토리를 선택하세요.</h1>
-					<ul class="change-ani-list">
-						<li>
-							<div role="button" class="btn-thumb on">
-								<div class="img-bind">
-									<img src="/_cdn/images/sample/ani-sample1.jpg" alt="">
-								</div>
-							</div>
-							<p>호랑이</p>
-						</li>
-						<li>
-							<div role="button" class="btn-thumb">
-								<div class="img-bind">
-									<img src="/_cdn/images/sample/ani-sample2.jpg" alt="">
-								</div>
-							</div>
-							<p>돌고래</p>
-						</li>
-						<li>
-							<div role="button" class="btn-thumb">
-								<div class="img-bind">
-									<img src="/_cdn/images/sample/ani-sample3.jpg" alt="">
-								</div>
-							</div>
-							<p>오리</p>
-						</li>
-					</ul>
-				</div>
-
-				<div class="btn-area">
-					<button type="button" class="btn btn-blue btn-large">확인</button>
-				</div>
-			</div>
-		</div>
-
-		<!-- 티노 정체 추가 설명 팝업 -->
-		<div class="aws-popup mfp-hide" id="change-guide-popup">
-			<div class="popup-wrap bg-white">
-				<div class="wrap">
-
-					<h1>책의 주인공이 나와 아빠였다니?</h1>
-					<div class="img-bind">
-						<img src="/_cdn/images/contents/change-guide-popup.png" alt="">
-					</div>
-					<p>
-						엔딩에는 아이와 조력자 티노의 사진이 캐릭터에 합성 됩니다.<br>
-						나를 도와준 친구 티노가 바로 아빠(또는 엄마) 였어요!<br><br>
-
-						<strong>아빠가 이 책을 읽어준다면 아이가 얼마나 놀랄까요?</strong><br><br>
-
-						주문이 완료되면 사진 추가 링크를 보내드려요.<br>
-						휴대폰 속 예쁜 사진을 간편하게 추가하세요.<br>
-						(사진이 없으면 일러스트로 제작됩니다.)
-					</p>
-
-				</div>
-			</div>
-		</div>
-
 	</div>
+
+	<script>
+    $(function () {
+      $(".tab-content").hide();
+      $(".tab-content:first").show();
+
+      $("ul.tab-list li").click(function () {
+        $("ul.tab-list li").removeClass("on");
+        $(this).addClass("on");
+        $(".tab-content").hide()
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn()
+      });
+    });
+
+    $('.open-popup-link').magnificPopup({
+      type:'inline',
+      midClick: true
+    });
+	</script>
+
+	<!-- 캐릭터 변경 팝업 -->
+	<div class="aws-popup mfp-hide" id="change-character-popup">
+		<div class="popup-wrap">
+			<div class="wrap">
+
+				<h1>‘ㅗ’의 스토리를 선택하세요.</h1>
+				<ul class="change-ani-list">
+					<li>
+						<div role="button" class="btn-thumb on">
+							<div class="img-bind">
+								<img src="/_cdn/images/sample/ani-sample1.jpg" alt="">
+							</div>
+						</div>
+						<p>호랑이</p>
+					</li>
+					<li>
+						<div role="button" class="btn-thumb">
+							<div class="img-bind">
+								<img src="/_cdn/images/sample/ani-sample2.jpg" alt="">
+							</div>
+						</div>
+						<p>돌고래</p>
+					</li>
+					<li>
+						<div role="button" class="btn-thumb">
+							<div class="img-bind">
+								<img src="/_cdn/images/sample/ani-sample3.jpg" alt="">
+							</div>
+						</div>
+						<p>오리</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="btn-area">
+				<button type="button" class="btn btn-blue btn-large">확인</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 티노 정체 추가 설명 팝업 -->
+	<div class="aws-popup mfp-hide" id="change-guide-popup">
+		<div class="popup-wrap bg-white">
+			<div class="wrap">
+
+				<h1>책의 주인공이 나와 아빠였다니?</h1>
+				<div class="img-bind">
+					<img src="/_cdn/images/contents/change-guide-popup.png" alt="">
+				</div>
+				<p>
+					엔딩에는 아이와 조력자 티노의 사진이 캐릭터에 합성 됩니다.<br>
+					나를 도와준 친구 티노가 바로 아빠(또는 엄마) 였어요!<br><br>
+
+					<strong>아빠가 이 책을 읽어준다면 아이가 얼마나 놀랄까요?</strong><br><br>
+
+					주문이 완료되면 사진 추가 링크를 보내드려요.<br>
+					휴대폰 속 예쁜 사진을 간편하게 추가하세요.<br>
+					(사진이 없으면 일러스트로 제작됩니다.)
+				</p>
+
+			</div>
+		</div>
+	</div>
+
 </body>
 
 </html>

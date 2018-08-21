@@ -26,21 +26,29 @@
 	<link  type="text/css" rel="stylesheet" href="/_cdn/js/magnific-popup/magnific-popup.css">
 	<script type="text/javascript" src="/_cdn/js/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-</head>
+	<script type="text/javascript">
+    $(document).ready(function() {
 
+      // Sticky
+      $(".sticky-header").stick_in_parent({
+        parent: $("#wrapper")
+      });
 
+      // SNB
+      $('.menu-ham').click(function () {
+        $('.menu').animate({left: '0'}, 50);
+        $('.menu-over').show();
+      });
 
-<script type="text/javascript">
-  $(document).ready(function() {
-
-    // Sticky
-    $(".sticky-header").stick_in_parent({
-      parent: $("#wrapper")
+      $('.close-menu').click(function () {
+        $('.menu').animate({left: '-100%'}, 50);
+        $('.menu-over').hide();
+      });
     });
 
-  });
+	</script>
 
-</script>
+</head>
 
 <body>
 	<div id="wrapper">
@@ -50,23 +58,21 @@
 					<img src="/_cdn/images/common/awesomestory-logo@2x.png" alt=어썸스토리">
 				</a>
 			</h1>
-			<a role="button" href="#" class="btn-menu" id="snb-open" href="#sidr">메뉴</a>
-			<a role="button" href="#" class="btn-cart">장바구니</a>
+			<a role="button" href="#" class="btn-menu menu-ham">menu</a>
+			<a role="button" href="/order/cart.html" class="btn-cart">장바구니</a>
 		</header>
 
 		<!-- SNB 좌측 카테고리 메뉴 -->
-		<nav id="snb-menu">
-			<div class="area">
-
+		<div class="menu-over">
+			<nav class="menu">
 				<div class="snb-header">
-					<h1><img src="_cdn/images/common/awesomestory-logo-snb@2x.png" alt="어썸스토리"></h1>
-					<a role="button" href="#" class="btn-snb-close">슬라이드 메뉴 닫기</a>
+					<h1><img src="/_cdn/images/common/awesomestory-logo-snb@2x.png" alt="어썸스토리"></h1>
+					<a role="button" href="#" class="close-menu">슬라이드 메뉴 닫기</a>
 				</div>
 
-				<h2 class="blind">테마존</h2>
 				<ul class="snb-menu-list">
-					<li><a href="http://www.daum.net">내 이름이 도망갔어</a></li>
-					<li><a href="http://www.naver.com">어썸스토리 소개</a></li>
+					<li><a href="/index.html">내 이름이 도망갔어</a></li>
+					<li><a href="/product/product.html">어썸스토리 소개</a></li>
 					<li><a href="http://www.google.com">주문조회</a></li>
 					<li><a href="http://www.nate.com">자주묻는 질문</a></li>
 				</ul>
@@ -75,33 +81,108 @@
 					<li><a href="https://www.awesomestory.co.kr/terms">이용약관</a></li>
 					<li><a href="https://www.awesomestory.co.kr/privacy">개인정보처리방침</a></li>
 				</ul>
-
-			</div>
-		</nav>
+			</nav>
+		</div>
 		<!-- //SNB 좌측 카테고리 메뉴 -->
 
     <div id="container">
 			<section class="product-top-slide">
 				<h1 class="blind">책소개 배너</h1>
+
 				<div class="swiper-container">
 					<ul class="swiper-wrapper">
 						<li class="swiper-slide">
-							<img src="/_cdn/images/sample/@main-banner1.jpg" alt="">
+							<img  src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cover_f.jpg" alt="">
 						</li>
 						<li class="swiper-slide">
-							<img src="/_cdn/images/sample/@main-banner2.jpg" alt="">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_f_p1.jpg" alt="">
 						</li>
 						<li class="swiper-slide">
-							<img src="/_cdn/images/sample/@main-banner3.jpg" alt="">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p2.jpg" alt="">
 						</li>
 						<li class="swiper-slide">
-							<img src="/_cdn/images/sample/@main-banner4.jpg" alt="">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p3.jpg" alt="">
 						</li>
 						<li class="swiper-slide">
-							<img src="/_cdn/images/sample/@main-banner5.jpg" alt="">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p4.jpg" alt="">
 						</li>
 						<li class="swiper-slide">
-							<img src="/_cdn/images/sample/@main-banner6.jpg" alt="">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p5.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p6.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p1_f1.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p2.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p3_s0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p4_s0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p1_f0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p2.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p3.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p4_s1.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p1_f0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p2.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p3.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p4_s0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p1_f0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p2_s1.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p3_s1.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p4_s1.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p1_f0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p2.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p3.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p4_s0.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_p1.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_p2.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_f_p3.jpg" alt="">
+						</li>
+						<li class="swiper-slide">
+							<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_f_p4.jpg" alt="">
 						</li>
 					</ul>
 					<div class="swiper-pagination custom"></div>
@@ -129,12 +210,16 @@
 			</section>
 
 	    <section class="content input-child-name">
-		    <form>
+		    <form action=" " method=" ">
 			    <div class="input-block">
 				    <label for="child-name">
 					    <h2 class="title">우리 아이 이름</h2>
 				    </label>
-				    <input type="text" name="child-name" id="child-name" placeholder="성 제외 두글자(외자는 성 포함)" class="aws-input">
+				    <input type="text" maxlength="2" name="child-name" id="child-name" placeholder="성 제외 두글자(외자는 성 포함)" class="aws-input">
+				    <p class="caution">
+							이름을 두 글자로 입력해 주세요.<br>
+					    이름이 외자인 경우, 성을 포함하여 두 글자를 완성해 주세요.
+				    </p>
 			    </div>
 			    <ul>
 				    <li class="list-block">
@@ -210,8 +295,49 @@
 			    </div>
 
 			    <div id="tab2" class="tab-content" style="display: none;">
+				    <h1 class="blind">구매후기 탭</h1>
+						<ul class="review-list">
+							<li>
+								<div class="author">
+									<strong class="name">예준이 엄마</strong> 님
+								</div>
 
-						여기는 구매후기
+								<div class="star-score-bg">
+									<div class="star-score" style="width: 100%;">5점 만점에 5점</div>
+								</div>
+
+								<p class="review-text">
+									우리 아이가 가장 좋아하는 책이 되었어요. 읽자마자 폭풍 눈물~~~
+								</p>
+							</li>
+							<li>
+								<div class="author">
+									<strong class="name">서아 선생님</strong> 님
+								</div>
+
+								<div class="star-score-bg">
+									<div class="star-score" style="width: 80%;">5점 만점에 4점</div>
+								</div>
+
+								<p class="review-text">
+									어린이집 생일 선물로 딱이에요!! 서아 부모님도 너무 좋아하시고
+									다음에 다른 아이 생일때도 이 책으로 부탁하신다고 ㅎㅎ
+								</p>
+							</li>
+							<li>
+								<div class="author">
+									<strong class="name">지호 아빠</strong> 님
+								</div>
+
+								<div class="star-score-bg">
+									<div class="star-score" style="width: 70%;">5점 만점에 3.5점</div>
+								</div>
+
+								<p class="review-text">
+									너무 좋아하며 평생 간직할 거라고 하네요.
+								</p>
+							</li>
+						</ul>
 
 			    </div>
 
@@ -232,8 +358,6 @@
           });
 		    </script>
 	    </section>
-
-
 
     </div>
 

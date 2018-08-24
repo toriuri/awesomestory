@@ -27,7 +27,7 @@
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/_cdn/images/common/ic-menu-24-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-menu-24-normal@2x.png) no-repeat center center;
     background-size: 24px; }
   #header a.btn-cart {
     overflow: hidden;
@@ -37,7 +37,7 @@
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/_cdn/images/common/ic-cart-24-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-cart-24-normal@2x.png) no-repeat center center;
     background-size: 24px; }
 
 #container {
@@ -124,7 +124,7 @@
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/_cdn/images/common/ic-close-line-20-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
     background-size: 20px; }
   .menu .snb-menu-list li {
     margin-bottom: 20px; }

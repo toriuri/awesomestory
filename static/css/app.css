@@ -10,25 +10,25 @@
   font-family: 'Noto Sans KR Light';
   font-style: normal;
   font-weight: 300;
-  src: url("/_cdn/fonts/notokr-light.woff") format("woff"), url("/_cdn/fonts/notokr-light.eot") format("opentype"); }
+  src: url("/static/font/notokr-light.woff") format("woff"), url("/static/font/notokr-light.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url("/_cdn/fonts/notokr-regular.woff") format("woff"), url("/_cdn/fonts/notokr-regular.eot") format("opentype"); }
+  src: url("/static/font/notokr-regular.woff") format("woff"), url("/static/font/notokr-regular.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR Medium';
   font-style: normal;
   font-weight: 400;
-  src: url("/_cdn/fonts/notokr-medium.woff") format("woff"), url("/_cdn/fonts/notokr-medium.eot") format("opentype"); }
+  src: url("/static/font/notokr-medium.woff") format("woff"), url("/static/font/notokr-medium.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR Bold';
   font-style: normal;
   font-weight: 400;
-  src: url("/_cdn/fonts/notokr-bold.woff") format("woff"), url("/_cdn/fonts/notokr-bold.eot") format("opentype"); }
+  src: url("/static/font/notokr-bold.woff") format("woff"), url("/static/font/notokr-bold.eot") format("opentype"); }
 
 /* reset */
 html, body, div, applet, object, iframe,
@@ -252,7 +252,7 @@ p.caution {
     opacity: 1.0;
     width: 30px;
     height: 30px;
-    background: url(/_cdn/images/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
     background-size: 30px;
     position: absolute;
     top: 0;
@@ -358,7 +358,7 @@ select {
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/_cdn/images/common/ic-menu-24-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-menu-24-normal@2x.png) no-repeat center center;
     background-size: 24px; }
   #header a.btn-cart {
     overflow: hidden;
@@ -368,7 +368,7 @@ select {
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/_cdn/images/common/ic-cart-24-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-cart-24-normal@2x.png) no-repeat center center;
     background-size: 24px; }
 
 #container {
@@ -455,7 +455,7 @@ select {
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/_cdn/images/common/ic-close-line-20-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
     background-size: 20px; }
   .menu .snb-menu-list li {
     margin-bottom: 20px; }
@@ -540,7 +540,7 @@ select {
         display: block;
         width: 16px;
         height: 16px;
-        background: url(/_cdn/images/common/ic-arrow-btn-16@2x.png) no-repeat center center;
+        background: url(/static/image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
         background-size: 16px;
         position: absolute;
         right: 10px;
@@ -552,7 +552,7 @@ select {
   color: #9b9b9b;
   padding: 32px 0 10px;
   margin: 10px 16px 36px;
-  background-image: url(/_cdn/images/common/ic-quotes-left@2x.png), url(/_cdn/images/common/ic-quotes-right@2x.png);
+  background-image: url(/static/image/common/ic-quotes-left@2x.png), url(/static/image/common/ic-quotes-right@2x.png);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-size: 30px; }
@@ -685,7 +685,7 @@ select {
     width: 26px;
     height: 26px;
     margin-top: -13px;
-    background: url(/_cdn/images/common/ic-swiper-arrow-control@2x.png) no-repeat;
+    background: url(/static/image/common/ic-swiper-arrow-control@2x.png) no-repeat;
     background-size: auto 27px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -771,10 +771,10 @@ select {
               -moz-box-sizing: border-box;
               box-sizing: border-box; }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.girl::before {
-              background: url(/_cdn/images/contents/image-girl@2x.png) no-repeat center center;
+              background: url(/static/image/contents/image-girl@2x.png) no-repeat center center;
               background-size: 148px; }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.boy::before {
-              background: url(/_cdn/images/contents/image-boy@2x.png) no-repeat center center;
+              background: url(/static/image/contents/image-boy@2x.png) no-repeat center center;
               background-size: 148px; }
           .input-child-name form ul .list-block .radio-gender[type="radio"]:checked + label {
             color: #000; }
@@ -1099,7 +1099,7 @@ select {
         display: block;
         width: 12px;
         height: 12px;
-        background: url(/_cdn/images/common/ic-arrow-12@2x.png) no-repeat center center;
+        background: url(/static/image/common/ic-arrow-12@2x.png) no-repeat center center;
         background-size: 12px;
         position: absolute;
         right: 0;
@@ -1148,13 +1148,13 @@ select {
             box-sizing: border-box;
             opacity: 0.3; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.daddy::before {
-            background: url(/_cdn/images/contents/image-daddy@2x.png) no-repeat center center;
+            background: url(/static/image/contents/image-daddy@2x.png) no-repeat center center;
             background-size: 73px; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.mom::before {
-            background: url(/_cdn/images/contents/image-mom@2x.png) no-repeat center center;
+            background: url(/static/image/contents/image-mom@2x.png) no-repeat center center;
             background-size: 73px; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.etc::before {
-            background: url(/_cdn/images/contents/image-etc@2x.png) no-repeat center center;
+            background: url(/static/image/contents/image-etc@2x.png) no-repeat center center;
             background-size: 73px; }
         .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"]:checked + label {
           color: #000; }

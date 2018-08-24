@@ -35,7 +35,7 @@
           content: '';
           display: block;
           width: 16px; height: 16px;
-          background: url(/_cdn/images/common/ic-arrow-btn-16@2x.png) no-repeat center center;
+          background: url(/static/image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
           background-size: 16px;
           position: absolute; right: 10px; top: 50%;
           margin-top: -8px;
@@ -46,7 +46,7 @@
   dl.text{
     font-size: 14px; color: #9b9b9b;
     padding: 32px 0 10px; margin: 10px 16px 36px;
-    background-image: url(/_cdn/images/common/ic-quotes-left@2x.png), url(/_cdn/images/common/ic-quotes-right@2x.png);
+    background-image: url(/static/image/common/ic-quotes-left@2x.png), url(/static/image/common/ic-quotes-right@2x.png);
     background-position: left top, right bottom;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -167,7 +167,7 @@
   .swiper-button-prev, .swiper-button-next{
     display: block; width: 26px; height: 26px;
     margin-top: -13px;
-    background: url(/_cdn/images/common/ic-swiper-arrow-control@2x.png) no-repeat;
+    background: url(/static/image/common/ic-swiper-arrow-control@2x.png) no-repeat;
     background-size: auto 27px;
     @include border-radius(13px);
     @include box-s(0, 0, 10px, rgba(0, 0, 0, 0.6));
@@ -247,13 +247,13 @@
             }
             &.girl{
               &::before{
-                background: url(/_cdn/images/contents/image-girl@2x.png) no-repeat center center;
+                background: url(/static/image/contents/image-girl@2x.png) no-repeat center center;
                 background-size: 148px;
               }
             }
             &.boy{
               &::before{
-                background: url(/_cdn/images/contents/image-boy@2x.png) no-repeat center center;
+                background: url(/static/image/contents/image-boy@2x.png) no-repeat center center;
                 background-size: 148px;
               }
             }
@@ -544,7 +544,7 @@
         content: '';
         display: block;
         width: 12px; height: 12px;
-        background: url(/_cdn/images/common/ic-arrow-12@2x.png) no-repeat center center;
+        background: url(/static/image/common/ic-arrow-12@2x.png) no-repeat center center;
         background-size: 12px;
         position: absolute; right: 0; top: 0;
       }
@@ -580,19 +580,19 @@
           }
           &.daddy{
             &::before{
-              background: url(/_cdn/images/contents/image-daddy@2x.png) no-repeat center center;
+              background: url(/static/image/contents/image-daddy@2x.png) no-repeat center center;
               background-size: 73px;
             }
           }
           &.mom{
             &::before{
-              background: url(/_cdn/images/contents/image-mom@2x.png) no-repeat center center;
+              background: url(/static/image/contents/image-mom@2x.png) no-repeat center center;
               background-size: 73px;
             }
           }
           &.etc{
             &::before{
-              background: url(/_cdn/images/contents/image-etc@2x.png) no-repeat center center;
+              background: url(/static/image/contents/image-etc@2x.png) no-repeat center center;
               background-size: 73px;
             }
           }

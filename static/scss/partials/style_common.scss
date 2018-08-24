@@ -8,29 +8,29 @@
   font-family:'Noto Sans KR Light';
   font-style:normal;
   font-weight:300;
-  src:url('/_cdn/fonts/notokr-light.woff') format('woff'),
-  url('/_cdn/fonts/notokr-light.eot') format('opentype');
+  src:url('/static/font/notokr-light.woff') format('woff'),
+  url('/static/font/notokr-light.eot') format('opentype');
 }
 @font-face{
   font-family:'Noto Sans KR';
   font-style:normal;
   font-weight:400;
-  src:url('/_cdn/fonts/notokr-regular.woff') format('woff'),
-  url('/_cdn/fonts/notokr-regular.eot') format('opentype');
+  src:url('/static/font/notokr-regular.woff') format('woff'),
+  url('/static/font/notokr-regular.eot') format('opentype');
 }
 @font-face{
   font-family:'Noto Sans KR Medium';
   font-style:normal;
   font-weight:400;
-  src:url('/_cdn/fonts/notokr-medium.woff') format('woff'),
-  url('/_cdn/fonts/notokr-medium.eot') format('opentype');
+  src:url('/static/font/notokr-medium.woff') format('woff'),
+  url('/static/font/notokr-medium.eot') format('opentype');
 }
 @font-face {
   font-family: 'Noto Sans KR Bold';
   font-style: normal;
   font-weight: 400;
-  src:url('/_cdn/fonts/notokr-bold.woff') format('woff'),
-  url('/_cdn/fonts/notokr-bold.eot') format('opentype');
+  src:url('/static/font/notokr-bold.woff') format('woff'),
+  url('/static/font/notokr-bold.eot') format('opentype');
 }
 
 /* reset */
@@ -203,7 +203,7 @@ p.caution{
     text-indent: -3000px;
     opacity: 1.0;
     width: 30px; height: 30px;
-    background: url(/_cdn/images/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
+    background: url(/static/image/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
     background-size: 30px;
     position: absolute;
     top: 0; right: 16px;
@@ -241,31 +241,4 @@ iframe[name='google_conversion_frame'] {
   font-size: 0 !important;
   margin-top: -13px;
   float: left;
-}
-
-select {
-  height: 34px; padding: 0 28px 0 10px;
-  color: #333; font-size: 13px; vertical-align:middle;
-  border: 1px solid #e1e1e1;
-  background:url('../../web/m/common/ic_select_arr.png') no-repeat right center #fff;
-  background-size: 25px 9px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  @include border-radius(0);
-  @include box-sizing;
-}
-
-/* common - select */
-.select_custom_default {
-  position: relative;
-  height: 35px; padding: 6px 28px 6px 15px; border: 1px solid #ccc;
-  color: #888; font-size: 12px; line-height: 13px;
-  background-position: right top;
-  @include border-radius(0);
-  @include box-sizing;
-
-  &:focus, &:active {
-    color: #333; border-color: $color-mint;
-  }
 }

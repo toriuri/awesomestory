@@ -911,8 +911,13 @@ select {
         width: auto;
         height: 216px;
         margin-right: -4px; }
+        .book-preview-slide .preview-container .preview-wrapper img:first-child {
+          margin-left: 10px; }
         .book-preview-slide .preview-container .preview-wrapper img:nth-child(even) {
           margin-left: 10px; }
+        @media (min-width: 500px) and (orientation: landscape) {
+          .book-preview-slide .preview-container .preview-wrapper img {
+            height: 360px; } }
   .book-preview-slide .name-list-wrap {
     padding: 30px 0; }
     .book-preview-slide .name-list-wrap .name-list {

@@ -201,6 +201,8 @@ p.caution{
     top: 0; right: 16px;
     &:hover, &:focus{
       top: 0; right: 16px;
+      background: url(/static/image/common/ic-close-circle-30-press@2x.png);
+      background-size: 30px;
     }
   }
   @media (min-width: 500px) and (orientation: landscape){

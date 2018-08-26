@@ -668,7 +668,7 @@
   }
 }
 
-/* 책에 인쇄될 페이지 */
+/* 악세서리 추가 페이지 */
 .add-book-acce{
   overflow: hidden; padding-bottom: 60px;
   h2.title{
@@ -767,6 +767,67 @@
         }
       }
     }
+  }
+}
+
+/* 주문상품 */
+.order-list-wrap{
+  padding: 30px 0 5px; border-bottom: 1px solid #d8d8d8;
+  text-align: center;
+  h2.title{margin-bottom: 22px;}
+  .order-list{
+    padding: 0 16px;
+    li{
+      position: relative;
+      border: 1px solid #efeff4;
+      padding: 16px; margin-bottom: 23px; text-align: left;
+      &:last-child{margin-bottom: 0;}
+
+      .img-thumb{
+        width: 56px; height: 56px;
+        position: absolute; right: 16px; top: 16px;
+        img{display: block; width: 100%;}
+      }
+      dl{
+        dt{
+          font-family: "Noto Sans KR Medium", sans-serif;
+          font-size: 14px;
+          margin-bottom: 8px;
+        }
+        dd{
+          font-size: 12px; color: #707070;
+          margin-bottom: 18px; line-height: 1.0em;
+          a{
+            display: block;
+            font-family: "Noto Sans KR Light", sans-serif;
+            font-size: 11px; color: #0082c9;
+            margin-top: 9px;
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+      .btn-order-delete{
+        overflow: hidden;
+        width: 20px; height: 20px;
+        text-indent: -3000px;
+        background: url(/static/image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
+        background-size: 20px;
+        @include border-radius(50%);
+        position: absolute; right: -10px; top: -10px;
+        &:hover, &:focus{
+          background-image: url(/static/image/common/ic-close-circle-red-20-press@2x.png);
+          background-size: 20px;
+        }
+
+      }
+    }
+  }
+  .btn-add-book{
+    display: inline-block; padding: 16px;
+    font-family: "Noto Sans KR Medium", sans-serif;
+    font-size: 13px; color: #0082c9;
   }
 }
 

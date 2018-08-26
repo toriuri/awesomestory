@@ -18,17 +18,26 @@
       img{height: 23px;}
     }
   }
-  a.btn-menu{
-    position: absolute; left: 13px; top: 7px;
+  .btn-menu, .btn-cart{
+    display: block;
+    position: absolute; top: 7px;
     width: 24px; height: 24px; text-indent: -3000px;
-    background: url(/static/image/common/ic-menu-24-normal@2x.png) no-repeat center center;
+    background: no-repeat center center;
     background-size: 24px;
   }
+  a.btn-menu{
+    left: 13px;
+    background-image: url(/static/image/common/ic-menu-24-normal@2x.png);
+    &:hover, &:focus{
+      background-image: url(/static/image/common/ic-menu-24-press@2x.png);
+    }
+  }
   a.btn-cart{
-    position: absolute; right: 16px; top: 7px;
-    width: 24px; height: 24px; text-indent: -3000px;
-    background: url(/static/image/common/ic-cart-24-normal@2x.png) no-repeat center center;
-    background-size: 24px;
+    right: 16px;
+    background-image: url(/static/image/common/ic-cart-24-normal@2x.png);
+    &:hover, &:focus{
+      background-image: url(/static/image/common/ic-cart-24-press@2x.png);
+    }
     .count-circle{
       display: inline-block;
       min-width: 14px; height: 14px; padding: 0 3px;

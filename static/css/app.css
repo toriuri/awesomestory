@@ -252,7 +252,9 @@ p.caution {
     right: 16px; }
     .aws-popup .mfp-close:hover, .aws-popup .mfp-close:focus {
       top: 0;
-      right: 16px; }
+      right: 16px;
+      background: url(/static/image/common/ic-close-circle-30-press@2x.png);
+      background-size: 30px; }
   @media (min-width: 500px) and (orientation: landscape) {
     .aws-popup {
       overflow-y: auto;
@@ -311,24 +313,25 @@ iframe[name='google_conversion_frame'] {
       padding: 8px 0 7px; }
       #header h1 a img {
         height: 23px; }
+  #header .btn-menu, #header .btn-cart {
+    display: block;
+    position: absolute;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    text-indent: -3000px;
+    background: no-repeat center center;
+    background-size: 24px; }
   #header a.btn-menu {
-    position: absolute;
     left: 13px;
-    top: 7px;
-    width: 24px;
-    height: 24px;
-    text-indent: -3000px;
-    background: url(/static/image/common/ic-menu-24-normal@2x.png) no-repeat center center;
-    background-size: 24px; }
+    background-image: url(/static/image/common/ic-menu-24-normal@2x.png); }
+    #header a.btn-menu:hover, #header a.btn-menu:focus {
+      background-image: url(/static/image/common/ic-menu-24-press@2x.png); }
   #header a.btn-cart {
-    position: absolute;
     right: 16px;
-    top: 7px;
-    width: 24px;
-    height: 24px;
-    text-indent: -3000px;
-    background: url(/static/image/common/ic-cart-24-normal@2x.png) no-repeat center center;
-    background-size: 24px; }
+    background-image: url(/static/image/common/ic-cart-24-normal@2x.png); }
+    #header a.btn-cart:hover, #header a.btn-cart:focus {
+      background-image: url(/static/image/common/ic-cart-24-press@2x.png); }
     #header a.btn-cart .count-circle {
       display: inline-block;
       min-width: 14px;
@@ -1169,7 +1172,7 @@ iframe[name='google_conversion_frame'] {
           font-size: 10px;
           color: #9b9b9b; }
 
-/* 책에 인쇄될 페이지 */
+/* 악세서리 추가 페이지 */
 .add-book-acce {
   overflow: hidden;
   padding-bottom: 60px; }
@@ -1297,6 +1300,72 @@ iframe[name='google_conversion_frame'] {
           margin-right: 16px; }
           .add-book-acce ul.book-acce-list li:last-child {
             margin-right: 0; } }
+
+/* 주문상품 */
+.order-list-wrap {
+  padding: 30px 0 5px;
+  border-bottom: 1px solid #d8d8d8;
+  text-align: center; }
+  .order-list-wrap h2.title {
+    margin-bottom: 22px; }
+  .order-list-wrap .order-list {
+    padding: 0 16px; }
+    .order-list-wrap .order-list li {
+      position: relative;
+      border: 1px solid #efeff4;
+      padding: 16px;
+      margin-bottom: 23px;
+      text-align: left; }
+      .order-list-wrap .order-list li:last-child {
+        margin-bottom: 0; }
+      .order-list-wrap .order-list li .img-thumb {
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        right: 16px;
+        top: 16px; }
+        .order-list-wrap .order-list li .img-thumb img {
+          display: block;
+          width: 100%; }
+      .order-list-wrap .order-list li dl dt {
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 14px;
+        margin-bottom: 8px; }
+      .order-list-wrap .order-list li dl dd {
+        font-size: 12px;
+        color: #707070;
+        margin-bottom: 18px;
+        line-height: 1.0em; }
+        .order-list-wrap .order-list li dl dd a {
+          display: block;
+          font-family: "Noto Sans KR Light", sans-serif;
+          font-size: 11px;
+          color: #0082c9;
+          margin-top: 9px; }
+        .order-list-wrap .order-list li dl dd:last-child {
+          margin-bottom: 0; }
+      .order-list-wrap .order-list li .btn-order-delete {
+        overflow: hidden;
+        width: 20px;
+        height: 20px;
+        text-indent: -3000px;
+        background: url(/static/image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
+        background-size: 20px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: absolute;
+        right: -10px;
+        top: -10px; }
+        .order-list-wrap .order-list li .btn-order-delete:hover, .order-list-wrap .order-list li .btn-order-delete:focus {
+          background-image: url(/static/image/common/ic-close-circle-red-20-press@2x.png);
+          background-size: 20px; }
+  .order-list-wrap .btn-add-book {
+    display: inline-block;
+    padding: 16px;
+    font-family: "Noto Sans KR Medium", sans-serif;
+    font-size: 13px;
+    color: #0082c9; }
 
 /* 결제 수단 */
 .payment {

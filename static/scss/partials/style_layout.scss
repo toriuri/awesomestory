@@ -51,31 +51,31 @@
 #footer{
   position: relative;
   background: #f7f7f7;
-  padding: 16px 20px; font-size: 8px;
+  padding: 16px 20px 20px; font-size: 11px;
 
   ul.footer-lnb{
     overflow: hidden;
     border-bottom: 1px solid #d8d8d8;
-    padding-bottom: 11px; margin-bottom: 14px;
+    padding-bottom: 11px; margin-bottom: 16px;
     li{
       float: left;
       a{
-        display: block; margin-right: 20px; font-size: 11px;
+        display: block; margin-right: 20px; font-size: 13px;
         strong{font-family: "Noto Sans KR Medium", sans-serif;}
       }
     }
   }
   h2{
-    font-family: "Noto Sans KR Bold", sans-serif; font-size: 11px;
+    font-family: "Noto Sans KR Bold", sans-serif; font-size: 13px;
     margin-bottom: 4px;
   }
   ul.footer-info li{
-    line-height: 19px;
+    line-height: 2.0em; letter-spacing: -0.03em;
   }
   .copyright{
-    text-align: center;
+    text-align: center; letter-spacing: 0;
     border-top: 1px solid #d8d8d8;
-    padding-top: 10px; margin-top: 11px;
+    padding-top: 10px; margin-top: 13px;
   }
 }
 

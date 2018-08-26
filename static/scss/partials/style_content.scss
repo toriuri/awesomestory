@@ -400,7 +400,7 @@
           background: #fff;
           border: 2px solid #fff;
           @include border-radius(50%);
-          &:hover, &:focus, &.on{
+          &:focus, &.on{
             border-color: #0082c9;
             @include box-s(0, 3px, 3px, rgba(0, 0, 0, 0.2));
           }
@@ -414,14 +414,12 @@
             }
           }
           .btn-change{
+            background: #fee734; color: #000;
             min-width: 42px; height: 18px; padding: 2px 8px 0; line-height: 18px;
             position: absolute; left: 50%; bottom: -5px;
             @include translate(-50%, 0);
             @include border-radius(9px);
             @include box-s(0, 1px, 4px, rgba(129, 85, 23, 0.22));
-            &:hover, &:focus{
-              box-shadow: none;
-            }
           }
         }
         p{font-size: 12px; margin-top: 8px;}

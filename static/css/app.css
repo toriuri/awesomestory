@@ -220,14 +220,6 @@ p.caution {
   .btn-blue[disabled] {
     background: #6ad7f4; }
 
-.btn-yellow {
-  background: #fee734;
-  color: #000; }
-  .btn-yellow:hover, .btn-yellow:focus {
-    background: #cbb927; }
-  .btn-yellow[disabled] {
-    opacity: 0.5; }
-
 /***** 공통 팝업 *****/
 .aws-popup {
   position: relative;
@@ -882,7 +874,7 @@ iframe[name='google_conversion_frame'] {
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%; }
-          .book-preview-slide .name-list-wrap .name-list li .btn-thumb:hover, .book-preview-slide .name-list-wrap .name-list li .btn-thumb:focus, .book-preview-slide .name-list-wrap .name-list li .btn-thumb.on {
+          .book-preview-slide .name-list-wrap .name-list li .btn-thumb:focus, .book-preview-slide .name-list-wrap .name-list li .btn-thumb.on {
             border-color: #0082c9;
             -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
             box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -900,6 +892,8 @@ iframe[name='google_conversion_frame'] {
               display: block;
               width: 100%; }
           .book-preview-slide .name-list-wrap .name-list li .btn-thumb .btn-change {
+            background: #fee734;
+            color: #000;
             min-width: 42px;
             height: 18px;
             padding: 2px 8px 0;
@@ -916,8 +910,6 @@ iframe[name='google_conversion_frame'] {
             -webkit-box-shadow: 0 1px 4px rgba(129, 85, 23, 0.22);
             box-shadow: 0 1px 4px rgba(129, 85, 23, 0.22);
             filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1px, Color='#38815517'); }
-            .book-preview-slide .name-list-wrap .name-list li .btn-thumb .btn-change:hover, .book-preview-slide .name-list-wrap .name-list li .btn-thumb .btn-change:focus {
-              box-shadow: none; }
         .book-preview-slide .name-list-wrap .name-list li p {
           font-size: 12px;
           margin-top: 8px; }

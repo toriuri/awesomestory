@@ -173,14 +173,6 @@ p.caution{
     background: #6ad7f4;
   }
 }
-.btn-yellow{
-  background: #fee734; color: #000;
-  &:hover, &:focus{background: #cbb927;}
-  &[disabled]{
-    opacity: 0.5;
-  }
-}
-
 
 /***** 공통 팝업 *****/
 .aws-popup{

@@ -1138,7 +1138,6 @@ iframe[name='google_conversion_frame'] {
         cursor: pointer;
         display: inline-block;
         height: 29px;
-        float: left;
         margin-left: 10px; }
         .print-letter .tab-container .tab-list li span {
           display: block;

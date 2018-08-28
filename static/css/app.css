@@ -10,25 +10,25 @@
   font-family: 'Noto Sans KR Light';
   font-style: normal;
   font-weight: 300;
-  src: url("/static/font/notokr-light.woff") format("woff"), url("/static/font/notokr-light.eot") format("opentype"); }
+  src: url("../font/notokr-light.woff") format("woff"), url("../font/notokr-light.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url("/static/font/notokr-regular.woff") format("woff"), url("/static/font/notokr-regular.eot") format("opentype"); }
+  src: url("../font/notokr-regular.woff") format("woff"), url("../font/notokr-regular.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR Medium';
   font-style: normal;
   font-weight: 400;
-  src: url("/static/font/notokr-medium.woff") format("woff"), url("/static/font/notokr-medium.eot") format("opentype"); }
+  src: url("../font/notokr-medium.woff") format("woff"), url("../font/notokr-medium.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR Bold';
   font-style: normal;
   font-weight: 400;
-  src: url("/static/font/notokr-bold.woff") format("woff"), url("/static/font/notokr-bold.eot") format("opentype"); }
+  src: url("../font/notokr-bold.woff") format("woff"), url("../font/notokr-bold.eot") format("opentype"); }
 
 /* reset */
 html, body, div, applet, object, iframe,
@@ -245,7 +245,7 @@ p.caution {
     opacity: 1.0;
     width: 30px;
     height: 30px;
-    background: url(/static/image/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
+    background: url(../image/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
     background-size: 30px;
     position: absolute;
     top: 0;
@@ -253,7 +253,7 @@ p.caution {
     .aws-popup .mfp-close:hover, .aws-popup .mfp-close:focus {
       top: 0;
       right: 26px;
-      background: url(/static/image/common/ic-close-circle-30-press@2x.png);
+      background: url(../image/common/ic-close-circle-30-press@2x.png);
       background-size: 30px; }
   @media (min-width: 500px) and (orientation: landscape) {
     .aws-popup {
@@ -324,14 +324,14 @@ iframe[name='google_conversion_frame'] {
     background-size: 24px; }
   #header a.btn-menu {
     left: 13px;
-    background-image: url(/static/image/common/ic-menu-24-normal@2x.png); }
+    background-image: url(../image/common/ic-menu-24-normal@2x.png); }
     #header a.btn-menu:hover, #header a.btn-menu:focus {
-      background-image: url(/static/image/common/ic-menu-24-press@2x.png); }
+      background-image: url(../image/common/ic-menu-24-press@2x.png); }
   #header a.btn-cart {
     right: 16px;
-    background-image: url(/static/image/common/ic-cart-24-normal@2x.png); }
+    background-image: url(../image/common/ic-cart-24-normal@2x.png); }
     #header a.btn-cart:hover, #header a.btn-cart:focus {
-      background-image: url(/static/image/common/ic-cart-24-press@2x.png); }
+      background-image: url(../image/common/ic-cart-24-press@2x.png); }
     #header a.btn-cart .count-circle {
       display: inline-block;
       min-width: 14px;
@@ -438,7 +438,7 @@ iframe[name='google_conversion_frame'] {
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/static/image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
+    background: url(../image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
     background-size: 20px; }
   .menu .snb-menu-list li {
     margin-bottom: 20px; }
@@ -503,7 +503,7 @@ iframe[name='google_conversion_frame'] {
         display: block;
         width: 16px;
         height: 16px;
-        background: url(/static/image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
+        background: url(../image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
         background-size: 16px;
         position: absolute;
         right: 10px;
@@ -515,7 +515,7 @@ iframe[name='google_conversion_frame'] {
   color: #9b9b9b;
   padding: 32px 0 10px;
   margin: 10px 16px 18px;
-  background-image: url(/static/image/common/ic-quotes-left@2x.png), url(/static/image/common/ic-quotes-right@2x.png);
+  background-image: url(../image/common/ic-quotes-left@2x.png), url(../image/common/ic-quotes-right@2x.png);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-size: 30px; }
@@ -614,7 +614,7 @@ iframe[name='google_conversion_frame'] {
     width: 26px;
     height: 26px;
     margin-top: -13px;
-    background: url(/static/image/common/ic-swiper-arrow-control@2x.png) no-repeat;
+    background: url(../image/common/ic-swiper-arrow-control@2x.png) no-repeat;
     background-size: auto 27px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -700,10 +700,10 @@ iframe[name='google_conversion_frame'] {
               -moz-box-sizing: border-box;
               box-sizing: border-box; }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.girl::before {
-              background: url(/static/image/contents/image-girl@2x.png) no-repeat center center;
+              background: url(../image/contents/image-girl@2x.png) no-repeat center center;
               background-size: 148px; }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.boy::before {
-              background: url(/static/image/contents/image-boy@2x.png) no-repeat center center;
+              background: url(../image/contents/image-boy@2x.png) no-repeat center center;
               background-size: 148px; }
           .input-child-name form ul .list-block .radio-gender[type="radio"]:checked + label {
             color: #000; }
@@ -1027,7 +1027,7 @@ iframe[name='google_conversion_frame'] {
         display: block;
         width: 12px;
         height: 12px;
-        background: url(/static/image/common/ic-arrow-12@2x.png) no-repeat center center;
+        background: url(../image/common/ic-arrow-12@2x.png) no-repeat center center;
         background-size: 12px;
         position: absolute;
         right: 0;
@@ -1076,13 +1076,13 @@ iframe[name='google_conversion_frame'] {
             box-sizing: border-box;
             opacity: 0.3; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.daddy::before {
-            background: url(/static/image/contents/image-daddy@2x.png) no-repeat center center;
+            background: url(../image/contents/image-daddy@2x.png) no-repeat center center;
             background-size: 73px; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.mom::before {
-            background: url(/static/image/contents/image-mom@2x.png) no-repeat center center;
+            background: url(../image/contents/image-mom@2x.png) no-repeat center center;
             background-size: 73px; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.etc::before {
-            background: url(/static/image/contents/image-etc@2x.png) no-repeat center center;
+            background: url(../image/contents/image-etc@2x.png) no-repeat center center;
             background-size: 73px; }
         .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"]:checked + label {
           color: #000; }
@@ -1256,7 +1256,7 @@ iframe[name='google_conversion_frame'] {
             overflow: hidden;
             width: 26px;
             height: 26px;
-            background: url(/static/image/common/ic-check-circle-26-normal@2x.png) no-repeat center center;
+            background: url(../image/common/ic-check-circle-26-normal@2x.png) no-repeat center center;
             background-size: 26px;
             position: absolute;
             right: 12px;
@@ -1268,7 +1268,7 @@ iframe[name='google_conversion_frame'] {
             -moz-border-radius: 50%;
             border-radius: 50%; }
         .add-book-acce ul.book-acce-list .list-block .aws-chk[type="checkbox"]:checked + label .img-chk {
-          background-image: url(/static/image/common/ic-check-circle-26-select@2x.png);
+          background-image: url(../image/common/ic-check-circle-26-select@2x.png);
           background-size: 26px;
           -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -1346,7 +1346,7 @@ iframe[name='google_conversion_frame'] {
         width: 20px;
         height: 20px;
         text-indent: -3000px;
-        background: url(/static/image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
+        background: url(../image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
         background-size: 20px;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -1355,7 +1355,7 @@ iframe[name='google_conversion_frame'] {
         right: -10px;
         top: -10px; }
         .order-list-wrap .order-list li .btn-order-delete:hover, .order-list-wrap .order-list li .btn-order-delete:focus {
-          background-image: url(/static/image/common/ic-close-circle-red-20-press@2x.png);
+          background-image: url(../image/common/ic-close-circle-red-20-press@2x.png);
           background-size: 20px; }
   .order-list-wrap .btn-area {
     padding: 16px 16px 20px;
@@ -1381,7 +1381,7 @@ iframe[name='google_conversion_frame'] {
     .order-information .order-process ul {
       overflow: hidden;
       padding-top: 15.76%;
-      background: url(/static/image/contents/order-process@2x.png) no-repeat center top;
+      background: url(../image/contents/order-process@2x.png) no-repeat center top;
       background-size: 100%; }
       .order-information .order-process ul li {
         float: left;
@@ -1502,12 +1502,12 @@ iframe[name='google_conversion_frame'] {
         width: 20px;
         height: 20px;
         margin-right: 5px;
-        background: url(/static/image/common/checkbox_20_normal@2x.png) no-repeat center center;
+        background: url(../image/common/checkbox_20_normal@2x.png) no-repeat center center;
         background-size: 20px;
         position: relative;
         top: -2px; }
     .order-information .orderer-info .input-block .aws-chk[type="checkbox"]:checked + label:before {
-      background-image: url(/static/image/common/checkbox_20_select@2x.png); }
+      background-image: url(../image/common/checkbox_20_select@2x.png); }
   .order-information .orderer-info .input-block + p.text {
     font-family: "Noto Sans KR Light", sans-serif;
     font-size: 11px;

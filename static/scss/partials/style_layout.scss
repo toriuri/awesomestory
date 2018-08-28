@@ -27,16 +27,16 @@
   }
   a.btn-menu{
     left: 13px;
-    background-image: url(/static/image/common/ic-menu-24-normal@2x.png);
+    background-image: url(../image/common/ic-menu-24-normal@2x.png);
     &:hover, &:focus{
-      background-image: url(/static/image/common/ic-menu-24-press@2x.png);
+      background-image: url(../image/common/ic-menu-24-press@2x.png);
     }
   }
   a.btn-cart{
     right: 16px;
-    background-image: url(/static/image/common/ic-cart-24-normal@2x.png);
+    background-image: url(../image/common/ic-cart-24-normal@2x.png);
     &:hover, &:focus{
-      background-image: url(/static/image/common/ic-cart-24-press@2x.png);
+      background-image: url(../image/common/ic-cart-24-press@2x.png);
     }
     .count-circle{
       display: inline-block;
@@ -123,7 +123,7 @@
       display: block; overflow: hidden;
       position: absolute; right: 6px; top: 6px;
       width: 24px; height: 24px; text-indent: -3000px;
-      background: url(/static/image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
+      background: url(../image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
       background-size: 20px;
     }
   }

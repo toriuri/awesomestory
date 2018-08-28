@@ -35,7 +35,7 @@
           content: '';
           display: block;
           width: 16px; height: 16px;
-          background: url(/static/image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
+          background: url(../image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
           background-size: 16px;
           position: absolute; right: 10px; top: 50%;
           margin-top: -8px;
@@ -46,7 +46,7 @@
   dl.text{
     font-size: 14px; color: #9b9b9b;
     padding: 32px 0 10px; margin: 10px 16px 18px;
-    background-image: url(/static/image/common/ic-quotes-left@2x.png), url(/static/image/common/ic-quotes-right@2x.png);
+    background-image: url(../image/common/ic-quotes-left@2x.png), url(../image/common/ic-quotes-right@2x.png);
     background-position: left top, right bottom;
     background-repeat: no-repeat;
     background-size: 30px;
@@ -143,7 +143,7 @@
   .swiper-button-prev, .swiper-button-next{
     display: block; width: 26px; height: 26px;
     margin-top: -13px;
-    background: url(/static/image/common/ic-swiper-arrow-control@2x.png) no-repeat;
+    background: url(../image/common/ic-swiper-arrow-control@2x.png) no-repeat;
     background-size: auto 27px;
     @include border-radius(13px);
     @include box-s(0, 0, 10px, rgba(0, 0, 0, 0.6));
@@ -223,13 +223,13 @@
             }
             &.girl{
               &::before{
-                background: url(/static/image/contents/image-girl@2x.png) no-repeat center center;
+                background: url(../image/contents/image-girl@2x.png) no-repeat center center;
                 background-size: 148px;
               }
             }
             &.boy{
               &::before{
-                background: url(/static/image/contents/image-boy@2x.png) no-repeat center center;
+                background: url(../image/contents/image-boy@2x.png) no-repeat center center;
                 background-size: 148px;
               }
             }
@@ -517,7 +517,7 @@
         content: '';
         display: block;
         width: 12px; height: 12px;
-        background: url(/static/image/common/ic-arrow-12@2x.png) no-repeat center center;
+        background: url(../image/common/ic-arrow-12@2x.png) no-repeat center center;
         background-size: 12px;
         position: absolute; right: 0; top: 0;
       }
@@ -553,19 +553,19 @@
           }
           &.daddy{
             &::before{
-              background: url(/static/image/contents/image-daddy@2x.png) no-repeat center center;
+              background: url(../image/contents/image-daddy@2x.png) no-repeat center center;
               background-size: 73px;
             }
           }
           &.mom{
             &::before{
-              background: url(/static/image/contents/image-mom@2x.png) no-repeat center center;
+              background: url(../image/contents/image-mom@2x.png) no-repeat center center;
               background-size: 73px;
             }
           }
           &.etc{
             &::before{
-              background: url(/static/image/contents/image-etc@2x.png) no-repeat center center;
+              background: url(../image/contents/image-etc@2x.png) no-repeat center center;
               background-size: 73px;
             }
           }
@@ -730,7 +730,7 @@
 
           .img-chk{
             overflow: hidden; width: 26px; height: 26px;
-            background: url(/static/image/common/ic-check-circle-26-normal@2x.png) no-repeat center center;
+            background: url(../image/common/ic-check-circle-26-normal@2x.png) no-repeat center center;
             background-size: 26px;
             position: absolute; right: 12px; top: 12px;
             @include box-sizing;
@@ -740,7 +740,7 @@
         /* 버튼 on */
         &:checked + label{
           .img-chk{
-            background-image: url(/static/image/common/ic-check-circle-26-select@2x.png);
+            background-image: url(../image/common/ic-check-circle-26-select@2x.png);
             background-size: 26px;
             @include box-s(0, 2px, 6px, rgba(0,0,0,0.2));
           }
@@ -810,12 +810,12 @@
         overflow: hidden;
         width: 20px; height: 20px;
         text-indent: -3000px;
-        background: url(/static/image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
+        background: url(../image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
         background-size: 20px;
         @include border-radius(50%);
         position: absolute; right: -10px; top: -10px;
         &:hover, &:focus{
-          background-image: url(/static/image/common/ic-close-circle-red-20-press@2x.png);
+          background-image: url(../image/common/ic-close-circle-red-20-press@2x.png);
           background-size: 20px;
         }
       }
@@ -840,7 +840,7 @@
     p.text{font-size: 11px; color: #fc4641; margin-bottom: 8px;}
     ul{
       overflow: hidden; padding-top: 15.76%;
-      background: url(/static/image/contents/order-process@2x.png) no-repeat center top;
+      background: url(../image/contents/order-process@2x.png) no-repeat center top;
       background-size: 100%;
       li{
         float: left;
@@ -940,7 +940,7 @@
             content: '';
             display: inline-block; float: left;
             width: 20px; height: 20px; margin-right: 5px;
-            background: url(/static/image/common/checkbox_20_normal@2x.png) no-repeat center center;
+            background: url(../image/common/checkbox_20_normal@2x.png) no-repeat center center;
             background-size: 20px;
             position: relative; top: -2px;
           }
@@ -948,7 +948,7 @@
         /* 버튼 on */
         &:checked + label{
           &:before{
-            background-image: url(/static/image/common/checkbox_20_select@2x.png);
+            background-image: url(../image/common/checkbox_20_select@2x.png);
           }
         }
       }

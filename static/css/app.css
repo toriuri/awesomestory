@@ -1540,6 +1540,8 @@ iframe[name='google_conversion_frame'] {
           color: #fc4641; }
       .delivery-info form li .btn-text {
         float: right;
+        background: transparent;
+        border: none;
         font-family: "Noto Sans KR Light", sans-serif;
         font-size: 11px;
         color: #0082c9;

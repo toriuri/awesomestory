@@ -975,6 +975,7 @@
       }
       .btn-text{
         float: right;
+        background: transparent; border: none;
         font-family: "Noto Sans KR Light", sans-serif;
         font-size: 11px; color: #0082c9; line-height: 1.7em;
       }
@@ -982,6 +983,7 @@
     }
   }
 }
+
 /* 결제 수단 */
 .payment{
   padding-bottom: 20px;

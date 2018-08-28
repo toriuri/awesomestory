@@ -831,7 +831,7 @@
   }
 }
 
-/* 주문 절차 */
+/* 주문 절차 및 결재금액 */
 .order-information{
   padding: 24px 16px 0;
   h2{padding: 0; margin-bottom: 5px;}
@@ -961,6 +961,28 @@
   }
 }
 
+/* 배송 정보 */
+.delivery-info{
+  padding: 24px 0 0; margin-bottom: 40px;
+  form{
+    padding: 0 16px;
+    li{
+      overflow: hidden; padding: 15px 0 0;
+      label{
+        display: block; float: left;
+        padding-left: 7px; margin-bottom: 7px;
+        span{color: #fc4641;}
+      }
+      .btn-text{
+        float: right;
+        background: transparent; border: none;
+        font-family: "Noto Sans KR Light", sans-serif;
+        font-size: 11px; color: #0082c9; line-height: 1.7em;
+      }
+      #address{margin-bottom: 5px;}
+    }
+  }
+}
 
 /* 결제 수단 */
 .payment{

@@ -63,9 +63,9 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px;
   color: #000;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
   line-height: 1.6em;
-  background: #e1e1e1; }
+  background: #f0f0f0; }
 
 ol, ul, li {
   list-style: none; }
@@ -182,7 +182,7 @@ p.caution {
 
 /* 버튼 공통 스타일  */
 .btn-area {
-  padding: 0 16px 16px; }
+  padding: 0 16px 26px; }
 
 .btn {
   display: inline-block;
@@ -1303,9 +1303,8 @@ iframe[name='google_conversion_frame'] {
 
 /* 주문상품 */
 .order-list-wrap {
-  padding: 30px 0 5px;
-  border-bottom: 1px solid #d8d8d8;
-  text-align: center; }
+  padding: 30px 0 0;
+  border-bottom: 1px solid #d8d8d8; }
   .order-list-wrap h2.title {
     margin-bottom: 22px; }
   .order-list-wrap .order-list {
@@ -1314,8 +1313,7 @@ iframe[name='google_conversion_frame'] {
       position: relative;
       border: 1px solid #efeff4;
       padding: 16px;
-      margin-bottom: 23px;
-      text-align: left; }
+      margin-bottom: 23px; }
       .order-list-wrap .order-list li:last-child {
         margin-bottom: 0; }
       .order-list-wrap .order-list li .img-thumb {
@@ -1360,12 +1358,163 @@ iframe[name='google_conversion_frame'] {
         .order-list-wrap .order-list li .btn-order-delete:hover, .order-list-wrap .order-list li .btn-order-delete:focus {
           background-image: url(/static/image/common/ic-close-circle-red-20-press@2x.png);
           background-size: 20px; }
-  .order-list-wrap .btn-add-book {
-    display: inline-block;
-    padding: 16px;
-    font-family: "Noto Sans KR Medium", sans-serif;
-    font-size: 13px;
-    color: #0082c9; }
+  .order-list-wrap .btn-area {
+    padding: 16px 16px 20px;
+    text-align: center; }
+    .order-list-wrap .btn-area .btn-add-book {
+      display: inline-block;
+      font-family: "Noto Sans KR Medium", sans-serif;
+      font-size: 13px;
+      color: #0082c9; }
+
+/* 주문 절차 */
+.order-information {
+  padding: 24px 16px 0; }
+  .order-information h2 {
+    padding: 0;
+    margin-bottom: 5px; }
+  .order-information .order-process {
+    padding-bottom: 46px; }
+    .order-information .order-process p.text {
+      font-size: 11px;
+      color: #fc4641;
+      margin-bottom: 8px; }
+    .order-information .order-process ul {
+      overflow: hidden;
+      padding-top: 15.76%;
+      background: url(/static/image/contents/order-process@2x.png) no-repeat center top;
+      background-size: 100%; }
+      .order-information .order-process ul li {
+        float: left;
+        font-size: 11px;
+        text-align: center; }
+        .order-information .order-process ul li:nth-child(1) {
+          width: 20%;
+          margin-right: 6%; }
+        .order-information .order-process ul li:nth-child(2) {
+          width: 20%;
+          margin-right: 6%; }
+        .order-information .order-process ul li:nth-child(3) {
+          width: 20%;
+          margin-right: 8%; }
+        .order-information .order-process ul li:nth-child(4) {
+          width: 20%; }
+  .order-information .coupon-input {
+    padding-bottom: 40px; }
+    .order-information .coupon-input p.text {
+      font-size: 12px;
+      color: #707070; }
+    .order-information .coupon-input .input-block {
+      overflow: hidden;
+      margin: 18px 0 0; }
+      .order-information .coupon-input .input-block label {
+        display: inline-block;
+        float: left;
+        width: 80%;
+        padding-right: 9px; }
+      .order-information .coupon-input .input-block .btn-blue-line {
+        display: inline-block;
+        float: left;
+        width: 20%;
+        height: 42px;
+        background: #fff;
+        border: 2px solid #0082c9;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 12px;
+        color: #0082c9;
+        line-height: 38px;
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2px, Color='#33000000'); }
+      .order-information .coupon-input .input-block .caution {
+        clear: both; }
+  .order-information .total-payment {
+    padding-bottom: 38px; }
+    .order-information .total-payment .payment-details {
+      margin-top: 24px;
+      font-size: 12px;
+      line-height: 2.0em; }
+      .order-information .total-payment .payment-details dt {
+        float: left;
+        color: #9b9b9b; }
+        .order-information .total-payment .payment-details dt.coupon-sale {
+          padding: 12px 0 8px;
+          margin-top: 10px; }
+        .order-information .total-payment .payment-details dt.total {
+          padding: 10px 0; }
+        .order-information .total-payment .payment-details dt strong {
+          font-family: "Noto Sans KR Medium", sans-serif;
+          color: #000; }
+      .order-information .total-payment .payment-details dd {
+        color: #000;
+        text-align: right; }
+        .order-information .total-payment .payment-details dd.coupon-sale {
+          color: #0082c9;
+          padding: 12px 0 8px;
+          margin-top: 10px;
+          border-top: 1px dashed #dcdcdc; }
+          .order-information .total-payment .payment-details dd.coupon-sale .btn-delete {
+            min-width: 38px;
+            min-height: 20px;
+            padding: 2px 0 0;
+            margin-left: 5px;
+            position: relative;
+            top: -2px;
+            font-size: 9px;
+            color: #707070;
+            background: #fff;
+            border: 1px solid #bababa;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px; }
+            .order-information .total-payment .payment-details dd.coupon-sale .btn-delete:hover, .order-information .total-payment .payment-details dd.coupon-sale .btn-delete:focus {
+              background: #bababa;
+              color: #fff; }
+        .order-information .total-payment .payment-details dd.total {
+          font-family: "Noto Sans KR Bold", sans-serif;
+          font-size: 16px;
+          color: #fc4641;
+          padding: 10px 0;
+          border-top: 1px solid #d8d8d8; }
+  .order-information .orderer-info h2 {
+    margin-bottom: 24px; }
+    .order-information .orderer-info h2 span {
+      color: #fc4641; }
+  .order-information .orderer-info .input-block label.phone-number {
+    display: block;
+    margin-bottom: 16px; }
+  .order-information .orderer-info .input-block .aws-chk[type="checkbox"] {
+    /* 라디오 버튼 숨김처리  */
+    /* 버튼 basic */
+    /* 버튼 on */ }
+    .order-information .orderer-info .input-block .aws-chk[type="checkbox"]:not(:checked), .order-information .orderer-info .input-block .aws-chk[type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px; }
+    .order-information .orderer-info .input-block .aws-chk[type="checkbox"] + label {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      display: block;
+      font-size: 12px; }
+      .order-information .orderer-info .input-block .aws-chk[type="checkbox"] + label:before {
+        content: '';
+        display: inline-block;
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        background: url(/static/image/common/checkbox_20_normal@2x.png) no-repeat center center;
+        background-size: 20px;
+        position: relative;
+        top: -2px; }
+    .order-information .orderer-info .input-block .aws-chk[type="checkbox"]:checked + label:before {
+      background-image: url(/static/image/common/checkbox_20_select@2x.png); }
+  .order-information .orderer-info .input-block + p.text {
+    font-family: "Noto Sans KR Light", sans-serif;
+    font-size: 11px;
+    color: #707070;
+    padding-left: 25px;
+    margin-bottom: 32px; }
 
 /* 결제 수단 */
 .payment {

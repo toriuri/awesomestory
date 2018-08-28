@@ -772,15 +772,14 @@
 
 /* 주문상품 */
 .order-list-wrap{
-  padding: 30px 0 5px; border-bottom: 1px solid #d8d8d8;
-  text-align: center;
+  padding: 30px 0 0; border-bottom: 1px solid #d8d8d8;
   h2.title{margin-bottom: 22px;}
   .order-list{
     padding: 0 16px;
     li{
       position: relative;
       border: 1px solid #efeff4;
-      padding: 16px; margin-bottom: 23px; text-align: left;
+      padding: 16px; margin-bottom: 23px;
       &:last-child{margin-bottom: 0;}
 
       .img-thumb{
@@ -820,16 +819,149 @@
           background-image: url(/static/image/common/ic-close-circle-red-20-press@2x.png);
           background-size: 20px;
         }
-
       }
     }
   }
-  .btn-add-book{
-    display: inline-block; padding: 16px;
-    font-family: "Noto Sans KR Medium", sans-serif;
-    font-size: 13px; color: #0082c9;
+  .btn-area{
+    padding: 16px 16px 20px; text-align: center;
+    .btn-add-book{
+      display: inline-block;
+      font-family: "Noto Sans KR Medium", sans-serif;
+      font-size: 13px; color: #0082c9;
+    }
   }
 }
+
+/* 주문 절차 */
+.order-information{
+  padding: 24px 16px 0;
+  h2{padding: 0; margin-bottom: 5px;}
+  .order-process{
+    padding-bottom: 46px;
+    p.text{font-size: 11px; color: #fc4641; margin-bottom: 8px;}
+    ul{
+      overflow: hidden; padding-top: 15.76%;
+      background: url(/static/image/contents/order-process@2x.png) no-repeat center top;
+      background-size: 100%;
+      li{
+        float: left;
+        font-size: 11px; text-align: center;
+        &:nth-child(1){width: 20%; margin-right: 6%;}
+        &:nth-child(2){width: 20%; margin-right: 6%;}
+        &:nth-child(3){width: 20%; margin-right: 8%;}
+        &:nth-child(4){width: 20%;}
+      }
+    }
+  }
+  .coupon-input{
+    padding-bottom: 40px;
+    p.text{font-size: 12px; color: #707070;}
+    .input-block{
+      overflow: hidden; margin: 18px 0 0;
+      label{
+        display: inline-block; float: left;
+        width: 80%; padding-right: 9px;
+      }
+      .btn-blue-line{
+        display: inline-block; float:left;
+        width: 20%; height: 42px;
+        background: #fff; border: 2px solid #0082c9;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 12px; color: #0082c9; line-height: 38px;
+        @include box-s(0, 2px, 6px, rgba(0,0,0,0.2));
+      }
+      .caution{
+        clear: both;
+      }
+    }
+  }
+  .total-payment{
+    padding-bottom: 38px;
+    .payment-details{
+      margin-top: 24px;
+      font-size: 12px; line-height: 2.0em;
+      dt{
+        float: left; color: #9b9b9b;
+        &.coupon-sale{
+          padding: 12px 0 8px; margin-top: 10px;
+        }
+        &.total{
+          padding: 10px 0;
+        }
+        strong{
+          font-family: "Noto Sans KR Medium", sans-serif;
+          color: #000;
+        }
+      }
+      dd{
+        color: #000; text-align: right;
+        &.coupon-sale{
+          color: #0082c9;
+          padding: 12px 0 8px; margin-top: 10px;
+          border-top: 1px dashed #dcdcdc;
+          .btn-delete{
+            min-width: 38px; min-height: 20px;
+            padding: 2px 0 0; margin-left: 5px;
+            position: relative; top: -2px;
+            font-size: 9px; color: #707070;
+            background: #fff; border: 1px solid #bababa;
+            @include border-radius(2px);
+            &:hover, &:focus{
+              background: #bababa; color: #fff;
+            }
+          }
+        }
+        &.total{
+          font-family: "Noto Sans KR Bold", sans-serif;
+          font-size: 16px; color: #fc4641;
+          padding: 10px 0;
+          border-top: 1px solid #d8d8d8;
+        }
+      }
+    }
+  }
+  .orderer-info{
+    h2{
+      margin-bottom: 24px;
+      span{color: #fc4641;}
+    }
+    .input-block{
+      label.phone-number{display: block; margin-bottom: 16px;}
+
+      .aws-chk[type="checkbox"] {
+        /* 라디오 버튼 숨김처리  */
+        &:not(:checked), &:checked{position: absolute; left: -9999px;}
+
+        /* 버튼 basic */
+        & + label{
+          position: relative; cursor: pointer;
+          overflow: hidden; display: block;
+          font-size: 12px;
+          &:before{
+            content: '';
+            display: inline-block; float: left;
+            width: 20px; height: 20px; margin-right: 5px;
+            background: url(/static/image/common/checkbox_20_normal@2x.png) no-repeat center center;
+            background-size: 20px;
+            position: relative; top: -2px;
+          }
+        }
+        /* 버튼 on */
+        &:checked + label{
+          &:before{
+            background-image: url(/static/image/common/checkbox_20_select@2x.png);
+          }
+        }
+      }
+      & + p.text{
+        font-family: "Noto Sans KR Light", sans-serif;
+        font-size: 11px; color: #707070;
+        padding-left: 25px; margin-bottom: 32px;
+      }
+    }
+  }
+}
+
 
 /* 결제 수단 */
 .payment{

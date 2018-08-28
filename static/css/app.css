@@ -10,25 +10,25 @@
   font-family: 'Noto Sans KR Light';
   font-style: normal;
   font-weight: 300;
-  src: url("/static/font/notokr-light.woff") format("woff"), url("/static/font/notokr-light.eot") format("opentype"); }
+  src: url("../font/notokr-light.woff") format("woff"), url("../font/notokr-light.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
-  src: url("/static/font/notokr-regular.woff") format("woff"), url("/static/font/notokr-regular.eot") format("opentype"); }
+  src: url("../font/notokr-regular.woff") format("woff"), url("../font/notokr-regular.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR Medium';
   font-style: normal;
   font-weight: 400;
-  src: url("/static/font/notokr-medium.woff") format("woff"), url("/static/font/notokr-medium.eot") format("opentype"); }
+  src: url("../font/notokr-medium.woff") format("woff"), url("../font/notokr-medium.eot") format("opentype"); }
 
 @font-face {
   font-family: 'Noto Sans KR Bold';
   font-style: normal;
   font-weight: 400;
-  src: url("/static/font/notokr-bold.woff") format("woff"), url("/static/font/notokr-bold.eot") format("opentype"); }
+  src: url("../font/notokr-bold.woff") format("woff"), url("../font/notokr-bold.eot") format("opentype"); }
 
 /* reset */
 html, body, div, applet, object, iframe,
@@ -63,9 +63,9 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px;
   color: #000;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
   line-height: 1.6em;
-  background: #e1e1e1; }
+  background: #f0f0f0; }
 
 ol, ul, li {
   list-style: none; }
@@ -182,7 +182,7 @@ p.caution {
 
 /* 버튼 공통 스타일  */
 .btn-area {
-  padding: 0 16px 16px; }
+  padding: 0 16px 26px; }
 
 .btn {
   display: inline-block;
@@ -229,7 +229,7 @@ p.caution {
   transform: translate(-50%, 0);
   display: inline-block; }
   .aws-popup .popup-wrap {
-    padding: 40px 16px; }
+    padding: 40px 26px; }
     .aws-popup .popup-wrap img {
       display: block;
       width: 100%; }
@@ -245,15 +245,15 @@ p.caution {
     opacity: 1.0;
     width: 30px;
     height: 30px;
-    background: url(/static/image/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
+    background: url(../image/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
     background-size: 30px;
     position: absolute;
     top: 0;
-    right: 16px; }
+    right: 26px; }
     .aws-popup .mfp-close:hover, .aws-popup .mfp-close:focus {
       top: 0;
-      right: 16px;
-      background: url(/static/image/common/ic-close-circle-30-press@2x.png);
+      right: 26px;
+      background: url(../image/common/ic-close-circle-30-press@2x.png);
       background-size: 30px; }
   @media (min-width: 500px) and (orientation: landscape) {
     .aws-popup {
@@ -324,14 +324,14 @@ iframe[name='google_conversion_frame'] {
     background-size: 24px; }
   #header a.btn-menu {
     left: 13px;
-    background-image: url(/static/image/common/ic-menu-24-normal@2x.png); }
+    background-image: url(../image/common/ic-menu-24-normal@2x.png); }
     #header a.btn-menu:hover, #header a.btn-menu:focus {
-      background-image: url(/static/image/common/ic-menu-24-press@2x.png); }
+      background-image: url(../image/common/ic-menu-24-press@2x.png); }
   #header a.btn-cart {
     right: 16px;
-    background-image: url(/static/image/common/ic-cart-24-normal@2x.png); }
+    background-image: url(../image/common/ic-cart-24-normal@2x.png); }
     #header a.btn-cart:hover, #header a.btn-cart:focus {
-      background-image: url(/static/image/common/ic-cart-24-press@2x.png); }
+      background-image: url(../image/common/ic-cart-24-press@2x.png); }
     #header a.btn-cart .count-circle {
       display: inline-block;
       min-width: 14px;
@@ -438,7 +438,7 @@ iframe[name='google_conversion_frame'] {
     width: 24px;
     height: 24px;
     text-indent: -3000px;
-    background: url(/static/image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
+    background: url(../image/common/ic-close-line-20-normal@2x.png) no-repeat center center;
     background-size: 20px; }
   .menu .snb-menu-list li {
     margin-bottom: 20px; }
@@ -503,7 +503,7 @@ iframe[name='google_conversion_frame'] {
         display: block;
         width: 16px;
         height: 16px;
-        background: url(/static/image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
+        background: url(../image/common/ic-arrow-btn-16@2x.png) no-repeat center center;
         background-size: 16px;
         position: absolute;
         right: 10px;
@@ -515,7 +515,7 @@ iframe[name='google_conversion_frame'] {
   color: #9b9b9b;
   padding: 32px 0 10px;
   margin: 10px 16px 18px;
-  background-image: url(/static/image/common/ic-quotes-left@2x.png), url(/static/image/common/ic-quotes-right@2x.png);
+  background-image: url(../image/common/ic-quotes-left@2x.png), url(../image/common/ic-quotes-right@2x.png);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-size: 30px; }
@@ -614,7 +614,7 @@ iframe[name='google_conversion_frame'] {
     width: 26px;
     height: 26px;
     margin-top: -13px;
-    background: url(/static/image/common/ic-swiper-arrow-control@2x.png) no-repeat;
+    background: url(../image/common/ic-swiper-arrow-control@2x.png) no-repeat;
     background-size: auto 27px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -700,10 +700,10 @@ iframe[name='google_conversion_frame'] {
               -moz-box-sizing: border-box;
               box-sizing: border-box; }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.girl::before {
-              background: url(/static/image/contents/image-girl@2x.png) no-repeat center center;
+              background: url(../image/contents/image-girl@2x.png) no-repeat center center;
               background-size: 148px; }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.boy::before {
-              background: url(/static/image/contents/image-boy@2x.png) no-repeat center center;
+              background: url(../image/contents/image-boy@2x.png) no-repeat center center;
               background-size: 148px; }
           .input-child-name form ul .list-block .radio-gender[type="radio"]:checked + label {
             color: #000; }
@@ -834,18 +834,17 @@ iframe[name='google_conversion_frame'] {
       white-space: nowrap;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch; }
-      .book-preview-slide .preview-container .preview-wrapper img {
+      .book-preview-slide .preview-container .preview-wrapper img, .book-preview-slide .preview-container .preview-wrapper canvas {
         display: inline-block;
         vertical-align: middle;
         width: auto;
-        height: 216px;
-        margin-right: -4px; }
-        .book-preview-slide .preview-container .preview-wrapper img:first-child {
+        height: 216px; }
+        .book-preview-slide .preview-container .preview-wrapper img:first-child, .book-preview-slide .preview-container .preview-wrapper canvas:first-child {
           margin-left: 10px; }
-        .book-preview-slide .preview-container .preview-wrapper img:nth-child(even) {
-          margin-left: 10px; }
+        .book-preview-slide .preview-container .preview-wrapper img:nth-child(even), .book-preview-slide .preview-container .preview-wrapper canvas:nth-child(even) {
+          margin-left: 5px; }
         @media (min-width: 500px) and (orientation: landscape) {
-          .book-preview-slide .preview-container .preview-wrapper img {
+          .book-preview-slide .preview-container .preview-wrapper img, .book-preview-slide .preview-container .preview-wrapper canvas {
             height: 360px; } }
   .book-preview-slide .name-list-wrap {
     padding: 30px 0; }
@@ -1028,7 +1027,7 @@ iframe[name='google_conversion_frame'] {
         display: block;
         width: 12px;
         height: 12px;
-        background: url(/static/image/common/ic-arrow-12@2x.png) no-repeat center center;
+        background: url(../image/common/ic-arrow-12@2x.png) no-repeat center center;
         background-size: 12px;
         position: absolute;
         right: 0;
@@ -1077,13 +1076,13 @@ iframe[name='google_conversion_frame'] {
             box-sizing: border-box;
             opacity: 0.3; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.daddy::before {
-            background: url(/static/image/contents/image-daddy@2x.png) no-repeat center center;
+            background: url(../image/contents/image-daddy@2x.png) no-repeat center center;
             background-size: 73px; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.mom::before {
-            background: url(/static/image/contents/image-mom@2x.png) no-repeat center center;
+            background: url(../image/contents/image-mom@2x.png) no-repeat center center;
             background-size: 73px; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.etc::before {
-            background: url(/static/image/contents/image-etc@2x.png) no-repeat center center;
+            background: url(../image/contents/image-etc@2x.png) no-repeat center center;
             background-size: 73px; }
         .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"]:checked + label {
           color: #000; }
@@ -1257,7 +1256,7 @@ iframe[name='google_conversion_frame'] {
             overflow: hidden;
             width: 26px;
             height: 26px;
-            background: url(/static/image/common/ic-check-circle-26-normal@2x.png) no-repeat center center;
+            background: url(../image/common/ic-check-circle-26-normal@2x.png) no-repeat center center;
             background-size: 26px;
             position: absolute;
             right: 12px;
@@ -1269,7 +1268,7 @@ iframe[name='google_conversion_frame'] {
             -moz-border-radius: 50%;
             border-radius: 50%; }
         .add-book-acce ul.book-acce-list .list-block .aws-chk[type="checkbox"]:checked + label .img-chk {
-          background-image: url(/static/image/common/ic-check-circle-26-select@2x.png);
+          background-image: url(../image/common/ic-check-circle-26-select@2x.png);
           background-size: 26px;
           -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -1303,9 +1302,8 @@ iframe[name='google_conversion_frame'] {
 
 /* 주문상품 */
 .order-list-wrap {
-  padding: 30px 0 5px;
-  border-bottom: 1px solid #d8d8d8;
-  text-align: center; }
+  padding: 30px 0 0;
+  border-bottom: 1px solid #d8d8d8; }
   .order-list-wrap h2.title {
     margin-bottom: 22px; }
   .order-list-wrap .order-list {
@@ -1314,8 +1312,7 @@ iframe[name='google_conversion_frame'] {
       position: relative;
       border: 1px solid #efeff4;
       padding: 16px;
-      margin-bottom: 23px;
-      text-align: left; }
+      margin-bottom: 23px; }
       .order-list-wrap .order-list li:last-child {
         margin-bottom: 0; }
       .order-list-wrap .order-list li .img-thumb {
@@ -1349,7 +1346,7 @@ iframe[name='google_conversion_frame'] {
         width: 20px;
         height: 20px;
         text-indent: -3000px;
-        background: url(/static/image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
+        background: url(../image/common/ic-close-circle-red-20-normal@2x.png) no-repeat center center #fff;
         background-size: 20px;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -1358,14 +1355,165 @@ iframe[name='google_conversion_frame'] {
         right: -10px;
         top: -10px; }
         .order-list-wrap .order-list li .btn-order-delete:hover, .order-list-wrap .order-list li .btn-order-delete:focus {
-          background-image: url(/static/image/common/ic-close-circle-red-20-press@2x.png);
+          background-image: url(../image/common/ic-close-circle-red-20-press@2x.png);
           background-size: 20px; }
-  .order-list-wrap .btn-add-book {
-    display: inline-block;
-    padding: 16px;
-    font-family: "Noto Sans KR Medium", sans-serif;
-    font-size: 13px;
-    color: #0082c9; }
+  .order-list-wrap .btn-area {
+    padding: 16px 16px 20px;
+    text-align: center; }
+    .order-list-wrap .btn-area .btn-add-book {
+      display: inline-block;
+      font-family: "Noto Sans KR Medium", sans-serif;
+      font-size: 13px;
+      color: #0082c9; }
+
+/* 주문 절차 */
+.order-information {
+  padding: 24px 16px 0; }
+  .order-information h2 {
+    padding: 0;
+    margin-bottom: 5px; }
+  .order-information .order-process {
+    padding-bottom: 46px; }
+    .order-information .order-process p.text {
+      font-size: 11px;
+      color: #fc4641;
+      margin-bottom: 8px; }
+    .order-information .order-process ul {
+      overflow: hidden;
+      padding-top: 15.76%;
+      background: url(../image/contents/order-process@2x.png) no-repeat center top;
+      background-size: 100%; }
+      .order-information .order-process ul li {
+        float: left;
+        font-size: 11px;
+        text-align: center; }
+        .order-information .order-process ul li:nth-child(1) {
+          width: 20%;
+          margin-right: 6%; }
+        .order-information .order-process ul li:nth-child(2) {
+          width: 20%;
+          margin-right: 6%; }
+        .order-information .order-process ul li:nth-child(3) {
+          width: 20%;
+          margin-right: 8%; }
+        .order-information .order-process ul li:nth-child(4) {
+          width: 20%; }
+  .order-information .coupon-input {
+    padding-bottom: 40px; }
+    .order-information .coupon-input p.text {
+      font-size: 12px;
+      color: #707070; }
+    .order-information .coupon-input .input-block {
+      overflow: hidden;
+      margin: 18px 0 0; }
+      .order-information .coupon-input .input-block label {
+        display: inline-block;
+        float: left;
+        width: 80%;
+        padding-right: 9px; }
+      .order-information .coupon-input .input-block .btn-blue-line {
+        display: inline-block;
+        float: left;
+        width: 20%;
+        height: 42px;
+        background: #fff;
+        border: 2px solid #0082c9;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 12px;
+        color: #0082c9;
+        line-height: 38px;
+        -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2px, Color='#33000000'); }
+      .order-information .coupon-input .input-block .caution {
+        clear: both; }
+  .order-information .total-payment {
+    padding-bottom: 38px; }
+    .order-information .total-payment .payment-details {
+      margin-top: 24px;
+      font-size: 12px;
+      line-height: 2.0em; }
+      .order-information .total-payment .payment-details dt {
+        float: left;
+        color: #9b9b9b; }
+        .order-information .total-payment .payment-details dt.coupon-sale {
+          padding: 12px 0 8px;
+          margin-top: 10px; }
+        .order-information .total-payment .payment-details dt.total {
+          padding: 10px 0; }
+        .order-information .total-payment .payment-details dt strong {
+          font-family: "Noto Sans KR Medium", sans-serif;
+          color: #000; }
+      .order-information .total-payment .payment-details dd {
+        color: #000;
+        text-align: right; }
+        .order-information .total-payment .payment-details dd.coupon-sale {
+          color: #0082c9;
+          padding: 12px 0 8px;
+          margin-top: 10px;
+          border-top: 1px dashed #dcdcdc; }
+          .order-information .total-payment .payment-details dd.coupon-sale .btn-delete {
+            min-width: 38px;
+            min-height: 20px;
+            padding: 2px 0 0;
+            margin-left: 5px;
+            position: relative;
+            top: -2px;
+            font-size: 9px;
+            color: #707070;
+            background: #fff;
+            border: 1px solid #bababa;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px; }
+            .order-information .total-payment .payment-details dd.coupon-sale .btn-delete:hover, .order-information .total-payment .payment-details dd.coupon-sale .btn-delete:focus {
+              background: #bababa;
+              color: #fff; }
+        .order-information .total-payment .payment-details dd.total {
+          font-family: "Noto Sans KR Bold", sans-serif;
+          font-size: 16px;
+          color: #fc4641;
+          padding: 10px 0;
+          border-top: 1px solid #d8d8d8; }
+  .order-information .orderer-info h2 {
+    margin-bottom: 24px; }
+    .order-information .orderer-info h2 span {
+      color: #fc4641; }
+  .order-information .orderer-info .input-block label.phone-number {
+    display: block;
+    margin-bottom: 16px; }
+  .order-information .orderer-info .input-block .aws-chk[type="checkbox"] {
+    /* 라디오 버튼 숨김처리  */
+    /* 버튼 basic */
+    /* 버튼 on */ }
+    .order-information .orderer-info .input-block .aws-chk[type="checkbox"]:not(:checked), .order-information .orderer-info .input-block .aws-chk[type="checkbox"]:checked {
+      position: absolute;
+      left: -9999px; }
+    .order-information .orderer-info .input-block .aws-chk[type="checkbox"] + label {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      display: block;
+      font-size: 12px; }
+      .order-information .orderer-info .input-block .aws-chk[type="checkbox"] + label:before {
+        content: '';
+        display: inline-block;
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+        background: url(../image/common/checkbox_20_normal@2x.png) no-repeat center center;
+        background-size: 20px;
+        position: relative;
+        top: -2px; }
+    .order-information .orderer-info .input-block .aws-chk[type="checkbox"]:checked + label:before {
+      background-image: url(../image/common/checkbox_20_select@2x.png); }
+  .order-information .orderer-info .input-block + p.text {
+    font-family: "Noto Sans KR Light", sans-serif;
+    font-size: 11px;
+    color: #707070;
+    padding-left: 25px;
+    margin-bottom: 32px; }
 
 /* 결제 수단 */
 .payment {

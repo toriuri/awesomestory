@@ -122,28 +122,74 @@
 				    <button type="button" class="btn btn-order-delete">삭제</button>
 			    </li>
 		    </ul>
-				<a href="/product/product.html" class="btn-add-book">+ 책 추가하기</a>
+		    <div class="btn-area">
+			    <a href="/product/product.html" class="btn-add-book">+ 책 추가하기</a>
+		    </div>
 	    </section>
+			<section class="content order-information">
+				<div class="order-process">
+					<h2 class="title">주문절차</h2>
+					<p class="text">*주문이 완료되면 사진추가 링크를 보내 드려요.</p>
+					<ul>
+						<li>주문하기</li>
+						<li>사진 추가</li>
+						<li>주문 제작</li>
+						<li>8/31 발송</li>
+					</ul>
+				</div>
 
-	    <section class="content">
-		    <h2 class="title">주문절차</h2>
+				<div class="coupon-input">
+					<h2 class="title">쿠폰 입력</h2>
+					<p class="text">2권 이상 구매시 MULTI 15 입력하면 10% 할인</p>
+					<form>
+						<div class="input-block">
+							<label>
+								<input type="text" name="coupon-code" placeholder="쿠폰 또는 추천 코드" class="aws-input">
+							</label>
+							<button type="button" class="btn btn-blue-line">적용</button>
+							<p class="caution">
+								코드를 다시 확인해주세요.
+							</p>
+						</div>
+					</form>
+				</div>
 
-	    </section>
+				<div class="total-payment">
+					<h2 class="title">결제 금액</h2>
+					<dl class="payment-details">
+						<dt>총 상품 가격</dt>
+						<dd>50,000원</dd>
+						<dt>배송비</dt>
+						<dd>2,500원</dd>
+						<dt class="coupon-sale">쿠폰할인</dt>
+						<dd class="coupon-sale">
+							5,000원
+							<button type="button" class="btn btn-delete">지우기</button>
+						</dd>
+						<dt class="total"><strong>최종 결제금액</strong></dt>
+						<dd class="total">880,000원</dd>
+					</dl>
+				</div>
 
-	    <section class="content">
-		    <h2 class="title">쿠폰 입력</h2>
+				<div class="orderer-info">
+					<h2 class="title">주문자 정보<span>*</span></h2>
+					<form>
+						<div class="input-block">
+							<label class="phone-number">
+								<input type="text" name="phone-number" placeholder="주문자 연락처" class="aws-input">
+							</label>
+						</div>
+						<div class="input-block">
+							<input type="checkbox" name="" id="marketing-agree" class="aws-chk">
+							<label for="marketing-agree">새로운 책과 할인 정보를 받아 볼게요.</label>
+						</div>
+						<p class="text">
+							회원가입이 없는 대신 이 번호로 진행 과정과 배송안내를 알려드려요.
+						</p>
+					</form>
+				</div>
+			</section>
 
-	    </section>
-
-	    <section class="content">
-		    <h2 class="title">결제 금액</h2>
-
-	    </section>
-
-	    <section class="content">
-		    <h2 class="title">주문자 정보<span>*</span></h2>
-
-	    </section>
 
 	    <div class="btn-area">
 		    <button type="button" class="btn btn-blue btn-large" onClick="location.href='order.html'">다음 단계</button>

@@ -181,7 +181,7 @@ p.caution{
   display: inline-block;
 
   .popup-wrap {
-    padding: 40px 16px;
+    padding: 40px 26px;
     img{display: block; width: 100%;}
     .wrap{
       overflow: hidden; background: #fff;
@@ -198,7 +198,7 @@ p.caution{
     background: url(/static/image/common/ic-close-circle-30-normal@2x.png) no-repeat center center;
     background-size: 30px;
     position: absolute;
-    top: 0; right: 16px;
+    top: 0; right: 26px;
     &:hover, &:focus{
       top: 0; right: 16px;
       background: url(/static/image/common/ic-close-circle-30-press@2x.png);

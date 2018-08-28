@@ -229,7 +229,7 @@ p.caution {
   transform: translate(-50%, 0);
   display: inline-block; }
   .aws-popup .popup-wrap {
-    padding: 40px 16px; }
+    padding: 40px 26px; }
     .aws-popup .popup-wrap img {
       display: block;
       width: 100%; }
@@ -249,7 +249,7 @@ p.caution {
     background-size: 30px;
     position: absolute;
     top: 0;
-    right: 16px; }
+    right: 26px; }
     .aws-popup .mfp-close:hover, .aws-popup .mfp-close:focus {
       top: 0;
       right: 16px;

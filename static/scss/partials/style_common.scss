@@ -200,7 +200,7 @@ p.caution{
     position: absolute;
     top: 0; right: 26px;
     &:hover, &:focus{
-      top: 0; right: 16px;
+      top: 0; right: 26px;
       background: url(/static/image/common/ic-close-circle-30-press@2x.png);
       background-size: 30px;
     }

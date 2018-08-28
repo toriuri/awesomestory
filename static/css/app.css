@@ -252,7 +252,7 @@ p.caution {
     right: 26px; }
     .aws-popup .mfp-close:hover, .aws-popup .mfp-close:focus {
       top: 0;
-      right: 16px;
+      right: 26px;
       background: url(/static/image/common/ic-close-circle-30-press@2x.png);
       background-size: 30px; }
   @media (min-width: 500px) and (orientation: landscape) {
@@ -834,18 +834,17 @@ iframe[name='google_conversion_frame'] {
       white-space: nowrap;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch; }
-      .book-preview-slide .preview-container .preview-wrapper img {
+      .book-preview-slide .preview-container .preview-wrapper img, .book-preview-slide .preview-container .preview-wrapper canvas {
         display: inline-block;
         vertical-align: middle;
         width: auto;
-        height: 216px;
-        margin-right: -4px; }
-        .book-preview-slide .preview-container .preview-wrapper img:first-child {
+        height: 216px; }
+        .book-preview-slide .preview-container .preview-wrapper img:first-child, .book-preview-slide .preview-container .preview-wrapper canvas:first-child {
           margin-left: 10px; }
-        .book-preview-slide .preview-container .preview-wrapper img:nth-child(even) {
-          margin-left: 10px; }
+        .book-preview-slide .preview-container .preview-wrapper img:nth-child(even), .book-preview-slide .preview-container .preview-wrapper canvas:nth-child(even) {
+          margin-left: 5px; }
         @media (min-width: 500px) and (orientation: landscape) {
-          .book-preview-slide .preview-container .preview-wrapper img {
+          .book-preview-slide .preview-container .preview-wrapper img, .book-preview-slide .preview-container .preview-wrapper canvas {
             height: 360px; } }
   .book-preview-slide .name-list-wrap {
     padding: 30px 0; }

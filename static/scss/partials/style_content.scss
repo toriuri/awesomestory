@@ -357,12 +357,12 @@
       white-space: nowrap;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
-      img{
+      img, canvas{
         display: inline-block; vertical-align: middle;
-        width: auto; height: 216px; margin-right: -4px;
+        width: auto; height: 216px;
         &:first-child{margin-left: 10px;}
         &:nth-child(even) {
-          margin-left: 10px;
+          margin-left: 5px;
         }
         @media (min-width: 500px) and (orientation: landscape){
           height: 360px;
@@ -370,7 +370,6 @@
       }
     }
   }
-
   .name-list-wrap{
     padding: 30px 0;
     .name-list{

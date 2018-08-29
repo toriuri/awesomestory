@@ -1161,3 +1161,57 @@
     font-size: 13px; color: #0082c9;
   }
 }
+
+/***** rule *****/
+.rule-wrap{
+  padding: 0 16px;
+  .rule-title{
+    display: inline-block;
+    font-family: "Noto Sans KR Bold", sans-serif;
+    font-size: 18px; color: #333;
+    margin: 20px 0 10px;
+    border-bottom: 1px solid #333;
+  }
+  .rule{
+    &.privacy{
+      & > ol > li {list-style-type: hangul; margin-left: 4px;}
+    }
+    h2{
+      font-family: "Noto Sans KR Bold", sans-serif;
+      font-size: 14px; color: #333;
+      margin-bottom: 10px; margin-top: 20px;
+    }
+    p{
+      font-size: 12px; color: #666; text-align: justify; line-height: 1.6em;
+      margin: 10px 0 0;
+    }
+    li {
+      font-size: 12px; color: #333; text-align: justify; line-height: 1.7em;
+      margin-bottom: 2px;
+    }
+    ol{
+      margin: 15px 0 20px; padding-left: 10px;
+      list-style: decimal outside;
+      letter-spacing: -0.05em;
+      & > li {
+        list-style-type: decimal;
+      }
+      ul{
+        margin: 10px 10px 15px; padding-left: 10px;
+        list-style: square outside;
+        color: #666; letter-spacing: -0.05em;
+        & > li{
+          list-style-type: square;
+          & > ul {
+            margin: 10px 10px 15px; padding-left: 10px;
+            list-style: circle outside;
+            color: #666; letter-spacing: -0.05em;
+            & > li {
+              list-style-type: circle;
+            }
+          }
+        }
+      }
+    }
+  }
+}

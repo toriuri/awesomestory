@@ -59,10 +59,7 @@
 				</a>
 			</h1>
 			<a role="button" href="#" class="btn-menu menu-ham">Menu</a>
-			<a role="button" href="/order/cart.html" class="btn-cart">
-				장바구니
-				<strong class="count-circle">6</strong>
-			</a>
+			<a role="button" href="/order/cart.html" class="btn-cart">장바구니</a>
 		</header>
 
 		<!-- SNB 좌측 카테고리 메뉴 -->
@@ -85,52 +82,27 @@
 
 		<div id="container">
 
-	    <section class="content add-book-acce">
-		    <h2 class="title">악세서리 추가하기</h2>
-
-		    <ul class="book-acce-list">
-			    <li class="list-block">
-				    <input type="checkbox" name="opt1" id="opt1" class="aws-chk">
-						<label for="opt1">
-					    <div class="img-area">
-						    <div class="img-bind">
-							    <img src="/static/image/sample/@sample-img1.jpg" alt="">
-						    </div>
-					    </div>
-					    <dl>
-						    <dt>책 보호 커버</dt>
-						    <dd class="description">아이의 침과 찢으려는 시도로부터 책을 보호할 수 있어요.</dd>
-						    <dd class="price">
-							    <strong class="sale-price">1,500원</strong>
-							    <del class="original-price">2,000원</del>
-						    </dd>
-					    </dl>
-							<div class="img-chk"></div>
-				    </label>
-			    </li>
-			    <li class="list-block">
-				    <input type="checkbox" name="opt2" id="opt2" class="aws-chk">
-				    <label for="opt2">
-					    <div class="img-area">
-						    <div class="img-bind">
-							    <img src="/static/image/sample/@sample-img3.jpg" alt="">
-						    </div>
-					    </div>
-					    <dl>
-						    <dt>책 보호 커버</dt>
-						    <dd class="description">아이의 침과 찢으려는 시도로부터 책을 보호할 수 있어요.</dd>
-						    <dd class="price">
-							    <strong class="sale-price">1,800원</strong>
-							    <del class="original-price">2,000원</del>
-						    </dd>
-					    </dl>
-					    <div class="img-chk"></div>
-				    </label>
-			    </li>
-		    </ul>
-		    <div class="btn-area">
-			    <button type="button" class="btn btn-blue btn-large" onClick="location.href='../order/cart.html'">장바구니 담기 완료</button>
+	    <section class="content order-confirm">
+				<h2 class="title">주문 정보 확인</h2>
+		    <div class="input-form">
+			    <ul>
+				    <li>
+					    <label for="tel">주문자 휴대폰 번호</label>
+					    <input type="tel" name="tel" id="tel" class="aws-input">
+				    </li>
+				    <li>
+					    <label for="name">주문하신 책 아이 이름</label>
+					    <input type="text" name="name" id="name" placeholder="성 제외 두 글자, 외자는 성 포함" class="aws-input">
+				    </li>
+			    </ul>
+			    <div class="btn-area">
+				    <button type="button" class="btn btn-blue btn-large" onclick="location.href='mypage.html'">내 주문 확인하기</button>
+			    </div>
 		    </div>
+		    <p class="text">
+			    주문 정보가 기억나지 않는다면 <br>
+			    우측 하단 채팅 상담 버튼으로 문의하세요.
+		    </p>
 	    </section>
 
     </div>

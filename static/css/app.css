@@ -1551,7 +1551,7 @@ iframe[name='google_conversion_frame'] {
         font-size: 11px;
         color: #0082c9;
         line-height: 1.7em; }
-      .delivery-info .input-form li #address {
+      .delivery-info .input-form li .aws-input.address {
         margin-bottom: 5px; }
 
 /* 결제 수단 */
@@ -1640,8 +1640,75 @@ iframe[name='google_conversion_frame'] {
         float: left;
         font-family: "Noto Sans KR Medium", sans-serif; }
       .order-detail-wrap .order-detail-box dl.tino-info dd {
+        overflow: hidden;
         padding-left: 64px;
         color: #707070; }
+        .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box {
+          margin-bottom: 20px; }
+          .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li {
+            position: relative;
+            display: inline-block;
+            margin-right: 24px; }
+            .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .btn {
+              overflow: hidden;
+              width: 20px;
+              height: 20px;
+              text-indent: -3000px;
+              position: absolute;
+              right: -10px;
+              bottom: -10px;
+              background: no-repeat center center;
+              background-size: 20px; }
+              .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .btn.btn-photo-add {
+                background-image: url(../image/common/ic-photo-add-20-normal@2x.png); }
+                .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .btn.btn-photo-add:hover, .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .btn.btn-photo-add:focus {
+                  background-image: url(../image/common/ic-photo-add-20-press@2x.png); }
+              .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .btn.btn-photo-delete {
+                background-image: url(../image/common/ic-photo-delete-20-normal@2x.png); }
+                .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .btn.btn-photo-delete:hover, .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .btn.btn-photo-delete:focus {
+                  background-image: url(../image/common/ic-photo-delete-20-press@2x.png); }
+            .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .img-bind {
+              position: relative;
+              overflow: hidden;
+              width: 56px;
+              height: 56px; }
+              .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .img-bind:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                -webkit-border-radius: 2px;
+                -moz-border-radius: 2px;
+                border-radius: 2px;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box; }
+              .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .img-bind img {
+                display: block;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+                transform: translate(0, -50%); }
+              .order-detail-wrap .order-detail-box dl.tino-info dd .photo-box li .img-bind span {
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-size: 11px;
+                color: #0082c9;
+                line-height: 1.2em;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                -webkit-transform: translate(0, -50%);
+                -moz-transform: translate(0, -50%);
+                transform: translate(0, -50%); }
 
 .delivery-info-wrap {
   margin-top: 32px; }
@@ -1649,11 +1716,22 @@ iframe[name='google_conversion_frame'] {
     margin-bottom: 12px; }
   .delivery-info-wrap .delivery-info-box {
     margin: 0 16px;
-    padding: 16px;
+    padding: 16px 16px 10px;
     border: 1px solid #efeff4; }
+    .delivery-info-wrap .delivery-info-box h3 {
+      font-family: "Noto Sans KR Medium", sans-serif;
+      font-size: 12px;
+      margin-bottom: 6px; }
+    .delivery-info-wrap .delivery-info-box dl dt {
+      float: left;
+      padding: 5px 0;
+      font-family: "Noto Sans KR Medium", sans-serif;
+      color: #9b9b9b; }
+    .delivery-info-wrap .delivery-info-box dl dd {
+      padding: 5px 0 5px 64px; }
 
 .btn-area.btn-back-order {
-  padding: 16px 16px 20px;
+  padding: 16px 16px 30px;
   text-align: center; }
   .btn-area.btn-back-order .btn-add-book {
     display: inline-block;

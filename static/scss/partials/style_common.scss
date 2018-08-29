@@ -62,7 +62,10 @@ body{
   word-break: break-all;
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px; color: #000; letter-spacing: -0.03em; line-height: 1.6em;
-  background: #f0f0f0;
+
+  @media (min-width: 500px) and (orientation: landscape){
+    background: #f0f0f0;
+  }
 }
 
 ol, ul, li{list-style: none;}

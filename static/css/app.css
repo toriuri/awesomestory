@@ -64,8 +64,10 @@ body {
   font-size: 12px;
   color: #000;
   letter-spacing: -0.03em;
-  line-height: 1.6em;
-  background: #f0f0f0; }
+  line-height: 1.6em; }
+  @media (min-width: 500px) and (orientation: landscape) {
+    body {
+      background: #f0f0f0; } }
 
 ol, ul, li {
   list-style: none; }
@@ -299,10 +301,12 @@ iframe[name='google_conversion_frame'] {
   min-width: 320px;
   max-width: 750px;
   width: 100%;
-  background: #fff;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#33000000'); }
+  background: #fff; }
+  @media (min-width: 500px) and (orientation: landscape) {
+    #wrapper {
+      -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=0, Color='#33000000'); } }
 
 #header {
   position: relative;
@@ -701,6 +705,8 @@ iframe[name='google_conversion_frame'] {
               width: 156px;
               height: 156px;
               margin-bottom: 12px;
+              background: no-repeat center center;
+              background-size: 148px;
               -webkit-border-radius: 4px;
               -moz-border-radius: 4px;
               border-radius: 4px;
@@ -708,11 +714,9 @@ iframe[name='google_conversion_frame'] {
               -moz-box-sizing: border-box;
               box-sizing: border-box; }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.girl::before {
-              background: url(../image/contents/image-girl@2x.png) no-repeat center center;
-              background-size: 148px; }
+              background-image: url(../image/my-name-ran-away/image-girl@2x.png); }
             .input-child-name form ul .list-block .radio-gender[type="radio"] + label.boy::before {
-              background: url(../image/contents/image-boy@2x.png) no-repeat center center;
-              background-size: 148px; }
+              background-image: url(../image/my-name-ran-away/image-boy@2x.png); }
           .input-child-name form ul .list-block .radio-gender[type="radio"]:checked + label {
             color: #000; }
             .input-child-name form ul .list-block .radio-gender[type="radio"]:checked + label::before {
@@ -1078,6 +1082,8 @@ iframe[name='google_conversion_frame'] {
             width: 106px;
             height: 142px;
             margin-bottom: 12px;
+            background: no-repeat center center;
+            background-size: 73px;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
@@ -1086,14 +1092,11 @@ iframe[name='google_conversion_frame'] {
             box-sizing: border-box;
             opacity: 0.3; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.daddy::before {
-            background: url(../image/contents/image-daddy@2x.png) no-repeat center center;
-            background-size: 73px; }
+            background-image: url(../image/my-name-ran-away/image-daddy@2x.png); }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.mom::before {
-            background: url(../image/contents/image-mom@2x.png) no-repeat center center;
-            background-size: 73px; }
+            background-image: url(../image/my-name-ran-away/image-mom@2x.png); }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"] + label.etc::before {
-            background: url(../image/contents/image-etc@2x.png) no-repeat center center;
-            background-size: 73px; }
+            background-image: url(../image/my-name-ran-away/image-etc@2x.png); }
         .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"]:checked + label {
           color: #000; }
           .tino-change ul.tino-change-input .list-block .radio-tino[type="radio"]:checked + label::before {
@@ -1547,7 +1550,6 @@ iframe[name='google_conversion_frame'] {
         float: right;
         background: transparent;
         border: none;
-        font-family: "Noto Sans KR Light", sans-serif;
         font-size: 11px;
         color: #0082c9;
         line-height: 1.7em; }

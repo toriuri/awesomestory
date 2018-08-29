@@ -220,19 +220,19 @@
               content: "";
               display: block; width: 156px; height: 156px;
               margin-bottom: 12px;
+              background: no-repeat center center;
+              background-size: 148px;
               @include border-radius(4px);
               @include box-sizing;
             }
             &.girl{
               &::before{
-                background: url(../image/contents/image-girl@2x.png) no-repeat center center;
-                background-size: 148px;
+                background-image: url(../image/my-name-ran-away/image-girl@2x.png);
               }
             }
             &.boy{
               &::before{
-                background: url(../image/contents/image-boy@2x.png) no-repeat center center;
-                background-size: 148px;
+                background-image: url(../image/my-name-ran-away/image-boy@2x.png);
               }
             }
           }
@@ -552,26 +552,25 @@
             content: "";
             display: block; width: 106px; height: 142px;
             margin-bottom: 12px;
+            background: no-repeat center center;
+            background-size: 73px;
             @include border-radius(4px);
             @include box-sizing;
             opacity: 0.3;
           }
           &.daddy{
             &::before{
-              background: url(../image/contents/image-daddy@2x.png) no-repeat center center;
-              background-size: 73px;
+              background-image: url(../image/my-name-ran-away/image-daddy@2x.png);
             }
           }
           &.mom{
             &::before{
-              background: url(../image/contents/image-mom@2x.png) no-repeat center center;
-              background-size: 73px;
+              background-image: url(../image/my-name-ran-away/image-mom@2x.png);
             }
           }
           &.etc{
             &::before{
-              background: url(../image/contents/image-etc@2x.png) no-repeat center center;
-              background-size: 73px;
+              background-image: url(../image/my-name-ran-away/image-etc@2x.png);
             }
           }
         }
@@ -987,7 +986,6 @@
       .btn-text{
         float: right;
         background: transparent; border: none;
-        font-family: "Noto Sans KR Light", sans-serif;
         font-size: 11px; color: #0082c9; line-height: 1.7em;
       }
       .aws-input.address{margin-bottom: 5px;}

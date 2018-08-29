@@ -3,7 +3,9 @@
   position: relative; margin: 0 auto;
   min-width: 320px; max-width: 750px;
   width:100%; background: #fff;
-  @include box-s(0, 0, 4px, rgba(0, 0, 0, 0.2));
+  @media (min-width: 500px) and (orientation: landscape){
+    @include box-s(0, 0, 4px, rgba(0, 0, 0, 0.2));
+  }
 }
 
 #header{

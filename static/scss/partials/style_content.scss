@@ -1174,7 +1174,7 @@
   }
   .rule{
     &.privacy{
-      & > ol > li {list-style-type: hangul;}
+      & > ol > li {list-style-type: hangul; margin-left: 4px;}
     }
     h2{
       font-family: "Noto Sans KR Bold", sans-serif;

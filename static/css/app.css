@@ -1755,7 +1755,8 @@ iframe[name='google_conversion_frame'] {
     margin: 20px 0 10px;
     border-bottom: 1px solid #333; }
   .rule-wrap .rule.privacy > ol > li {
-    list-style-type: hangul; }
+    list-style-type: hangul;
+    margin-left: 4px; }
   .rule-wrap .rule h2 {
     font-family: "Noto Sans KR Bold", sans-serif;
     font-size: 14px;

@@ -1162,6 +1162,31 @@
   }
 }
 
+
+/***** 배송 정보 *****/
+.order-confirm{
+  padding: 24px 0 40px;
+  .input-form{
+    padding: 5px 16px 25px;
+    ul{
+      margin-bottom: 16px;
+      li{
+        overflow: hidden; padding: 15px 0 0;
+        label{
+          display: block; float: left;
+          padding-left: 7px; margin-bottom: 7px;
+        }
+      }
+    }
+    .btn-area{padding: 0;}
+  }
+  p.text{
+    font-size: 12px; color: #fc4641;
+    padding: 0 16px; text-align: center;
+  }
+}
+
+
 /***** rule *****/
 .rule-wrap{
   padding: 0 16px;

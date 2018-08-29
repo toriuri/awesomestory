@@ -1746,55 +1746,49 @@ iframe[name='google_conversion_frame'] {
 
 /***** rule *****/
 .rule-wrap {
-  padding: 0 16px; }
+  padding: 0 16px;
+  color: #333;
+  letter-spacing: -0.05em; }
   .rule-wrap .rule-title {
     display: inline-block;
     font-family: "Noto Sans KR Bold", sans-serif;
     font-size: 18px;
-    color: #333;
     margin: 20px 0 10px;
     border-bottom: 1px solid #333; }
   .rule-wrap .rule.privacy > ol > li {
     list-style-type: hangul;
-    margin-left: 4px; }
+    margin-left: 4px;
+    margin-bottom: 10px; }
   .rule-wrap .rule h2 {
     font-family: "Noto Sans KR Bold", sans-serif;
     font-size: 14px;
-    color: #333;
     margin-bottom: 10px;
     margin-top: 20px; }
   .rule-wrap .rule p {
     font-size: 12px;
-    color: #666;
     text-align: justify;
     line-height: 1.6em;
     margin: 10px 0 0; }
   .rule-wrap .rule li {
     font-size: 12px;
-    color: #333;
     text-align: justify;
     line-height: 1.7em;
     margin-bottom: 2px; }
   .rule-wrap .rule ol {
     margin: 15px 0 20px;
     padding-left: 10px;
-    list-style: decimal outside;
-    letter-spacing: -0.05em; }
+    list-style: decimal outside; }
     .rule-wrap .rule ol > li {
       list-style-type: decimal; }
     .rule-wrap .rule ol ul {
       margin: 10px 10px 15px;
       padding-left: 10px;
-      list-style: square outside;
-      color: #666;
-      letter-spacing: -0.05em; }
+      list-style: square outside; }
       .rule-wrap .rule ol ul > li {
         list-style-type: square; }
         .rule-wrap .rule ol ul > li > ul {
           margin: 10px 10px 15px;
           padding-left: 10px;
-          list-style: circle outside;
-          color: #666;
-          letter-spacing: -0.05em; }
+          list-style: circle outside; }
           .rule-wrap .rule ol ul > li > ul > li {
             list-style-type: circle; }

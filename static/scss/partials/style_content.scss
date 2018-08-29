@@ -1,4 +1,4 @@
-/***** main page content *****/
+/*************** main page content ***************/
 .main-slogan{
   font-size: 14px;
   line-height: 1.6em; text-align: center;
@@ -6,7 +6,7 @@
   strong{color: #0082c9;}
 }
 
-/* 책소개 및 만들기 */
+/***** 책소개 및 만들기 *****/
 .about-book{
   .build-book{
     position: relative;
@@ -74,7 +74,7 @@
   }
 }
 
-/* 책 판매수량 카운트 */
+/***** 책 판매수량 카운트 *****/
 .counter-box-wrap{
   text-align: center; padding: 18px 16px 36px;
   h2.title{
@@ -82,7 +82,7 @@
   }
 }
 
-/* 메인 - 인스타그램 후기 */
+/***** 메인 - 인스타그램 후기 *****/
 .instar{
   padding-top: 20px;
   .instar-list{
@@ -116,7 +116,9 @@
 }
 
 
-/***** sub page content *****/
+/*************** sub page content ***************/
+
+/***** sub product page *****/
 
 /* 상단 책 이미지 슬라이드 */
 .product-top-slide{
@@ -346,6 +348,9 @@
     }
   }
 }
+
+
+/***** sub preview page *****/
 
 /* 내 아이 책 미리보기 */
 .book-preview-slide{
@@ -667,7 +672,7 @@
   }
 }
 
-/* 악세서리 추가 페이지 */
+/***** 악세서리 추가 페이지 *****/
 .add-book-acce{
   overflow: hidden; padding-bottom: 60px;
   h2.title{
@@ -768,6 +773,9 @@
     }
   }
 }
+
+
+/***** sub cart page *****/
 
 /* 주문상품 */
 .order-list-wrap{
@@ -961,10 +969,13 @@
   }
 }
 
+
+/***** sub order page *****/
+
 /* 배송 정보 */
 .delivery-info{
   padding: 24px 0 0; margin-bottom: 40px;
-  form{
+  .input-form{
     padding: 0 16px;
     li{
       overflow: hidden; padding: 15px 0 0;
@@ -1015,3 +1026,69 @@
   }
 }
 
+
+/***** sub mypage *****/
+
+/* 주문상품 */
+.order-detail-wrap{
+  padding: 30px 0 0;
+  h2.title{margin-bottom: 12px;}
+  .order-detail-box{
+    position: relative;
+    margin: 0 16px; padding: 16px;
+    border: 1px solid #efeff4;
+    .img-thumb{
+      width: 56px; height: 56px;
+      position: absolute; right: 16px; top: 16px;
+      img{display: block; width: 100%;}
+    }
+    dl.book-info{
+      padding-right: 66px; margin-bottom: 16px;
+      dt{
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+      dd{
+        font-size: 12px; color: #707070;
+        margin-bottom: 18px; line-height: 1.0em;
+        strong{
+          display: block; margin-top: 4px;
+          font-family: "Noto Sans KR Light", sans-serif;
+          font-size: 11px;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+    dl.tino-info{
+      border-top: 1px solid #efeff4;
+      padding-top: 16px;
+      dt{
+        float: left;
+        font-family: "Noto Sans KR Medium", sans-serif;
+      }
+      dd{
+        padding-left: 64px;
+        color: #707070;
+      }
+    }
+  }
+}
+.delivery-info-wrap{
+  margin-top: 32px;
+  h2.title{margin-bottom: 12px;}
+  .delivery-info-box{
+    margin: 0 16px; padding: 16px;
+    border: 1px solid #efeff4;
+  }
+}
+.btn-area.btn-back-order{
+  padding: 16px 16px 20px; text-align: center;
+  .btn-add-book{
+    display: inline-block;
+    font-family: "Noto Sans KR Medium", sans-serif;
+    font-size: 13px; color: #0082c9;
+  }
+}

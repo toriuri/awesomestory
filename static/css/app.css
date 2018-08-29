@@ -458,7 +458,7 @@ iframe[name='google_conversion_frame'] {
       line-height: 2.0em;
       padding: 0 20px; }
 
-/***** main page content *****/
+/*************** main page content ***************/
 .main-slogan {
   font-size: 14px;
   line-height: 1.6em;
@@ -467,7 +467,7 @@ iframe[name='google_conversion_frame'] {
   .main-slogan strong {
     color: #0082c9; }
 
-/* 책소개 및 만들기 */
+/***** 책소개 및 만들기 *****/
 .about-book .build-book {
   position: relative;
   display: block;
@@ -540,14 +540,14 @@ iframe[name='google_conversion_frame'] {
   .about-book dl.text dd.price .original-price {
     font-size: 12px; }
 
-/* 책 판매수량 카운트 */
+/***** 책 판매수량 카운트 *****/
 .counter-box-wrap {
   text-align: center;
   padding: 18px 16px 36px; }
   .counter-box-wrap h2.title {
     margin-bottom: 20px; }
 
-/* 메인 - 인스타그램 후기 */
+/***** 메인 - 인스타그램 후기 *****/
 .instar {
   padding-top: 20px; }
   .instar .instar-list {
@@ -586,7 +586,8 @@ iframe[name='google_conversion_frame'] {
           color: #0082c9;
           min-height: 46px; }
 
-/***** sub page content *****/
+/*************** sub page content ***************/
+/***** sub product page *****/
 /* 상단 책 이미지 슬라이드 */
 .product-top-slide {
   position: relative;
@@ -829,6 +830,7 @@ iframe[name='google_conversion_frame'] {
             margin-bottom: 5px;
             font-family: "Noto Sans KR Bold", sans-serif; }
 
+/***** sub preview page *****/
 /* 내 아이 책 미리보기 */
 .book-preview-slide {
   position: relative;
@@ -1178,7 +1180,7 @@ iframe[name='google_conversion_frame'] {
           font-size: 10px;
           color: #9b9b9b; }
 
-/* 악세서리 추가 페이지 */
+/***** 악세서리 추가 페이지 *****/
 .add-book-acce {
   overflow: hidden;
   padding-bottom: 60px; }
@@ -1307,6 +1309,7 @@ iframe[name='google_conversion_frame'] {
           .add-book-acce ul.book-acce-list li:last-child {
             margin-right: 0; } }
 
+/***** sub cart page *****/
 /* 주문상품 */
 .order-list-wrap {
   padding: 30px 0 0;
@@ -1522,23 +1525,24 @@ iframe[name='google_conversion_frame'] {
     padding-left: 25px;
     margin-bottom: 32px; }
 
+/***** sub order page *****/
 /* 배송 정보 */
 .delivery-info {
   padding: 24px 0 0;
   margin-bottom: 40px; }
-  .delivery-info form {
+  .delivery-info .input-form {
     padding: 0 16px; }
-    .delivery-info form li {
+    .delivery-info .input-form li {
       overflow: hidden;
       padding: 15px 0 0; }
-      .delivery-info form li label {
+      .delivery-info .input-form li label {
         display: block;
         float: left;
         padding-left: 7px;
         margin-bottom: 7px; }
-        .delivery-info form li label span {
+        .delivery-info .input-form li label span {
           color: #fc4641; }
-      .delivery-info form li .btn-text {
+      .delivery-info .input-form li .btn-text {
         float: right;
         background: transparent;
         border: none;
@@ -1546,7 +1550,7 @@ iframe[name='google_conversion_frame'] {
         font-size: 11px;
         color: #0082c9;
         line-height: 1.7em; }
-      .delivery-info form li #address {
+      .delivery-info .input-form li #address {
         margin-bottom: 5px; }
 
 /* 결제 수단 */
@@ -1588,3 +1592,70 @@ iframe[name='google_conversion_frame'] {
         -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=2px, Color='#33000000'); }
+
+/***** sub mypage *****/
+/* 주문상품 */
+.order-detail-wrap {
+  padding: 30px 0 0; }
+  .order-detail-wrap h2.title {
+    margin-bottom: 12px; }
+  .order-detail-wrap .order-detail-box {
+    position: relative;
+    margin: 0 16px;
+    padding: 16px;
+    border: 1px solid #efeff4; }
+    .order-detail-wrap .order-detail-box .img-thumb {
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      right: 16px;
+      top: 16px; }
+      .order-detail-wrap .order-detail-box .img-thumb img {
+        display: block;
+        width: 100%; }
+    .order-detail-wrap .order-detail-box dl.book-info {
+      padding-right: 66px;
+      margin-bottom: 16px; }
+      .order-detail-wrap .order-detail-box dl.book-info dt {
+        font-family: "Noto Sans KR Medium", sans-serif;
+        font-size: 14px;
+        margin-bottom: 8px; }
+      .order-detail-wrap .order-detail-box dl.book-info dd {
+        font-size: 12px;
+        color: #707070;
+        margin-bottom: 18px;
+        line-height: 1.0em; }
+        .order-detail-wrap .order-detail-box dl.book-info dd strong {
+          display: block;
+          margin-top: 4px;
+          font-family: "Noto Sans KR Light", sans-serif;
+          font-size: 11px; }
+        .order-detail-wrap .order-detail-box dl.book-info dd:last-child {
+          margin-bottom: 0; }
+    .order-detail-wrap .order-detail-box dl.tino-info {
+      border-top: 1px solid #efeff4;
+      padding-top: 16px; }
+      .order-detail-wrap .order-detail-box dl.tino-info dt {
+        float: left;
+        font-family: "Noto Sans KR Medium", sans-serif; }
+      .order-detail-wrap .order-detail-box dl.tino-info dd {
+        padding-left: 64px;
+        color: #707070; }
+
+.delivery-info-wrap {
+  margin-top: 32px; }
+  .delivery-info-wrap h2.title {
+    margin-bottom: 12px; }
+  .delivery-info-wrap .delivery-info-box {
+    margin: 0 16px;
+    padding: 16px;
+    border: 1px solid #efeff4; }
+
+.btn-area.btn-back-order {
+  padding: 16px 16px 20px;
+  text-align: center; }
+  .btn-area.btn-back-order .btn-add-book {
+    display: inline-block;
+    font-family: "Noto Sans KR Medium", sans-serif;
+    font-size: 13px;
+    color: #0082c9; }

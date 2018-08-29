@@ -1746,11 +1746,9 @@ iframe[name='google_conversion_frame'] {
 
 /***** 배송 정보 *****/
 .order-confirm {
-  padding: 24px 0 0; }
+  padding: 24px 0 40px; }
   .order-confirm .input-form {
-    padding: 5px 16px 25px;
-    margin: 16px;
-    border: 1px solid #efeff4; }
+    padding: 5px 16px 25px; }
     .order-confirm .input-form ul {
       margin-bottom: 16px; }
       .order-confirm .input-form ul li {

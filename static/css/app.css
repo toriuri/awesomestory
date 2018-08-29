@@ -846,7 +846,7 @@ iframe[name='google_conversion_frame'] {
       .book-preview-slide .preview-container .preview-wrapper img, .book-preview-slide .preview-container .preview-wrapper canvas {
         display: inline-block;
         vertical-align: middle;
-        width: auto;
+        width: 305px;
         height: 216px; }
         .book-preview-slide .preview-container .preview-wrapper img:first-child, .book-preview-slide .preview-container .preview-wrapper canvas:first-child {
           margin-left: 10px; }
@@ -854,6 +854,7 @@ iframe[name='google_conversion_frame'] {
           margin-left: 5px; }
         @media (min-width: 500px) and (orientation: landscape) {
           .book-preview-slide .preview-container .preview-wrapper img, .book-preview-slide .preview-container .preview-wrapper canvas {
+            width: 509px;
             height: 360px; } }
   .book-preview-slide .name-list-wrap {
     padding: 30px 0; }

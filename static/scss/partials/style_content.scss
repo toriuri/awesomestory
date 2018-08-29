@@ -364,13 +364,13 @@
       -webkit-overflow-scrolling: touch;
       img, canvas{
         display: inline-block; vertical-align: middle;
-        width: auto; height: 216px;
+        width: 305px; height: 216px;
         &:first-child{margin-left: 10px;}
         &:nth-child(even) {
           margin-left: 5px;
         }
         @media (min-width: 500px) and (orientation: landscape){
-          height: 360px;
+          width: 509px; height: 360px;
         }
       }
     }

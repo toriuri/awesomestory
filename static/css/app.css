@@ -287,7 +287,8 @@ p.caution {
 
 /* 버튼 공통 스타일  */
 .btn-area {
-  padding: 0 16px 26px; }
+  padding: 0 16px 26px;
+  text-align: center; }
 
 .btn {
   display: inline-block;
@@ -316,6 +317,12 @@ p.caution {
   filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=7px, Color='#33000000'); }
   .btn-large:hover, .btn-large:focus {
     box-shadow: none; }
+
+.btn-large-text {
+  display: inline-block;
+  font-family: "Noto Sans KR Medium", sans-serif;
+  font-size: 13px;
+  color: #0082c9; }
 
 .btn-blue {
   background: #20beef;
@@ -777,8 +784,6 @@ iframe[name='google_conversion_frame'] {
     padding: 0 16px; }
     .input-child-name form .input-block {
       margin-bottom: 23px; }
-      .input-child-name form .input-block label {
-        display: block; }
       .input-child-name form .input-block h2 {
         padding: 0;
         margin-bottom: 20px; }
@@ -1054,86 +1059,23 @@ iframe[name='google_conversion_frame'] {
         .book-preview-slide .name-list-wrap .name-list li p {
           font-size: 12px;
           margin-top: 8px; }
-  .book-preview-slide .name-list-wrap-v2 {
-    padding: 30px 0; }
-    .book-preview-slide .name-list-wrap-v2 .name-list {
-      white-space: nowrap;
-      overflow-x: auto;
-      padding: 0 0 14px 0;
-      margin-bottom: 14px;
-      text-align: center; }
-      .book-preview-slide .name-list-wrap-v2 .name-list li {
-        position: relative;
-        display: inline-block;
-        margin: 0 6px;
-        text-align: center; }
-        .book-preview-slide .name-list-wrap-v2 .name-list li strong {
-          font-family: "Noto Sans KR Bold", sans-serif;
-          font-size: 13px;
-          color: #000; }
-        .book-preview-slide .name-list-wrap-v2 .name-list li .btn-thumb {
-          position: relative;
-          cursor: pointer;
-          width: 58px;
-          height: 58px;
-          padding: 2px;
-          background: #fff;
-          border: 2px solid #fff;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%; }
-          .book-preview-slide .name-list-wrap-v2 .name-list li .btn-thumb:focus, .book-preview-slide .name-list-wrap-v2 .name-list li .btn-thumb.on {
-            border-color: #0082c9;
-            -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=3px, Color='#33000000'); }
-          .book-preview-slide .name-list-wrap-v2 .name-list li .btn-thumb .img-bind {
-            overflow: hidden;
-            width: 50px;
-            height: 50px;
-            background: #ebebeb;
-            border: 1px solid #bababa;
+      .book-preview-slide .name-list-wrap .name-list.season2 {
+        padding: 0 0 14px 0; }
+        .book-preview-slide .name-list-wrap .name-list.season2 li {
+          margin: 0 6px; }
+          .book-preview-slide .name-list-wrap .name-list.season2 li .mid-circle {
+            cursor: pointer;
+            width: 10px;
+            height: 10px;
+            background: #bababa;
+            position: absolute;
+            left: -5px;
+            top: -54px;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
             border-radius: 50%; }
-            .book-preview-slide .name-list-wrap-v2 .name-list li .btn-thumb .img-bind img {
-              display: block;
-              width: 100%; }
-          .book-preview-slide .name-list-wrap-v2 .name-list li .btn-thumb .btn-change {
-            background: #fee734;
-            color: #000;
-            min-width: 42px;
-            height: 18px;
-            padding: 2px 8px 0;
-            line-height: 18px;
-            position: absolute;
-            left: 50%;
-            bottom: -5px;
-            -webkit-transform: translate(-50%, 0);
-            -moz-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-            -webkit-border-radius: 9px;
-            -moz-border-radius: 9px;
-            border-radius: 9px;
-            -webkit-box-shadow: 0 1px 4px rgba(129, 85, 23, 0.22);
-            box-shadow: 0 1px 4px rgba(129, 85, 23, 0.22);
-            filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1px, Color='#38815517'); }
-        .book-preview-slide .name-list-wrap-v2 .name-list li p {
-          font-size: 12px;
-          margin-top: 8px; }
-        .book-preview-slide .name-list-wrap-v2 .name-list li .mid-circle {
-          cursor: pointer;
-          width: 10px;
-          height: 10px;
-          background: #bababa;
-          position: absolute;
-          left: -5px;
-          top: -54px;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          border-radius: 50%; }
-          .book-preview-slide .name-list-wrap-v2 .name-list li .mid-circle:hover, .book-preview-slide .name-list-wrap-v2 .name-list li .mid-circle:focus, .book-preview-slide .name-list-wrap-v2 .name-list li .mid-circle.on {
-            background: #0082c9; }
+            .book-preview-slide .name-list-wrap .name-list.season2 li .mid-circle:hover, .book-preview-slide .name-list-wrap .name-list.season2 li .mid-circle:focus, .book-preview-slide .name-list-wrap .name-list.season2 li .mid-circle.on {
+              background: #0082c9; }
   .book-preview-slide .name-box {
     overflow: hidden;
     width: 212px;
@@ -1574,11 +1516,6 @@ iframe[name='google_conversion_frame'] {
   .order-list-wrap .btn-area {
     padding: 16px 16px 20px;
     text-align: center; }
-    .order-list-wrap .btn-area .btn-add-book {
-      display: inline-block;
-      font-family: "Noto Sans KR Medium", sans-serif;
-      font-size: 13px;
-      color: #0082c9; }
 
 /* 주문 절차 및 결재금액 */
 .order-information {
@@ -1616,7 +1553,7 @@ iframe[name='google_conversion_frame'] {
     padding-bottom: 40px; }
     .order-information .coupon-input p.text {
       font-size: 12px;
-      color: #707070; }
+      color: #0082c9; }
     .order-information .coupon-input .input-block {
       overflow: hidden;
       margin: 18px 0 0; }
@@ -1891,7 +1828,7 @@ iframe[name='google_conversion_frame'] {
   .delivery-info-wrap h2.title {
     margin-bottom: 12px; }
   .delivery-info-wrap .delivery-info-box {
-    margin: 0 16px;
+    margin: 0 16px 16px;
     padding: 16px 16px 10px;
     border: 1px solid #efeff4; }
     .delivery-info-wrap .delivery-info-box h3 {
@@ -1909,11 +1846,39 @@ iframe[name='google_conversion_frame'] {
 .btn-area.btn-back-order {
   padding: 16px 16px 30px;
   text-align: center; }
-  .btn-area.btn-back-order .btn-add-book {
-    display: inline-block;
-    font-family: "Noto Sans KR Medium", sans-serif;
-    font-size: 13px;
-    color: #0082c9; }
+
+/***** 주문 목록 *****/
+.myorder-list-wrap {
+  padding: 30px 0; }
+  .myorder-list-wrap h2.title {
+    margin-bottom: 12px; }
+  .myorder-list-wrap .btn-area {
+    padding: 0; }
+  .myorder-list-wrap .order-list-box {
+    position: relative;
+    margin: 0 16px 16px;
+    padding: 24px 16px;
+    border: 1px solid #efeff4; }
+    .myorder-list-wrap .order-list-box dl {
+      overflow: hidden;
+      margin-bottom: 10px;
+      font-size: 12px; }
+      .myorder-list-wrap .order-list-box dl dt {
+        float: left;
+        max-width: 30%;
+        margin-bottom: 10px;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        clear: right; }
+      .myorder-list-wrap .order-list-box dl dd {
+        float: right;
+        max-width: 70%;
+        margin-bottom: 10px;
+        color: #707070;
+        text-align: right; }
+        .myorder-list-wrap .order-list-box dl dd a {
+          color: #0082c9; }
+          .myorder-list-wrap .order-list-box dl dd a:hover, .myorder-list-wrap .order-list-box dl dd a:focus {
+            text-decoration: underline; }
 
 /***** 배송 정보 *****/
 .order-confirm {

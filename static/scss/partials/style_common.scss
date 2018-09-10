@@ -222,7 +222,7 @@ p.caution{
 
 /* 버튼 공통 스타일  */
 .btn-area{
-  padding: 0 16px 26px;
+  padding: 0 16px 26px; text-align: center;
 }
 .btn{
   display: inline-block; border: none;
@@ -241,7 +241,11 @@ p.caution{
     box-shadow: none;
   }
 }
-
+.btn-large-text{
+  display: inline-block;
+  font-family: "Noto Sans KR Medium", sans-serif;
+  font-size: 13px; color: #0082c9;
+}
 .btn-blue{
   background: #20beef; color: #fff;
   &:hover, &:focus{background: #1797bd;}

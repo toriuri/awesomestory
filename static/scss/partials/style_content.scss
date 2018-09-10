@@ -202,7 +202,6 @@
     padding: 0 16px;
     .input-block{
       margin-bottom: 23px;
-      label{display: block;}
       h2{padding: 0; margin-bottom: 20px;}
       .input-wrap{
         overflow: hidden;
@@ -447,59 +446,19 @@
         }
         p{font-size: 12px; margin-top: 8px;}
       }
-    }
-  }
-
-  .name-list-wrap-v2{
-    padding: 30px 0;
-    .name-list{
-      white-space: nowrap; overflow-x: auto;
-      padding: 0 0 14px 0; margin-bottom: 14px; text-align: center;
-      li{
-        position: relative;
-        display: inline-block; margin: 0 6px;
-        text-align: center;
-        strong{
-          font-family: "Noto Sans KR Bold", sans-serif;
-          font-size: 13px; color: #000;
-        }
-        .btn-thumb{
-          position: relative; cursor: pointer;
-          width: 58px; height: 58px; padding: 2px;
-          background: #fff;
-          border: 2px solid #fff;
-          @include border-radius(50%);
-          &:focus, &.on{
-            border-color: #0082c9;
-            @include box-s(0, 3px, 3px, rgba(0, 0, 0, 0.2));
-          }
-          .img-bind{
-            overflow: hidden; width: 50px; height: 50px;
-            background: #ebebeb;
-            border: 1px solid #bababa;
+      &.season2{
+        padding: 0 0 14px 0;
+        li{
+          margin: 0 6px;
+          .mid-circle{
+            cursor: pointer;
+            width: 10px; height: 10px;
+            background: #bababa;
+            position: absolute; left: -5px; top: -54px;
             @include border-radius(50%);
-            img{
-              display: block; width: 100%;
+            &:hover, &:focus, &.on{
+              background: #0082c9;
             }
-          }
-          .btn-change{
-            background: #fee734; color: #000;
-            min-width: 42px; height: 18px; padding: 2px 8px 0; line-height: 18px;
-            position: absolute; left: 50%; bottom: -5px;
-            @include translate(-50%, 0);
-            @include border-radius(9px);
-            @include box-s(0, 1px, 4px, rgba(129, 85, 23, 0.22));
-          }
-        }
-        p{font-size: 12px; margin-top: 8px;}
-        .mid-circle{
-          cursor: pointer;
-          width: 10px; height: 10px;
-          background: #bababa;
-          position: absolute; left: -5px; top: -54px;
-          @include border-radius(50%);
-          &:hover, &:focus, &.on{
-            background: #0082c9;
           }
         }
       }
@@ -905,11 +864,6 @@
   }
   .btn-area{
     padding: 16px 16px 20px; text-align: center;
-    .btn-add-book{
-      display: inline-block;
-      font-family: "Noto Sans KR Medium", sans-serif;
-      font-size: 13px; color: #0082c9;
-    }
   }
 }
 
@@ -936,7 +890,7 @@
   }
   .coupon-input{
     padding-bottom: 40px;
-    p.text{font-size: 12px; color: #707070;}
+    p.text{font-size: 12px; color: #0082c9;}
     .input-block{
       overflow: hidden; margin: 18px 0 0;
       label{
@@ -1177,7 +1131,7 @@
   margin-top: 32px;
   h2.title{margin-bottom: 12px;}
   .delivery-info-box{
-    margin: 0 16px; padding: 16px 16px 10px;
+    margin: 0 16px 16px; padding: 16px 16px 10px;
     border: 1px solid #efeff4;
     h3{
       font-family: "Noto Sans KR Medium", sans-serif;
@@ -1198,14 +1152,38 @@
 }
 .btn-area.btn-back-order{
   padding: 16px 16px 30px; text-align: center;
-  .btn-add-book{
-    display: inline-block;
-    font-family: "Noto Sans KR Medium", sans-serif;
-    font-size: 13px; color: #0082c9;
-  }
 }
 
-
+/***** 주문 목록 *****/
+.myorder-list-wrap{
+  padding: 30px 0;
+  h2.title{margin-bottom: 12px;}
+  .btn-area{padding: 0;}
+  .order-list-box {
+    position: relative;
+    margin: 0 16px 16px; padding: 24px 16px;
+    border: 1px solid #efeff4;
+    dl{
+      overflow: hidden; margin-bottom: 10px;
+      font-size: 12px;
+      dt{
+        float: left; max-width: 30%; margin-bottom: 10px;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        clear: right;
+      }
+      dd{
+        float: right; max-width: 70%; margin-bottom: 10px;
+        color: #707070; text-align: right;
+        a{
+          color: #0082c9;
+          &:hover, &:focus{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
 /***** 배송 정보 *****/
 .order-confirm{
   padding: 24px 0 40px;
@@ -1228,7 +1206,6 @@
     padding: 0 16px; text-align: center;
   }
 }
-
 
 /***** rule *****/
 .rule-wrap{
@@ -1282,3 +1259,4 @@
     }
   }
 }
+

@@ -211,61 +211,46 @@
         }
       }
     }
-    ul{
+
+    ul.gender-select{
       text-align: center; margin-bottom: 26px;
       .list-block{
         position: relative; display: inline-block;
         &:first-child{margin-right: 12px;}
 
         .radio-gender[type="radio"]{
+
           /* 라디오 버튼 숨김처리  */
           &:not(:checked), &:checked{position: absolute; left: -9999px;}
 
           /* checked off */
           & + label{
             position: relative; cursor: pointer;
-            display: block; width: 100%;
-            @include box-sizing;
+            display: block;
             font-size: 13px; text-align: center;
             color: rgba(0, 0, 0, 0.3);
-            &::before{
-              content: "";
-              display: block; width: 156px; height: 156px;
-              margin-bottom: 12px;
-              background: no-repeat center center;
-              background-size: 148px;
-              @include border-radius(4px);
+            .img-bind{
+              width: 156px; padding: 2px; margin-bottom: 12px;
+              border: 2px solid transparent;
               @include box-sizing;
-            }
-            &.girl{
-              &::before{
-                background-image: url(../image/my-name-ran-away/image-girl@2x.png);
-              }
-            }
-            &.boy{
-              &::before{
-                background-image: url(../image/my-name-ran-away/image-boy@2x.png);
-              }
+              @include border-radius(4px);
+              img{display: block; width: 100%;}
             }
           }
           /* checked on */
           &:checked + label{
             color: #000;
-            &::before{
-              border: 2px solid #0082c9;
+            .img-bind{
+              border-color: #0082c9;
               @include box-s(0, 3px, 3px, rgba(0, 0, 0, 0.2));
             }
           }
         }
-
         @media (max-width: 320px){
           &:first-child{margin-right: 6px;}
           .radio-gender[type="radio"]{
             & + label{
-              &::before{width: 138px; height: 138px;}
-              &.girl, &.boy{
-                &::before{background-size: 130px;}
-              }
+              .img-bind{width: 138px;}
             }
           }
         }
@@ -731,7 +716,7 @@
 
           .img-area{
             overflow: hidden;
-            position: relative; padding-top: 64.02%;
+            position: relative; padding-top: 56.25%;
             &:after{
               content: '';
               display: block;
@@ -746,12 +731,12 @@
             }
           }
           dl{
-            position: relative; padding: 23px 14px 22px;
-            dt{font-size: 18px; margin-bottom: 13px;}
+            position: relative; padding: 18px 14px 17px;
+            dt{font-size: 16px; margin-bottom: 13px;}
             dd{
               &.description{font-size: 13px; color: #9b9b9b;}
               &.price{
-                position: absolute; right: 16px; top: 22px;
+                position: absolute; right: 16px; top: 17px;
                 .sale-price{
                   float: right; display: inline-block;
                   font-family: "Noto Sans KR Bold", sans-serif;
@@ -795,7 +780,7 @@
       }
     }
     @media (min-width: 500px) and (orientation: landscape){
-      overflow: hidden; text-align: center;
+      overflow: hidden; text-align: left;
       li{
         display: inline-block;
         width: 47%; text-align: left; margin-right: 16px;

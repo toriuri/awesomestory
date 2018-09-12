@@ -795,65 +795,54 @@ iframe[name='google_conversion_frame'] {
         .input-child-name form .input-block .input-wrap input:last-child {
           width: 68%;
           float: right; }
-    .input-child-name form ul {
+    .input-child-name form ul.gender-select {
       text-align: center;
       margin-bottom: 26px; }
-      .input-child-name form ul .list-block {
+      .input-child-name form ul.gender-select .list-block {
         position: relative;
         display: inline-block; }
-        .input-child-name form ul .list-block:first-child {
+        .input-child-name form ul.gender-select .list-block:first-child {
           margin-right: 12px; }
-        .input-child-name form ul .list-block .radio-gender[type="radio"] {
+        .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"] {
           /* 라디오 버튼 숨김처리  */
           /* checked off */
           /* checked on */ }
-          .input-child-name form ul .list-block .radio-gender[type="radio"]:not(:checked), .input-child-name form ul .list-block .radio-gender[type="radio"]:checked {
+          .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"]:not(:checked), .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"]:checked {
             position: absolute;
             left: -9999px; }
-          .input-child-name form ul .list-block .radio-gender[type="radio"] + label {
+          .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"] + label {
             position: relative;
             cursor: pointer;
             display: block;
-            width: 100%;
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
             font-size: 13px;
             text-align: center;
             color: rgba(0, 0, 0, 0.3); }
-            .input-child-name form ul .list-block .radio-gender[type="radio"] + label::before {
-              content: "";
-              display: block;
+            .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"] + label .img-bind {
               width: 156px;
-              height: 156px;
+              padding: 2px;
               margin-bottom: 12px;
-              background: no-repeat center center;
-              background-size: 148px;
-              -webkit-border-radius: 4px;
-              -moz-border-radius: 4px;
-              border-radius: 4px;
+              border: 2px solid transparent;
               -webkit-box-sizing: border-box;
               -moz-box-sizing: border-box;
-              box-sizing: border-box; }
-            .input-child-name form ul .list-block .radio-gender[type="radio"] + label.girl::before {
-              background-image: url(../image/my-name-ran-away/image-girl@2x.png); }
-            .input-child-name form ul .list-block .radio-gender[type="radio"] + label.boy::before {
-              background-image: url(../image/my-name-ran-away/image-boy@2x.png); }
-          .input-child-name form ul .list-block .radio-gender[type="radio"]:checked + label {
+              box-sizing: border-box;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              border-radius: 4px; }
+              .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"] + label .img-bind img {
+                display: block;
+                width: 100%; }
+          .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"]:checked + label {
             color: #000; }
-            .input-child-name form ul .list-block .radio-gender[type="radio"]:checked + label::before {
-              border: 2px solid #0082c9;
+            .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"]:checked + label .img-bind {
+              border-color: #0082c9;
               -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
               filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=3px, Color='#33000000'); }
         @media (max-width: 320px) {
-          .input-child-name form ul .list-block:first-child {
+          .input-child-name form ul.gender-select .list-block:first-child {
             margin-right: 6px; }
-          .input-child-name form ul .list-block .radio-gender[type="radio"] + label::before {
-            width: 138px;
-            height: 138px; }
-          .input-child-name form ul .list-block .radio-gender[type="radio"] + label.girl::before, .input-child-name form ul .list-block .radio-gender[type="radio"] + label.boy::before {
-            background-size: 130px; } }
+          .input-child-name form ul.gender-select .list-block .radio-gender[type="radio"] + label .img-bind {
+            width: 138px; } }
 
 /* 책소개 및 구매후기 */
 .book-intro .tab-container .tab-list {
@@ -1362,7 +1351,7 @@ iframe[name='google_conversion_frame'] {
           .add-book-acce ul.book-acce-list .list-block .add-acce-chk[type="checkbox"] + label .img-area {
             overflow: hidden;
             position: relative;
-            padding-top: 64.02%; }
+            padding-top: 56.25%; }
             .add-book-acce ul.book-acce-list .list-block .add-acce-chk[type="checkbox"] + label .img-area:after {
               content: '';
               display: block;
@@ -1384,9 +1373,9 @@ iframe[name='google_conversion_frame'] {
               transform: translate(0, -50%); }
           .add-book-acce ul.book-acce-list .list-block .add-acce-chk[type="checkbox"] + label dl {
             position: relative;
-            padding: 23px 14px 22px; }
+            padding: 18px 14px 17px; }
             .add-book-acce ul.book-acce-list .list-block .add-acce-chk[type="checkbox"] + label dl dt {
-              font-size: 18px;
+              font-size: 16px;
               margin-bottom: 13px; }
             .add-book-acce ul.book-acce-list .list-block .add-acce-chk[type="checkbox"] + label dl dd.description {
               font-size: 13px;
@@ -1394,7 +1383,7 @@ iframe[name='google_conversion_frame'] {
             .add-book-acce ul.book-acce-list .list-block .add-acce-chk[type="checkbox"] + label dl dd.price {
               position: absolute;
               right: 16px;
-              top: 22px; }
+              top: 17px; }
               .add-book-acce ul.book-acce-list .list-block .add-acce-chk[type="checkbox"] + label dl dd.price .sale-price {
                 float: right;
                 display: inline-block;
@@ -1446,7 +1435,7 @@ iframe[name='google_conversion_frame'] {
     @media (min-width: 500px) and (orientation: landscape) {
       .add-book-acce ul.book-acce-list {
         overflow: hidden;
-        text-align: center; }
+        text-align: left; }
         .add-book-acce ul.book-acce-list li {
           display: inline-block;
           width: 47%;

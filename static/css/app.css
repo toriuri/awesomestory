@@ -181,6 +181,10 @@ input[type=datetime-local] {
   input[type=datetime-local][disabled] {
     border: 1px solid #e1e1e1; }
 
+.aws-input[type=date] {
+  line-height: 40px;
+  font-size: 14px; }
+
 p.caution {
   font-size: 11px;
   color: #fc4641;
@@ -397,6 +401,21 @@ iframe[name='google_conversion_frame'] {
   margin-top: -13px;
   float: left; }
 
+#skip_navigation {
+  display: block;
+  width: 100%;
+  padding: 7px 0;
+  background: #0082c9;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  position: absolute;
+  left: -9999px; }
+  #skip_navigation:hover, #skip_navigation:active, #skip_navigation:focus {
+    position: static;
+    width: auto;
+    height: auto; }
+
 /***** layout *****/
 #wrapper {
   position: relative;
@@ -600,6 +619,8 @@ iframe[name='google_conversion_frame'] {
     position: absolute;
     left: 16px;
     bottom: 16px; }
+    .about-book .build-book .text-box.color-white {
+      color: #fff; }
     .about-book .build-book .text-box h1 {
       font-family: "Noto Sans KR Bold", sans-serif;
       font-size: 16px;

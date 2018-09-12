@@ -1,8 +1,19 @@
+#skip_navigation{
+  display:block;
+  width: 100%; padding: 7px 0;
+  background: $color-blue;
+  color: #fff; text-align: center; font-size: 14px;
+  position: absolute; left: -9999px;
+  &:hover, &:active, &:focus{
+    position: static; width: auto; height: auto;
+  }
+}
+
 /***** layout *****/
 #wrapper {
   position: relative; margin: 0 auto;
   min-width: 320px; max-width: 750px;
-  width:100%; background: #fff;
+  width: 100%; background: #fff;
   @media (min-width: 500px) and (orientation: landscape){
     @include box-s(0, 0, 4px, rgba(0, 0, 0, 0.2));
   }
@@ -43,7 +54,7 @@
     .count-circle{
       display: inline-block;
       min-width: 14px; height: 14px; padding: 0 3px;
-      background: #fc4641; color: #fff;
+      background: $color-red; color: #fff;
       font-family: Arial, Baskerville, monospace, sans-serif; font-weight: 400;
       font-size: 10px; text-align: center; line-height: 15px; text-indent: 0;
       @include border-radius(7px);

@@ -1,7 +1,7 @@
 /***** top banner *****/
 .header-banner{
   position: relative;
-  background: #0082c9; padding: 11px 15px 9px;
+  background: $color-blue; padding: 11px 15px 9px;
   p{
     font-size: 14px; color: #fff; line-height: 20px;
     strong{font-family: "Noto Sans KR Bold", sans-serif; color:#ffe900;}
@@ -13,7 +13,7 @@
   font-size: 14px;
   line-height: 1.6em; text-align: center;
   padding: 26px 0 25px;
-  strong{color: #0082c9;}
+  strong{color: $color-blue;}
 }
 
 /***** 책소개 및 만들기 *****/
@@ -26,6 +26,9 @@
     .text-box{
       position: absolute;
       left: 16px; bottom: 16px;
+      &.color-white{
+        color: #fff;
+      }
       h1{
         font-family: "Noto Sans KR Bold", sans-serif;
         font-size: 16px; margin-bottom: 3px;
@@ -63,7 +66,7 @@
     dt{
       display: inline-block;
       font-family: "Noto Sans KR Medium", sans-serif;
-      color: #0082c9;
+      color: $color-blue;
     }
     dd{
       &.description{
@@ -73,7 +76,7 @@
         .sale-price{
           display: inline-block;
           font-family: "Noto Sans KR Bold", sans-serif;
-          color: #0082c9;
+          color: $color-blue;
           padding: 0 5px;
         }
         .original-price{
@@ -117,7 +120,7 @@
           }
         }
         .instar-tag{
-          font-size: 11px; color: #0082c9;
+          font-size: 11px; color: $color-blue;
           min-height: 46px;
         }
       }
@@ -182,7 +185,7 @@
         .sale-price{
           display: inline-block;
           font-family: "Noto Sans KR Bold", sans-serif;
-          font-size: 14px; color: #0082c9;
+          font-size: 14px; color: $color-blue;
           padding-right: 5px;
         }
         .original-price{
@@ -241,7 +244,7 @@
           &:checked + label{
             color: #000;
             .img-bind{
-              border-color: #0082c9;
+              border-color: $color-blue;
               @include box-s(0, 3px, 3px, rgba(0, 0, 0, 0.2));
             }
           }
@@ -408,7 +411,7 @@
           border: 2px solid #fff;
           @include border-radius(50%);
           &:focus, &.on{
-            border-color: #0082c9;
+            border-color: $color-blue;
             @include box-s(0, 3px, 3px, rgba(0, 0, 0, 0.2));
           }
           .img-bind{
@@ -442,7 +445,7 @@
             position: absolute; left: -5px; top: -54px;
             @include border-radius(50%);
             &:hover, &:focus, &.on{
-              background: #0082c9;
+              background: $color-blue;
             }
           }
         }
@@ -463,7 +466,7 @@
     strong{
       float: right;
       font-family: "Noto Sans KR Bold", sans-serif;
-      font-size: 18px; color: #0082c9; letter-spacing: 4px; line-height: 40px;
+      font-size: 18px; color: $color-blue; letter-spacing: 4px; line-height: 40px;
     }
   }
 }
@@ -490,7 +493,7 @@
           border: 2px solid #fff;
           @include border-radius(50%);
           &:hover, &:focus, &.on{
-            border-color: #0082c9;
+            border-color: $color-blue;
           }
           .img-bind{
             overflow: hidden; width: 56px; height: 56px;
@@ -549,7 +552,7 @@
   }
   p.text{
     padding: 0 16px; margin-bottom: 24px; font-size: 12px; color: #9b9b9b;
-    strong{color: #fc4641;}
+    strong{color: $color-red;}
   }
   ul.tino-change-input{
     text-align: center;
@@ -597,7 +600,7 @@
         &:checked + label{
           color: #000;
           &::before{
-            background-color: #fff; border: 2px solid #0082c9;
+            background-color: #fff; border: 2px solid $color-blue;
             opacity: 1.0;
             @include box-s(0, 3px, 3px, rgba(0, 0, 0, 0.2));
           }
@@ -637,7 +640,7 @@
       font-family: "Noto Sans KR Light", sans-serif;
       strong{
         font-family: "Noto Sans KR Medium", sans-serif;
-        color: #0082c9;
+        color: $color-blue;
       }
     }
   }
@@ -740,7 +743,7 @@
                 .sale-price{
                   float: right; display: inline-block;
                   font-family: "Noto Sans KR Bold", sans-serif;
-                  font-size: 14px; color: #0082c9;
+                  font-size: 14px; color: $color-blue;
                   padding-left: 8px;
                 }
                 .original-price{
@@ -771,7 +774,7 @@
             content: '';
             display: block;
             width: 100%; height: 100%;
-            border: 2px solid #0082c9;
+            border: 2px solid $color-blue;
             position: absolute; left: 0; top: 0;
             @include box-sizing;
             @include border-radius(6px);
@@ -824,7 +827,7 @@
           a{
             display: block;
             font-family: "Noto Sans KR Light", sans-serif;
-            font-size: 11px; color: #0082c9;
+            font-size: 11px; color: $color-blue;
             margin-top: 9px;
           }
           &:last-child{
@@ -858,7 +861,7 @@
   h2{padding: 0; margin-bottom: 5px;}
   .order-process{
     padding-bottom: 46px;
-    p.text{font-size: 11px; color: #fc4641; margin-bottom: 8px;}
+    p.text{font-size: 11px; color: $color-red; margin-bottom: 8px;}
     ul{
       overflow: hidden; padding-top: 15.76%;
       background: url(../image/contents/order-process@2x.png) no-repeat center top;
@@ -875,7 +878,7 @@
   }
   .coupon-input{
     padding-bottom: 40px;
-    p.text{font-size: 12px; color: #0082c9;}
+    p.text{font-size: 12px; color: $color-blue;}
     .input-block{
       overflow: hidden; margin: 18px 0 0;
       label{
@@ -885,9 +888,9 @@
       .btn-blue-line{
         display: inline-block; float:left;
         width: 20%; height: 42px;
-        background: #fff; border: 2px solid #0082c9;
+        background: #fff; border: 2px solid $color-blue;
         font-family: "Noto Sans KR Medium", sans-serif;
-        font-size: 12px; color: #0082c9; line-height: 38px;
+        font-size: 12px; color: $color-blue; line-height: 38px;
         @include box-s(0, 2px, 6px, rgba(0,0,0,0.2));
       }
       .caution{
@@ -916,7 +919,7 @@
       dd{
         color: #000; text-align: right;
         &.coupon-sale{
-          color: #0082c9;
+          color: $color-blue;
           padding: 12px 0 8px; margin-top: 10px;
           border-top: 1px dashed #dcdcdc;
           .btn-delete{
@@ -933,7 +936,7 @@
         }
         &.total{
           font-family: "Noto Sans KR Bold", sans-serif;
-          font-size: 16px; color: #fc4641;
+          font-size: 16px; color: $color-red;
           padding: 10px 0;
           border-top: 1px solid #d8d8d8;
         }
@@ -943,7 +946,7 @@
   .orderer-info{
     h2{
       margin-bottom: 24px;
-      span{color: #fc4641;}
+      span{color: $color-red;}
     }
     .input-block{
       label.phone-number{display: block; margin-bottom: 16px;}
@@ -969,12 +972,12 @@
       label{
         display: block; float: left;
         padding-left: 7px; margin-bottom: 7px;
-        span{color: #fc4641;}
+        span{color: $color-red;}
       }
       .btn-text{
         float: right;
         background: transparent; border: none;
-        font-size: 11px; color: #0082c9; line-height: 1.7em;
+        font-size: 11px; color: $color-blue; line-height: 1.7em;
       }
       .aws-input.address{margin-bottom: 5px;}
     }
@@ -1003,9 +1006,9 @@
       }
       /* 버튼 on */
       &:checked + label{
-        border: 2px solid #0082c9;
+        border: 2px solid $color-blue;
         font-family: "Noto Sans KR Medium", sans-serif;
-        color: #0082c9; line-height: 38px;
+        color: $color-blue; line-height: 38px;
         @include box-s(0, 2px, 6px, rgba(0,0,0,0.2));
       }
     }
@@ -1101,7 +1104,7 @@
               }
               span{
                 display: block; width: 100%; text-align: center;
-                font-size: 11px; color: #0082c9; line-height: 1.2em;
+                font-size: 11px; color: $color-blue; line-height: 1.2em;
                 position: absolute; left: 0; top: 50%;
                 @include translate(0, -50%);
               }
@@ -1160,7 +1163,7 @@
         float: right; max-width: 70%; margin-bottom: 10px;
         color: #707070; text-align: right;
         a{
-          color: #0082c9;
+          color: $color-blue;
           &:hover, &:focus{
             text-decoration: underline;
           }
@@ -1187,7 +1190,7 @@
     .btn-area{padding: 0;}
   }
   p.text{
-    font-size: 12px; color: #fc4641;
+    font-size: 12px; color: $color-red;
     padding: 0 16px; text-align: center;
   }
 }

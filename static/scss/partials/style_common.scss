@@ -136,12 +136,15 @@ input[type=datetime-local]{
   @include border-radius(4px);
 
   &:hover, &:focus{border-color: #00bdf1;}
-  &.error{border-color: #fc4641;}
+  &.error{border-color: $color-red;}
   &[disabled]{border: 1px solid #e1e1e1;}
 }
 
+.aws-input[type=date]{
+  line-height: 40px; font-size: 14px;
+}
 p.caution{
-  font-size: 11px; color: #fc4641; line-height: 1.3em;
+  font-size: 11px; color: $color-red; line-height: 1.3em;
   padding-top: 10px;
 }
 
@@ -214,9 +217,9 @@ p.caution{
   }
   /* 버튼 on */
   &:checked + label{
-    color: #0082c9;
-    &:before{border-color: #0082c9;}
-    &:after{background: #0082c9;}
+    color: $color-blue;
+    &:before{border-color: $color-blue;}
+    &:after{background: $color-blue;}
   }
 }
 
@@ -244,7 +247,7 @@ p.caution{
 .btn-large-text{
   display: inline-block;
   font-family: "Noto Sans KR Medium", sans-serif;
-  font-size: 13px; color: #0082c9;
+  font-size: 13px; color: $color-blue;
 }
 .btn-blue{
   background: #20beef; color: #fff;

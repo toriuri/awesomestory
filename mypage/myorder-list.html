@@ -26,21 +26,27 @@
 	<link  type="text/css" rel="stylesheet" href="/static/js/magnific-popup/magnific-popup.css">
 	<script type="text/javascript" src="/static/js/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-</head>
+	<script type="text/javascript">
+    $(document).ready(function() {
 
+      // Sticky
+      $(".sticky-header").stick_in_parent({
+        parent: $("#wrapper")
+      });
 
+      // SNB
+      $('.menu-ham').click(function () {
+        $('.menu').animate({left: '0'}, 50);
+        $('.menu-over').show();
+      });
 
-<script type="text/javascript">
-  $(document).ready(function() {
-
-    // Sticky
-    $(".sticky-header").stick_in_parent({
-      parent: $("#wrapper")
+      $('.close-menu').click(function () {
+        $('.menu').animate({left: '-100%'}, 50);
+        $('.menu-over').hide();
+      });
     });
-
-  });
-
-</script>
+	</script>
+</head>
 
 <body>
 	<div id="wrapper">
@@ -50,7 +56,7 @@
 					<img src="/static/image/common/awesomestory-logo@2x.png" alt=어썸스토리">
 				</a>
 			</h1>
-			<a role="button" href="#" class="btn-menu" id="snb-open">메뉴</a>
+			<a role="button" href="#" class="btn-menu menu-ham">메뉴</a>
 			<a role="button" href="/order/cart.html" class="btn-cart">
 				장바구니
 				<strong class="count-circle">6</strong>
@@ -66,10 +72,9 @@
 				</div>
 
 				<ul class="snb-menu-list">
-					<li><a href="/index.html">내 이름이 도망갔어</a></li>
-					<li><a href="/product/product.html">어썸스토리 소개</a></li>
+					<li><a href="/product/product1.html">내 이름이 도망갔어</a></li>
+					<li><a href="/product/product2.html">나는 너의 자신감이야</a></li>
 					<li><a href="/mypage/login.html">주문조회</a></li>
-					<li><a href="#">자주묻는 질문</a></li>
 				</ul>
 			</nav>
 		</div>

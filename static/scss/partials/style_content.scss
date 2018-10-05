@@ -1024,7 +1024,7 @@
   h2.title{margin-bottom: 12px;}
   .order-detail-box{
     position: relative;
-    margin: 0 16px; padding: 16px;
+    margin: 0 16px 10px; padding: 16px;
     border: 1px solid #efeff4;
     .img-thumb{
       width: 56px; height: 56px;
@@ -1051,7 +1051,7 @@
         }
       }
     }
-    dl.tino-info{
+    dl.book-content{
       border-top: 1px solid #efeff4;
       padding-top: 16px;
       dt{
@@ -1059,14 +1059,13 @@
         font-family: "Noto Sans KR Medium", sans-serif;
       }
       dd{
-        overflow: hidden; padding-left: 64px;
+        padding-left: 64px; margin-bottom: 10px;
         color: #707070;
-
-        .photo-box{
-          margin-bottom: 20px;
+        ul.photo-box{
           li{
             position: relative;
-            display: inline-block; margin-right: 24px;
+            display: inline-block; margin: 0 18px 18px 0;
+            &:last-child{margin: 0 0 18px 0;}
             .btn{
               overflow: hidden;
               width: 20px; height: 20px; text-indent: -3000px;
@@ -1104,9 +1103,14 @@
               }
               span{
                 display: block; width: 100%; text-align: center;
-                font-size: 11px; color: $color-blue; line-height: 1.2em;
+                font-size: 11px; color: $color-blue; line-height: 1.2em; margin-top: 2px;
                 position: absolute; left: 0; top: 50%;
                 @include translate(0, -50%);
+              }
+              canvas {
+                position: absolute; left:0; top:0;
+                display: block;
+                background-color: white;
               }
             }
           }
@@ -1123,17 +1127,24 @@
     border: 1px solid #efeff4;
     h3{
       font-family: "Noto Sans KR Medium", sans-serif;
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 6px;
     }
     dl{
       dt{
         float: left; padding: 5px 0;
         font-family: "Noto Sans KR Medium", sans-serif;
-        color: #9b9b9b;
+        /*color: #9b9b9b;*/
       }
       dd{
         padding: 5px 0 5px 64px;
+        color: #707070;
+        a{
+          color: $color-blue;
+          &:hover, &:focus{
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

@@ -82,7 +82,7 @@
 		<!-- //SNB 좌측 카테고리 메뉴 -->
 
     <div id="container">
-
+	    <form action="" method="">
 	    <section class="content order-detail-wrap">
 		    <h2 class="title">주문 상세</h2>
 		    <div class="order-detail-box">
@@ -99,9 +99,49 @@
 			    </dl>
 			    <dl class="book-content">
 				    <dt>티노</dt>
-				    <dd>아빠</dd>
+				    <dd>
+					    <ul class="input-block tino">
+						    <li>
+							    <input type="radio" name="tinos" id="i-tino-d" class="aws-radio-small" checked>
+							    <label for="i-tino-d">아빠</label>
+						    </li>
+						    <li>
+							    <input type="radio" name="tinos" id="i-tino-m" class="aws-radio-small">
+							    <label for="i-tino-m">엄마</label>
+						    </li>
+						    <li>
+							    <input type="radio" name="tinos" id="i-tino-e" class="aws-radio-small" onclick="etcTinoInput()">
+							    <label for="i-tino-e">기타</label>
+						    </li>
+					    </ul>
+					    <label class="etc-tino-input" id="etc-tino-input" style="display: none;">
+						    <input type="text" name="etc-tino-input" placeholder="이모, 할머니 등" class="aws-input">
+					    </label>
+					    <script>
+                function etcTinoInput() {
+                  var checkedEtc = document.getElementById("i-tino-e");
+                  var text = document.getElementById("etc-tino-input");
+                  if (checkedEtc.checked === true){
+                    text.style.display = "block";
+                  } else {
+                    text.style.display = "none";
+                  }
+                }
+					    </script>
+				    </dd>
 				    <dt>표지색</dt>
-				    <dd>빨강</dd>
+				    <dd>
+					    <ul class="input-block cover-color">
+						    <li>
+							    <input type="radio" name="cover" id="blue" value="blue" class="aws-radio-small">
+							    <label for="blue">파랑</label>
+						    </li>
+						    <li>
+							    <input type="radio" name="cover" id="red" value="red" class="aws-radio-small" checked>
+							    <label for="red">빨강</label>
+						    </li>
+					    </ul>
+				    </dd>
 				    <dt>사진</dt>
 				    <dd>
 					    <ul class="photo-box">
@@ -123,17 +163,24 @@
 				    </dd>
 				    <dt>편지</dt>
 				    <dd>
-					    사랑하는 지호에게,<br><br>
+					    <textarea cols="20" rows="12" title="편지글 수정" class="textarea">
+사랑하는 지호에게,
 
-					    이 동화책은 너의 소중한 이름을 담고 있단다.<br>
-					    오직 너만을 위해 소중하게 만들어졌고, 너만의 이야기를 담고 있는 책이란다.<br>
-					    네가 살아갈 이 세상처럼 말이야.<br>
-					    이 선물이 너에게 오래 간직되는 보물이 되면 좋겠다.<br>
-					    사랑한다.<br><br>
+이 동화책은 너의 소중한 이름을 담고 있단다.
+오직 너만을 위해 소중하게 만들어졌고, 너만의 이야기를 담고 있는 책이란다.
+네가 살아갈 이 세상처럼 말이야.
+이 선물이 너에게 오래 간직되는 보물이 되면 좋겠다.
+사랑한다.
 
-					    - 너의 행복을 바라는 엄마, 아빠가.
+ - 너의 행복을 바라는 엄마, 아빠가.</textarea>
+					    <p class="txt-counter">
+						    <span class="now-str">120</span>/<span class="total-str">200</span>
+					    </p>
 				    </dd>
 			    </dl>
+			    <div class="btn-area">
+				    <button type="submit" class="btn btn-blue btn-large">저장하기</button>
+			    </div>
 		    </div>
 
 		    <div class="order-detail-box">
@@ -176,18 +223,25 @@
 				    </dd>
 				    <dt>편지</dt>
 				    <dd>
-					    사랑하는 윤호에게<br><br>
+					    <textarea cols="20" rows="12" title="편지글 수정" class="textarea">
+사랑하는 윤호에게
 
-					    우리는 네가 태어나던 날의 기억이 아직 생생해.<br>
-					    작고 귀여운 손발을 꼬물거리는 게 어찌나 신기했던지.<br>
-					    이 책은 바로 그때부터 지금까지, 그리고 앞으로도 영원히<br>
-					    네 마음을 지켜 줄 자신감에 대한 이야기를 담고 있어.<br>
-					    너는 지금도 무엇이든 될 수 있고, 무엇이든 할 수 있단다.<br>
-					    항상 너를 응원하는 네 안의 목소리를 따라 살아가면 좋겠어.<br><br>
+우리는 네가 태어나던 날의 기억이 아직 생생해.
+작고 귀여운 손발을 꼬물거리는 게 어찌나 신기했던지.
+이 책은 바로 그때부터 지금까지, 그리고 앞으로도 영원히
+네 마음을 지켜 줄 자신감에 대한 이야기를 담고 있어.
+너는 지금도 무엇이든 될 수 있고, 무엇이든 할 수 있단다.
+항상 너를 응원하는 네 안의 목소리를 따라 살아가면 좋겠어.
 
-					    - 언제나 너를 응원하는 엄마가
+- 언제나 너를 응원하는 엄마가</textarea>
+					    <p class="txt-counter">
+						    <span class="now-str">120</span>/<span class="total-str">200</span>
+					    </p>
 				    </dd>
 			    </dl>
+			    <div class="btn-area">
+				    <button type="submit" class="btn btn-blue btn-large">저장하기</button>
+			    </div>
 		    </div>
 	    </section>
 
@@ -195,31 +249,41 @@
 		    <h2 class="title">배송 정보</h2>
 		    <div class="delivery-info-box">
 			    <h3>받으실 분</h3>
-			    <dl>
-				    <dt>성함</dt>
-				    <dd>한홍택</dd>
-				    <dt>연락처</dt>
-				    <dd>010-1234-5678</dd>
-						<dt>주소</dt>
-				    <dd>경기 고양시 일산서구 일중로 15번길 128 유진스웰 201-704호</dd>
-				    <dt>진행상태</dt>
-				    <dd>준비중</dd>
-				    <dt>발송예정</dt>
-				    <dd>2018년 08월 31일</dd>
-				    <dt>택배조회</dt>
+			    <dl class="modify">
+				    <dt><label for="name">성함</label></dt>
 				    <dd>
-					    <a href="#" target="_blank">
-					      우체국택배 <br>68640-4101-2650
-					    </a>
+					    <input type="text" name="name" id="name" value="한홍택" class="aws-input">
+				    </dd>
+				    <dt><label for="tel">연락처</label></dt>
+				    <dd>
+					    <input type="tel" name="tel" id="tel" value="010-1234-5678" class="aws-input">
+				    </dd>
+						<dt><label for="address">주소</label></dt>
+				    <dd>
+					    <input type="text" name="zipcode" value="456123" class="aws-input" readonly>
+					    <input type="text" name="address" id="address" value="경기 고양시 일산서구 일중로 15번길 128" class="aws-input address" readonly>
+					    <input type="text" name="address-detail" value="유진스웰 201-704호" class="aws-input" readonly>
+				    </dd>
+				    <dt><label for="comment">배송 요청사항</label></dt>
+				    <dd>
+					    <input type="text" name="comment" id="comment" value="부재 중일 경우 경비실에 부탁드립니다." class="aws-input">
 				    </dd>
 			    </dl>
+			    <div class="btn-area">
+				    <button type="submit" class="btn btn-blue btn-large">저장하기</button>
+			    </div>
 		    </div>
 	    </section>
+
+	    <div class="btn-area order-cancel">
+		    <button type="button" class="btn btn-gray-line" onClick="location.href='myorder-cancel.html'">주문 취소</button>
+		    <p class="caution">2018년 10월 20일 22시 까지 취소 가능합니다.</p>
+	    </div>
 
 	    <div class="btn-area">
 		    <a role="button" href="../mypage/myorder-list.html" class="btn-large-text">주문 목록으로 돌아가기</a>
 	    </div>
-
+	    </form>
     </div>
 
   </div>

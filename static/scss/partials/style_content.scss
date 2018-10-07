@@ -799,10 +799,10 @@
 /***** sub cart page *****/
 
 /* 주문상품 */
-.order-list-wrap{
+.cart-list-wrap{
   padding: 30px 0 0; border-bottom: 1px solid #d8d8d8;
-  h2.title{margin-bottom: 22px;}
-  .order-list{
+  h2.title{margin-bottom: 16px;}
+  .cart-list{
     padding: 0 16px;
     li{
       position: relative;
@@ -901,7 +901,7 @@
   .total-payment{
     padding-bottom: 38px;
     .payment-details{
-      margin-top: 24px;
+      margin-top: 14px;
       font-size: 12px; line-height: 2.0em;
       dt{
         float: left; color: #9b9b9b;
@@ -945,7 +945,7 @@
   }
   .orderer-info{
     h2{
-      margin-bottom: 24px;
+      margin-bottom: 16px;
       span{color: $color-red;}
     }
     .input-block{
@@ -1018,13 +1018,73 @@
 
 /***** sub mypage *****/
 
-/* 주문상품 */
+/* 주문 정보 확인 - 로그인 */
+.order-confirm{
+  padding: 24px 0 40px;
+  .input-form{
+    padding: 5px 16px 25px;
+    ul{
+      margin-bottom: 16px;
+      li{
+        overflow: hidden; padding: 15px 0 0;
+        label{
+          display: block; float: left;
+          padding-left: 7px; margin-bottom: 7px;
+        }
+      }
+    }
+    .btn-area{padding: 0;}
+  }
+  p.text{
+    font-size: 12px; color: $color-red;
+    padding: 0 16px; text-align: center;
+  }
+}
+
+/* 주문 목록 */
+.order-list-wrap{
+  padding: 30px 0;
+  h2.title{margin-bottom: 12px;}
+  .btn-area{padding: 0;}
+
+  .order-list-box{
+    position: relative;
+    margin: 0 16px 16px; padding: 20px 16px;
+    border: 1px solid #efeff4;
+    dl{
+      overflow: hidden; margin-bottom: 10px;
+      font-size: 12px;
+      dt{
+        float: left; width: 60px; margin-bottom: 10px;
+        font-family: "Noto Sans KR Medium", sans-serif;
+        clear: right;
+        &:first-child{
+          display: block; width: 100%; clear: both; margin-bottom: 16px;
+          font-family: "Noto Sans KR Light", sans-serif;
+          font-size: 16px;
+        }
+      }
+      dd{
+        padding-left: 70px; margin-bottom: 10px;
+        color: #707070; text-align: right;
+        a{
+          color: $color-blue;
+          &:hover, &:focus{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 주문상품상세 - 상품별 상세 */
 .order-detail-wrap{
   padding: 30px 0 0;
   h2.title{margin-bottom: 12px;}
   .order-detail-box{
     position: relative;
-    margin: 0 16px 10px; padding: 16px;
+    margin: 0 16px 16px; padding: 16px;
     border: 1px solid #efeff4;
     .img-thumb{
       width: 56px; height: 56px;
@@ -1059,8 +1119,19 @@
         font-family: "Noto Sans KR Medium", sans-serif;
       }
       dd{
+        position: relative;
         padding-left: 64px; margin-bottom: 10px;
         color: #707070;
+        ul.input-block{
+          overflow: hidden;
+          li{
+            float: left; margin-right: 16px;
+            &:last-child{margin-right: 0;}
+          }
+          & + label .aws-input{
+            font-size: 12px;
+          }
+        }
         ul.photo-box{
           li{
             position: relative;
@@ -1115,20 +1186,32 @@
             }
           }
         }
+        .textarea{
+          display: block;
+          width: 100%;
+          & + .txt-counter{
+            font-size: 10px; color: #9b9b9b;
+            text-align: right; padding: 3px 5px 0 0;
+          }
+        }
+      }
+      & + .btn-area{
+        padding: 0 0 8px; margin-top: 16px;
       }
     }
   }
 }
+
+/* 주문상품상세 - 배송정보 */
 .delivery-info-wrap{
-  margin-top: 32px;
+  padding-top: 16px;
   h2.title{margin-bottom: 12px;}
   .delivery-info-box{
     margin: 0 16px 16px; padding: 16px 16px 10px;
     border: 1px solid #efeff4;
     h3{
-      font-family: "Noto Sans KR Medium", sans-serif;
-      font-size: 14px;
-      margin-bottom: 6px;
+      font-family: "Noto Sans KR Light", sans-serif;
+      font-size: 16px; margin-bottom: 16px;
     }
     dl{
       dt{
@@ -1146,63 +1229,73 @@
           }
         }
       }
+
+      &.modify{
+        dt{padding: 8px 0 0;}
+        dd{
+          padding: 0 0 0 80px; margin-bottom: 11px;
+          .aws-input{
+            margin-bottom: 5px;
+            font-size: 12px; height: 36px;
+          }
+        }
+        & + .btn-area{
+          padding: 0 0 8px; margin-top: 16px;
+        }
+      }
     }
   }
 }
-.btn-area.btn-back-order{
-  padding: 16px 16px 30px; text-align: center;
+
+/* 주문상품상세 - 주문취소 및 목록 버튼영역 */
+.btn-area{
+  &.order-cancel{
+    padding-top: 10px;
+    button{margin-bottom: 3px;}
+  }
+  &.btn-back-order{
+    padding: 16px 16px 30px; text-align: center;
+  }
 }
 
-/***** 주문 목록 *****/
-.myorder-list-wrap{
-  padding: 30px 0;
+/* 주문 취소 */
+.order-cancel-wrap{
+  padding: 30px 0 0;
   h2.title{margin-bottom: 12px;}
-  .btn-area{padding: 0;}
-  .order-list-box {
+  .btn-area{padding-top: 10px;}
+  .order-cancel{
     position: relative;
-    margin: 0 16px 16px; padding: 24px 16px;
+    margin: 0 16px 16px; padding: 16px 16px 6px;
     border: 1px solid #efeff4;
+    h3{
+      font-family: "Noto Sans KR Light", sans-serif;
+      font-size: 16px; margin-bottom: 16px;
+    }
     dl{
-      overflow: hidden; margin-bottom: 10px;
+      overflow: hidden;
       font-size: 12px;
       dt{
-        float: left; max-width: 30%; margin-bottom: 10px;
+        float: left; max-width: 60px; margin-bottom: 10px;
         font-family: "Noto Sans KR Medium", sans-serif;
         clear: right;
       }
       dd{
-        float: right; max-width: 70%; margin-bottom: 10px;
+        padding-left: 60px; margin-bottom: 10px;
         color: #707070; text-align: right;
-        a{
-          color: $color-blue;
-          &:hover, &:focus{
-            text-decoration: underline;
-          }
+        textarea{
+          display: block; width: 100%;
+        }
+        .aws-input{
+          font-size: 12px; height: 36px;
         }
       }
-    }
-  }
-}
-/***** 배송 정보 *****/
-.order-confirm{
-  padding: 24px 0 40px;
-  .input-form{
-    padding: 5px 16px 25px;
-    ul{
-      margin-bottom: 16px;
-      li{
-        overflow: hidden; padding: 15px 0 0;
-        label{
-          display: block; float: left;
-          padding-left: 7px; margin-bottom: 7px;
-        }
+      &.pay-detail{
+        border-top: 1px solid #efeff4; padding-top: 10px;
+      }
+      &.refund-account{
+        dt{padding-top: 8px;}
       }
     }
-    .btn-area{padding: 0;}
-  }
-  p.text{
-    font-size: 12px; color: $color-red;
-    padding: 0 16px; text-align: center;
   }
 }
 

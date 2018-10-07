@@ -57,7 +57,10 @@
 				</a>
 			</h1>
 			<a role="button" href="#" class="btn-menu menu-ham">Menu</a>
-			<a role="button" href="/order/cart.html" class="btn-cart">장바구니</a>
+			<a role="button" href="/order/cart.html" class="btn-cart">
+				장바구니
+				<strong class="count-circle">6</strong>
+			</a>
 		</header>
 
 		<!-- SNB 좌측 카테고리 메뉴 -->
@@ -71,66 +74,75 @@
 				<ul class="snb-menu-list">
 					<li><a href="/product/product1.html">내 이름이 도망갔어</a></li>
 					<li><a href="/product/product2.html">나는 너의 자신감이야</a></li>
-					<li><a href="/mypage/login.html">주문조회</a></li>
+					<li><a href="/mypage/myorder-detail.html">주문상세</a></li>
+					<li><a href="/mypage/myorder-detail-modify.html">주문상세 수정</a></li>
 				</ul>
 			</nav>
 		</div>
 		<!-- //SNB 좌측 카테고리 메뉴 -->
 
-		<div id="container">
+    <div id="container">
+	    <section class="content order-cancel-wrap">
+		    <h2 class="title">주문 취소</h2>
 
-	    <section class="content delivery-info">
-				<h2 class="title">배송정보</h2>
-		    <div class="input-form">
-			    <ul>
-				    <li>
-					    <label for="name">받으실 분 성함 <span>*</span></label>
-					    <input type="text" name="name" id="name" value="한지호(여자 아이)" class="aws-input">
-				    </li>
-				    <li>
-					    <label for="tel">연락처 <span>*</span></label>
-					    <button type="button" class="btn btn-text">주문자와 동일</button>
-					    <input type="text" name="tel" id="tel" class="aws-input">
-				    </li>
-				    <li>
-					    <label for="zip-code">우편번호 <span>*</span></label>
-					    <button type="button" class="btn btn-text">우편번호 찾기</button>
-					    <input type="text" name="zip-code" id="zip-code" class="aws-input" disabled>
-				    </li>
-				    <li>
-					    <label for="address">주소 <span>*</span></label>
-					    <input type="text" name="address" id="address" class="aws-input address" disabled>
-					    <input type="text" name="address-detail" placeholder="상세주소" class="aws-input">
-				    </li>
-				    <li>
-					    <label for="comment">배송 시 요청사항</label>
-					    <input type="text" name="comment" id="comment" placeholder="요청사항을 입력해 주세요" class="aws-input">
-				    </li>
-			    </ul>
+		    <div class="order-cancel list">
+			    <h3>주문정보</h3>
+			    <dl>
+				    <dt>주문명</dt>
+				    <dd>내 이름이 도망갔어 외 1권</dd>
+				    <dt>전화번호</dt>
+				    <dd>010-1234-5678</dd>
+				    <dt>결제일시</dt>
+				    <dd>2018년 10월 03일 11시 14분</dd>
+				    <dt>결제방식</dt>
+				    <dd>신용카드</dd>
+				    <dt>결제금액</dt>
+				    <dd>50,000원</dd>
+			    </dl>
+			    <dl class="pay-detail">
+				    <dt>상품금액</dt>
+				    <dd>55,000원</dd>
+				    <dt>배송비</dt>
+				    <dd>2,500원</dd>
+				    <dt>쿠폰금액</dt>
+				    <dd>-7,500원</dd>
+			    </dl>
 		    </div>
+
+		    <div class="order-cancel">
+			    <h3>취소 정보</h3>
+			    <dl>
+				    <dt><label for="cancel-reason">취소이유<br>(선택)</label></dt>
+				    <dd>
+					    <textarea cols="20" rows="5" title="취소사유" id="cancel-reason" class="textarea"></textarea>
+				    </dd>
+			    </dl>
+		    </div>
+
+		    <div class="order-cancel">
+			    <h3>환불계좌 정보</h3>
+			    <dl class="refund-account">
+				    <dt><label for="bank">은행명</label></dt>
+				    <dd>
+					    <input type="text" name="bank" id="bank" class="aws-input">
+				    </dd>
+				    <dt><label for="name">예금주명</label></dt>
+				    <dd>
+					    <input type="text" name="name" id="name" class="aws-input">
+				    </dd>
+				    <dt><label for="account-num">계좌번호</label></dt>
+				    <dd>
+					    <input type="text" name="account-num" id="account-num" class="aws-input">
+				    </dd>
+			    </dl>
+		    </div>
+
+		    <div class="btn-area">
+			    <button type="button" class="btn btn-blue btn-large">주문 취소 하기</button>
+		    </div>
+
 	    </section>
 
-	    <section class="content payment">
-		    <h2 class="title">결제수단</h2>
-		    <ul>
-			    <li class="list-block">
-				    <input type="radio" name="payment-option" id="card" class="radio-btn" checked>
-				    <label for="card">신용/체크카드</label>
-			    </li>
-			    <li class="list-block">
-				    <input type="radio" name="payment-option" id="virtual" class="radio-btn">
-				    <label for="virtual">가상계좌</label>
-			    </li>
-			    <li class="list-block">
-				    <input type="radio" name="payment-option" id="escrow" class="radio-btn">
-				    <label for="escrow">실시간 계좌이체(에스크로)</label>
-			    </li>
-		    </ul>
-	    </section>
-
-	    <div class="btn-area">
-		    <button type="button" class="btn btn-blue btn-large">결제하기</button>
-	    </div>
     </div>
 
   </div>

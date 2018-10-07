@@ -104,7 +104,7 @@ textarea{
 } /* 아이폰 초기화 */
 
 input[type=search]::-webkit-search-cancel-button{display: none;} /* 아이폰 초기화 */
-textarea:focus {color: #333 !important;}
+textarea:focus {color: #333 !important; border-color: #00bdf1;}
 
 /***** placeholder 기본색상 정의  *****/
 ::-webkit-input-placeholder { /* Chrome */
@@ -154,6 +154,7 @@ p.caution{
   font-size: 12px; color: #000;
   @include box-sizing;
   @include border-radius(4px);
+  resize: none;
 }
 
 /* 체크박스 공통 */
@@ -184,7 +185,7 @@ p.caution{
   }
 }
 
-/* 라디오버튼 공통 */
+/* 라디오버튼 공통 - large */
 .aws-radio[type="radio"] {
   /* 라디오 버튼 숨김처리  */
   &:not(:checked), &:checked{position: absolute; left: -9999px;}
@@ -210,6 +211,45 @@ p.caution{
       display: inline-block;
       width: 10px; height: 10px;
       position: absolute; left: 5px; top: 5px;
+      background: #ccc;
+      @include border-radius(50%);
+      @include box-sizing;
+    }
+  }
+  /* 버튼 on */
+  &:checked + label{
+    color: $color-blue;
+    &:before{border-color: $color-blue;}
+    &:after{background: $color-blue;}
+  }
+}
+
+/* 라디오버튼 공통 - small */
+.aws-radio-small[type="radio"] {
+  /* 라디오 버튼 숨김처리  */
+  &:not(:checked), &:checked{position: absolute; left: -9999px;}
+
+  /* 버튼 basic */
+  & + label{
+    position: relative; cursor: pointer;
+    overflow: hidden; display: block;
+    font-size: 12px; color: #333;
+    padding: 0 0 0 22px; margin-bottom: 8px;
+    &:before{
+      content: '';
+      display: inline-block;
+      width: 16px; height: 16px;
+      position: absolute; left: 0; top: 0;
+      border: 1px solid #ccc;
+      background: #fff;
+      @include border-radius(50%);
+      @include box-sizing;
+    }
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 8px; height: 8px;
+      position: absolute; left: 4px; top: 4px;
       background: #ccc;
       @include border-radius(50%);
       @include box-sizing;
@@ -254,6 +294,19 @@ p.caution{
   &:hover, &:focus{background: #1797bd;}
   &[disabled]{
     background: #6ad7f4;
+  }
+}
+
+.btn-gray-line{
+  width: 100%; height: 44px;
+  background: #fff; border: 2px solid #efeff4;
+  @include box-sizing;
+  font-family: "Noto Sans KR Bold", sans-serif;
+  font-size: 14px; color: #707070; letter-spacing: 0; padding-top: 3px;
+  &:hover, &:focus{
+    border-color: $color-blue;
+    color: $color-blue;
+    @include box-s(0, 2px, 6px, rgba(0,0,0,0.2));
   }
 }
 

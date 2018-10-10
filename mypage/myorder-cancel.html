@@ -106,6 +106,12 @@
 				    <dd>2,500원</dd>
 				    <dt>쿠폰금액</dt>
 				    <dd>-7,500원</dd>
+				    <dt>이전 환불금액</dt>
+				    <dd>4,000원</dd>
+			    </dl>
+			    <dl class="pay-detail">
+				    <dt>환불금액</dt>
+				    <dd>20,500원</dd>
 			    </dl>
 		    </div>
 
@@ -122,9 +128,17 @@
 		    <div class="order-cancel">
 			    <h3>환불계좌 정보</h3>
 			    <dl class="refund-account">
-				    <dt><label for="bank">은행명</label></dt>
+				    <dt><label for="bank-list">은행명</label></dt>
 				    <dd>
-					    <input type="text" name="bank" id="bank" class="aws-input">
+					    <div class="aws-select-wrapper">
+						    <select name="banks" id="bank-list" class="aws-select">>
+							    <option value="" selected>은행선택</option>
+							    <option value="kb">국민은행</option>
+							    <option value="woori">우리은행</option>
+							    <option value="shinhan">신한은행</option>
+							    <option value="kakao">카카오뱅크</option>
+						    </select>
+					    </div>
 				    </dd>
 				    <dt><label for="name">예금주명</label></dt>
 				    <dd>

@@ -97,6 +97,7 @@ a {
   line-height: 0.1%;
   font-size: 0.1%; }
 
+/* 아이폰 초기화 */
 input[type=text],
 input[type=email],
 input[type=number],
@@ -108,17 +109,23 @@ input[type=search],
 input[type=tel],
 input[type=date],
 input[type=datetime-local],
-textarea {
+textarea,
+select {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0; }
+
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+  display: none; }
 
 /* 아이폰 초기화 */
 input[type=search]::-webkit-search-cancel-button {
   display: none; }
 
-/* 아이폰 초기화 */
 textarea:focus {
   color: #333 !important;
   border-color: #00bdf1; }
@@ -170,7 +177,8 @@ input[type=datetime-local] {
   .aws-input[type=date]:focus,
   input[type=datetime-local]:hover,
   input[type=datetime-local]:focus {
-    border-color: #00bdf1; }
+    border-color: #00bdf1;
+    background: #fff !important; }
   .aws-input[type=text].error,
   .aws-input[type=tel].error,
   .aws-input[type=date].error,
@@ -196,7 +204,7 @@ p.caution {
   display: inline-block;
   padding: 16px;
   background: #fff;
-  border: 1px solid #e0e5f0;
+  border: 1px solid #e1e1e1;
   font-size: 12px;
   color: #000;
   -webkit-box-sizing: border-box;
@@ -206,6 +214,39 @@ p.caution {
   -moz-border-radius: 4px;
   border-radius: 4px;
   resize: none; }
+
+.aws-select-wrapper {
+  position: relative; }
+  .aws-select-wrapper::after {
+    display: inline-block;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #e1e1e1 transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -2px; }
+  .aws-select-wrapper .aws-select {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 2px 16px 0 16px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    font-size: 12px;
+    color: #000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    .aws-select-wrapper .aws-select:hover, .aws-select-wrapper .aws-select:focus {
+      border-color: #00bdf1;
+      background: #fff !important; }
 
 /* 체크박스 공통 */
 .aws-chk[type="checkbox"] {
@@ -2069,12 +2110,12 @@ iframe[name='google_conversion_frame'] {
       font-size: 12px; }
       .order-cancel-wrap .order-cancel dl dt {
         float: left;
-        max-width: 60px;
+        max-width: 80px;
         margin-bottom: 10px;
         font-family: "Noto Sans KR Medium", sans-serif;
         clear: right; }
       .order-cancel-wrap .order-cancel dl dd {
-        padding-left: 60px;
+        padding-left: 80px;
         margin-bottom: 10px;
         color: #707070;
         text-align: right; }
@@ -2088,7 +2129,7 @@ iframe[name='google_conversion_frame'] {
         border-top: 1px solid #efeff4;
         padding-top: 10px; }
       .order-cancel-wrap .order-cancel dl.refund-account dt {
-        padding-top: 8px; }
+        padding-top: 10px; }
 
 /***** rule *****/
 .rule-wrap {

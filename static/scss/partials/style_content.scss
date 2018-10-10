@@ -1275,12 +1275,12 @@
       overflow: hidden;
       font-size: 12px;
       dt{
-        float: left; max-width: 60px; margin-bottom: 10px;
+        float: left; max-width: 80px; margin-bottom: 10px;
         font-family: "Noto Sans KR Medium", sans-serif;
         clear: right;
       }
       dd{
-        padding-left: 60px; margin-bottom: 10px;
+        padding-left: 80px; margin-bottom: 10px;
         color: #707070; text-align: right;
         textarea{
           display: block; width: 100%;
@@ -1293,7 +1293,7 @@
         border-top: 1px solid #efeff4; padding-top: 10px;
       }
       &.refund-account{
-        dt{padding-top: 8px;}
+        dt{padding-top: 10px;}
       }
     }
   }

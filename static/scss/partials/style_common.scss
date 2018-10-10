@@ -87,6 +87,7 @@ a{
   line-height: 0.1%; font-size: 0.1%;
 }
 
+/* 아이폰 초기화 */
 input[type=text],
 input[type=email],
 input[type=number],
@@ -98,13 +99,26 @@ input[type=search],
 input[type=tel],
 input[type=date],
 input[type=datetime-local],
-textarea{
+textarea,
+select{
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   @include border-radius(0);
-} /* 아이폰 초기화 */
+}
 
-input[type=search]::-webkit-search-cancel-button{display: none;} /* 아이폰 초기화 */
-textarea:focus {color: #333 !important; border-color: #00bdf1;}
+/* IE 10, 11의 네이티브 화살표 숨기기 */
+select::-ms-expand {
+  display: none;
+}
+/* 아이폰 초기화 */
+input[type=search]::-webkit-search-cancel-button{
+  display: none;
+}
+textarea:focus{
+  color: #333 !important;
+  border-color: #00bdf1;
+}
 
 /***** placeholder 기본색상 정의  *****/
 ::-webkit-input-placeholder { /* Chrome */
@@ -135,7 +149,7 @@ input[type=datetime-local]{
   @include box-sizing;
   @include border-radius(4px);
 
-  &:hover, &:focus{border-color: #00bdf1;}
+  &:hover, &:focus{border-color: #00bdf1; background: #fff !important;}
   &.error{border-color: $color-red;}
   &[disabled]{border: 1px solid #e1e1e1;}
 }
@@ -150,12 +164,35 @@ p.caution{
 
 .textarea {
   display: inline-block; padding: 16px;
-  background: #fff; border: 1px solid #e0e5f0;
+  background: #fff; border: 1px solid #e1e1e1;
   font-size: 12px; color: #000;
   @include box-sizing;
   @include border-radius(4px);
   resize: none;
 }
+.aws-select-wrapper{
+  position: relative;
+  &::after {
+    display: inline-block;;
+    content: " ";
+    width: 0; height: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #e1e1e1 transparent transparent transparent;
+    position: absolute; top: 50%; right: 16px;
+    margin-top: -2px;
+  }
+  .aws-select{
+    display: block;
+    width: 100%; height: 36px; padding: 2px 16px 0 16px;
+    background: #fff; border: 1px solid #e1e1e1;
+    font-size: 12px; color: #000;
+    @include box-sizing;
+    @include border-radius(4px);
+    &:hover, &:focus{border-color: #00bdf1; background: #fff !important;}
+  }
+}
+
 
 /* 체크박스 공통 */
 .aws-chk[type="checkbox"] {

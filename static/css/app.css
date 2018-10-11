@@ -2124,7 +2124,8 @@ iframe[name='google_conversion_frame'] {
           width: 100%; }
         .order-cancel-wrap .order-cancel dl dd .aws-input {
           font-size: 12px;
-          height: 36px; }
+          height: 36px;
+          padding: 0 16px; }
       .order-cancel-wrap .order-cancel dl.pay-detail {
         border-top: 1px solid #efeff4;
         padding-top: 10px; }

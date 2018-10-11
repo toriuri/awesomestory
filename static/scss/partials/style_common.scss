@@ -170,6 +170,7 @@ p.caution{
   @include border-radius(4px);
   resize: none;
 }
+
 .aws-select-wrapper{
   position: relative;
   &::after {

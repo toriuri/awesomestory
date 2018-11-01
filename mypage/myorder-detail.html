@@ -106,18 +106,22 @@
 				    <dd>
 					    <ul class="photo-box">
 						    <li>
-							    <div class="img-bind">
-								    <span>윤호<br>사진</span>
-								    <!-- <img src="/static/image/sample/@sample-img1.jpg" alt=""> -->
+							    <div class="preview-image">
+								    <input type="file" name="add-file" id="add-file-child" accept=".png, .jpg, .jpeg" class="upload-hidden">
+								    <label for="add-file-child"><span>윤호사진</span></label>
 							    </div>
-							    <button type="button" class="btn btn-photo-add">추가</button>
 						    </li>
 						    <li>
-							    <div class="img-bind">
-								    <span>아빠<br>사진</span>
-								    <!-- <img src="/static/image/sample/@sample-img1.jpg" alt=""> -->
+							    <div class="preview-image">
+								    <input type="file" name="add-file" id="add-file-daddy" accept=".png, .jpg, .jpeg" class="upload-hidden">
+								    <label for="add-file-daddy"><span>아빠사진</span></label>
 							    </div>
-							    <button type="button" class="btn btn-photo-add">추가</button>
+						    </li>
+						    <li>
+							    <div class="preview-image">
+								    <input type="file" name="add-file" id="add-file-family" accept=".png, .jpg, .jpeg" class="upload-hidden">
+								    <label for="add-file-family"><span>가족사진</span></label>
+							    </div>
 						    </li>
 					    </ul>
 				    </dd>
@@ -152,25 +156,28 @@
 				    <dd>
 					    <ul class="photo-box">
 						    <li>
-							    <div class="img-bind">
-								    <span>한윤호<br>사진</span>
-								    <!-- <img src="/static/image/sample/@sample-img1.jpg" alt=""> -->
+							    <div class="upload-display">
+								    <div class="upload-thumb-wrap">
+									    <img src="/static/image/sample/@sample-img3.jpg" alt="">
+								    </div>
+								    <button type="button" class="btn btn-photo-delete">삭제</button>
 							    </div>
-							    <button type="button" class="btn btn-photo-add">추가</button>
 						    </li>
 						    <li>
-							    <div class="img-bind">
-								    <span>엄마<br>사진</span>
-								    <!-- <img src="/static/image/sample/@sample-img1.jpg" alt=""> -->
+							    <div class="upload-display">
+								    <div class="upload-thumb-wrap">
+									    <img src="/static/image/sample/@sample-img5.jpg" alt="">
+								    </div>
+								    <button type="button" class="btn btn-photo-delete">삭제</button>
 							    </div>
-							    <button type="button" class="btn btn-photo-add">추가</button>
 						    </li>
 						    <li>
-							    <div class="img-bind">
-								    <span>가족<br>사진</span>
-								    <img src="/static/image/sample/@sample-tino.jpg" alt="">
+							    <div class="upload-display">
+								    <div class="upload-thumb-wrap">
+									    <img src="/static/image/sample/@sample-img7.jpg" alt="">
+								    </div>
+								    <button type="button" class="btn btn-photo-delete">삭제</button>
 							    </div>
-							    <button type="button" class="btn btn-photo-delete">삭제</button>
 						    </li>
 					    </ul>
 				    </dd>

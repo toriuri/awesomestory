@@ -1087,7 +1087,7 @@
     margin: 0 16px 16px; padding: 16px;
     border: 1px solid #efeff4;
     .img-thumb{
-      width: 56px; height: 56px;
+      width: 66px; height: 66px;
       position: absolute; right: 16px; top: 16px;
       img{display: block; width: 100%;}
     }
@@ -1115,12 +1115,11 @@
       border-top: 1px solid #efeff4;
       padding-top: 16px;
       dt{
-        float: left;
         font-family: "Noto Sans KR Medium", sans-serif;
+        margin-bottom: 7px;
       }
       dd{
-        position: relative;
-        padding-left: 64px; margin-bottom: 10px;
+        position: relative; margin-bottom: 10px;
         color: #707070;
         ul.input-block{
           overflow: hidden;
@@ -1130,60 +1129,6 @@
           }
           & + label .aws-input{
             font-size: 12px;
-          }
-        }
-        ul.photo-box{
-          li{
-            position: relative;
-            display: inline-block; margin: 0 18px 18px 0;
-            &:last-child{margin: 0 0 18px 0;}
-            .btn{
-              overflow: hidden;
-              width: 20px; height: 20px; text-indent: -3000px;
-              position: absolute; right: -10px; bottom: -10px;
-              background: no-repeat center center;
-              background-size: 20px;
-              &.btn-photo-add{
-                background-image: url(../image/common/ic-photo-add-20-normal@2x.png);
-                &:hover, &:focus{
-                  background-image: url(../image/common/ic-photo-add-20-press@2x.png);
-                }
-              }
-              &.btn-photo-delete{
-                background-image: url(../image/common/ic-photo-delete-20-normal@2x.png);
-                &:hover, &:focus{
-                  background-image: url(../image/common/ic-photo-delete-20-press@2x.png);
-                }
-              }
-            }
-            .img-bind{
-              position: relative; overflow: hidden;
-              width: 56px; height: 56px;
-              &:after{
-                content: '';
-                display: block; width: 100%; height: 100%;
-                position: absolute; left: 0; top: 0;
-                border: 1px solid rgba(0,0,0, 0.1);
-                @include border-radius(2px);
-                @include box-sizing;
-              }
-              img{
-                display: block; width: 100%;
-                position: absolute; left: 0; top: 50%;
-                @include translate(0, -50%);
-              }
-              span{
-                display: block; width: 100%; text-align: center;
-                font-size: 11px; color: $color-blue; line-height: 1.2em; margin-top: 2px;
-                position: absolute; left: 0; top: 50%;
-                @include translate(0, -50%);
-              }
-              canvas {
-                position: absolute; left:0; top:0;
-                display: block;
-                background-color: white;
-              }
-            }
           }
         }
         .textarea{
@@ -1197,6 +1142,76 @@
       }
       & + .btn-area{
         padding: 0 0 8px; margin-top: 16px;
+      }
+    }
+  }
+}
+
+/* input file common style */
+ul.photo-box{
+  overflow: hidden;
+  li{
+    position: relative; overflow: hidden;
+    float: left; margin: 0 10px 10px 0;
+    &:last-child{margin-right: 0;}
+
+    .preview-image{
+      input[type="file"]{
+        position: absolute; overflow: hidden;
+        width: 1px; height: 1px; border: 0;
+        padding: 0; margin: -1px;
+        clip: rect(0,0,0,0);
+        & + label{
+          cursor: pointer;
+          position: relative; float: left;
+          display: block; width: 80px; height: 80px;
+          border: 1px solid rgba(0,0,0, 0.1);
+          @include border-radius(2px);
+          @include box-sizing;
+          span{
+            display: block; width: 100%; text-align: center;
+            font-size: 12px; color: $color-blue; line-height: 1.2em; margin-top: 0;
+            position: absolute; left: 0; top: 50%;
+            @include translate(0, -50%);
+          }
+          &::after{
+            content: '';
+            display: inline-block;
+            width: 20px; height: 20px;
+            position: absolute; right: -1px; bottom: -1px;
+            background: url(../image/common/ic-photo-add-20-normal@2x.png) no-repeat right bottom;
+            background-size: 20px;
+          }
+        }
+      }
+    }
+
+    .upload-display{
+      float: left; position: relative;
+      .upload-thumb-wrap{
+        position: relative;
+        width: auto; height: 80px;
+        border: 1px solid rgba(0,0,0, 0.1);
+        text-align: center;
+        @include border-radius(2px);
+        @include box-sizing;
+        img{display: inline-block; height: 100%;}
+      }
+      .btn-photo-delete{
+        overflow: hidden;
+        width: 20px; height: 20px; text-indent: -3000px;
+        position: absolute; right: -1px; bottom: -1px;
+        background: url(../image/common/ic-photo-delete-20-normal@2x.png) no-repeat center center;
+        background-size: 20px;
+        &:hover, &:focus{
+          background-image: url(../image/common/ic-photo-delete-20-press@2x.png);
+        }
+      }
+
+      canvas {
+        position: absolute; left:0; top:0;
+        display: block;
+        background-color: white;
       }
     }
   }

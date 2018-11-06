@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<title>어썸스토리 | 내이름이도망갔어</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, minimal-ui, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="자존감동화, 맞춤동화책, 어썸스토리, 내이름이도망갔어, 개인화 동화책">
+	<meta name="author" content="키즈테크랩">
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/web/image/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="/static/css/app.css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/cssuseragent/2.1.31/cssua.min.js"></script>
+	<script type="text/javascript" src="/static/js/sticky-kit/sticky-kit.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/static/js/swiper-4.3.5/css/swiper.min.css">
+	<script type="text/javascript" src="/static/js/swiper-4.3.5/js/swiper.min.js"></script>
+
+	<link  type="text/css" rel="stylesheet" href="/static/js/magnific-popup/magnific-popup.css">
+	<script type="text/javascript" src="/static/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<script type="text/javascript">
+    $(document).ready(function() {
+
+      // Sticky
+      $(".sticky-header").stick_in_parent({
+        parent: $("#wrapper")
+      });
+
+      // SNB
+      $('.menu-ham').click(function () {
+        $('.menu').animate({left: '0'}, 50);
+        $('.menu-over').show();
+      });
+
+      $('.close-menu').click(function () {
+        $('.menu').animate({left: '-100%'}, 50);
+        $('.menu-over').hide();
+      });
+    });
+	</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<header id="header" class="sticky-header">
+		<h1>
+			<a role="button" href="/">
+				<img src="/static/image/common/awesomestory-logo@2x.png" alt=어썸스토리">
+			</a>
+		</h1>
+		<a role="button" href="#" class="btn-menu menu-ham">Menu</a>
+		<a role="button" href="/order/cart.html" class="btn-cart">
+			장바구니
+			<strong class="count-circle">6</strong>
+		</a>
+	</header>
+
+	<!-- SNB 좌측 카테고리 메뉴 -->
+	<div class="menu-over">
+		<nav class="menu">
+			<div class="snb-header">
+				<h1><img src="/static/image/common/awesomestory-logo-snb@2x.png" alt="어썸스토리"></h1>
+				<a role="button" href="#" class="close-menu">슬라이드 메뉴 닫기</a>
+			</div>
+
+			<ul class="snb-menu-list">
+				<li><a href="/product/product1.html">내 이름이 도망갔어</a></li>
+				<li><a href="/product/product2.html">나는 너의 자신감이야</a></li>
+				<li><a href="/mypage/myorder-detail.html">주문상세</a></li>
+				<li><a href="/mypage/myorder-detail-modify.html">주문상세 수정</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- //SNB 좌측 카테고리 메뉴 -->
+
+	<div id="container">
+
+		<section class="content order-detail-wrap external-site">
+			<h2 class="title">김현님의 11번가 주문내역</h2>
+			<p>모든 책 정보 입력이 완료되면 제작과 배송이 시작됩니다</p>
+			<div class="order-detail-box">
+				<div class="img-thumb">
+					<img src="/static/image/contents/image-thumb-book-girl@2x.jpg" alt="">
+				</div>
+				<dl class="book-info">
+					<dt>내 이름이 도망갔어 <span>(하드커버)</span></dt>
+					<dd>
+						지호(여자 아이)
+					</dd>
+					<dd class="book-info-area">
+						정보 입력 완료
+					</dd>
+				</dl>
+			</div>
+
+			<div class="order-detail-box">
+				<div class="img-thumb">
+					<img src="/static/image/contents/image-thumb-book-boy@2x.jpg" alt="">
+				</div>
+				<dl class="book-info">
+					<dt>나는 너의 자신감이야 <span>(소프트커버)</span></dt>
+					<dd>
+						한윤호(남자 아이, 2012-09-12)
+					</dd>
+					<dd class="book-info-area">
+						정보 입력 완료
+					</dd>
+				</dl>
+			</div>
+
+			<div class="order-detail-box">
+				<div class="img-thumb">
+					<img src="/static/image/contents/image-thumb-book-girl@2x.jpg" alt="">
+				</div>
+				<dl class="book-info">
+					<dt>내 이름이 도망갔어 <span>(하드커버)</span></dt>
+					<dd class="book-info-area">
+						<button type="button" class="btn btn-blue btn-book-info" onClick="location.href='external-site-preview1.html'">+ 책 정보 입력</button>
+					</dd>
+				</dl>
+			</div>
+
+			<div class="order-detail-box">
+				<div class="img-thumb">
+					<img src="/static/image/contents/image-thumb-book-boy@2x.jpg" alt="">
+				</div>
+				<dl class="book-info">
+					<dt>나는 너의 자신감이야 <span>(소프트커버)</span></dt>
+					<dd class="book-info-area">
+						<button type="button" class="btn btn-blue btn-book-info" onClick="location.href='external-site-preview2.html'">+ 책 정보 입력</button>
+					</dd>
+				</dl>
+			</div>
+
+			<p class="notice">입력이 완료 된 책 정보 수정은 우측 하단 채팅 상담으로 문의해주세요.</p>
+		</section>
+
+		<section class="content delivery-info-wrap">
+			<h2 class="title">배송 정보</h2>
+			<div class="delivery-info-box">
+				<h3>받으실 분</h3>
+				<dl>
+					<dt>성함</dt>
+					<dd>한홍택</dd>
+					<dt>연락처</dt>
+					<dd>010-1234-5678</dd>
+					<dt>주소</dt>
+					<dd>(06510) 경기 고양시 일산서구 일중로 15번길 128 유진스웰 201-704호</dd>
+					<dt>진행상태</dt>
+					<dd>준비중</dd>
+					<dt>발송예정</dt>
+					<dd>2018년 08월 31일</dd>
+					<dt>택배조회</dt>
+					<dd>
+						<a href="#" target="_blank">
+							우체국택배 <br>68640-4101-2650
+						</a>
+					</dd>
+				</dl>
+			</div>
+		</section>
+
+		<div class="btn-area order-cancel">
+			<button type="submit" class="btn btn-gray-line" onClick="location.href='myorder-cancel.html'">주문 취소</button>
+			<p class="caution">2018년 10월 20일 22시 까지 취소 가능합니다.</p>
+		</div>
+
+		<div class="btn-area">
+			<a role="button" href="../mypage/myorder-list.html" class="btn-large-text">주문 목록으로 돌아가기</a>
+		</div>
+
+	</div>
+
+</div>
+</body>
+
+</html>

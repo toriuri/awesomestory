@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<title>어썸스토리 | 내이름이도망갔어</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, width=device-width, minimal-ui, maximum-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="keywords" content="자존감동화, 맞춤동화책, 어썸스토리, 내이름이도망갔어, 개인화 동화책">
+	<meta name="author" content="키즈테크랩">
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/web/image/favicon.ico">
+
+	<link rel="stylesheet" type="text/css" href="/static/css/app.css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/static/js/cssuseragent/2.1.31/cssua.min.js"></script>
+	<script type="text/javascript" src="/static/js/sticky-kit/sticky-kit.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/static/js/swiper-4.3.5/css/swiper.min.css">
+	<script type="text/javascript" src="/static/js/swiper-4.3.5/js/swiper.min.js"></script>
+
+	<link  type="text/css" rel="stylesheet" href="/static/js/magnific-popup/magnific-popup.css">
+	<script type="text/javascript" src="/static/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+	<script type="text/javascript">
+    $(document).ready(function() {
+
+      // Sticky
+      $(".sticky-header").stick_in_parent({
+        parent: $("#wrapper")
+      });
+
+      // SNB
+      $('.menu-ham').click(function () {
+        $('.menu').animate({left: '0'}, 50);
+        $('.menu-over').show();
+      });
+
+      $('.close-menu').click(function () {
+        $('.menu').animate({left: '-100%'}, 50);
+        $('.menu-over').hide();
+      });
+    });
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header" class="sticky-header">
+			<h1>
+				<a role="button" href="/">
+					<img src="/static/image/common/awesomestory-logo@2x.png" alt=어썸스토리">
+				</a>
+			</h1>
+			<a role="button" href="#" class="btn-menu menu-ham">Menu</a>
+			<a role="button" href="/order/cart.html" class="btn-cart">
+				장바구니
+				<strong class="count-circle">6</strong>
+			</a>
+		</header>
+
+		<!-- SNB 좌측 카테고리 메뉴 -->
+		<div class="menu-over">
+			<nav class="menu">
+				<div class="snb-header">
+					<h1><img src="/static/image/common/awesomestory-logo-snb@2x.png" alt="어썸스토리"></h1>
+					<a role="button" href="#" class="close-menu">슬라이드 메뉴 닫기</a>
+				</div>
+
+				<ul class="snb-menu-list">
+					<li><a href="/product/product1.html">내 이름이 도망갔어</a></li>
+					<li><a href="/product/product2.html">나는 너의 자신감이야</a></li>
+					<li><a href="/mypage/login.html">주문조회</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- //SNB 좌측 카테고리 메뉴 -->
+
+		<div id="container">
+			<section class="content input-child-name">
+				<form action=" " method=" ">
+					<div class="input-block">
+						<label for="child-name">
+							<h2 class="title">아이 이름에 따른 스토리 구성</h2>
+						</label>
+						<input type="text" maxlength="2" name="child-name" id="child-name" placeholder="성 제외 두글자(외자는 성 포함)" class="aws-input">
+						<p class="caution" style="display: none;">
+							이름을 두 글자로 입력해 주세요.<br>
+							이름이 외자인 경우, 성을 포함하여 두 글자를 완성해 주세요.
+						</p>
+					</div>
+					<ul class="gender-select">
+						<li class="list-block">
+							<input type="radio" name="gender" id="girl" class="radio-gender" checked>
+							<label for="girl" class="girl">
+								<div class="img-bind">
+									<img src="/static/image/my-name-ran-away/image-girl@2x.png" alt="">
+								</div>
+								여자아이
+							</label>
+						</li>
+						<li class="list-block">
+							<input type="radio" name="gender" id="boy" class="radio-gender">
+							<label for="boy" class="boy">
+								<div class="img-bind">
+									<img src="/static/image/my-name-ran-away/image-boy@2x.png" alt="">
+								</div>
+								남자아이
+							</label>
+						</li>
+					</ul>
+				</form>
+
+				<div class="btn-area">
+					<button type="button" class="btn btn-blue btn-large" disabled>스토리 미리보기(비활성화)</button><br><br>
+					<button type="button" class="btn btn-blue btn-large">스토리 미리보기(활성화)</button>
+				</div>
+			</section>
+
+			<section class="book-preview-slide">
+				<h1 class="blind">미리보기</h1>
+
+				<div class="preview-container">
+					<div class="preview-wrapper">
+						<p class="story-preview-copy">이름을 입력하면 스토리 미리보기가 표시됩니다.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="book-preview-slide">
+				<h1 class="blind">미리보기</h1>
+
+				<div class="preview-container">
+					<div class="preview-wrapper">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cover_f.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_f_p1.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p2.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p3.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p4.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p5.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/intro_p6.jpg">
+
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p1_f1.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p2.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p3_s0.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/yak_p4_s0.jpg">
+
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p1_f0.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p2.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p3.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/shepherd_p4_s1.jpg">
+
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p1_f0.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p2.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p3.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/lama_p4_s0.jpg">
+
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p1_f0.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p2_s1.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p3_s1.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/cheetah_p4_s1.jpg">
+
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p1_f0.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p2.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p3.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/snowman_p4_s0.jpg">
+
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_p1.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_p2.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_f_p3.jpg">
+						<img src="https://s3.ap-northeast-2.amazonaws.com/cdn.awesomestory.kr/previews/my_name_ran_away/180703/outro_f_p4.jpg">
+					</div>
+				</div>
+
+				<div class="name-list-wrap">
+					<ul class="name-list">
+						<li>
+							<strong>ㅎ</strong>
+							<div role="button" class="btn-thumb">
+								<div class="img-bind">
+									<img src="/static/image/sample/ani-sample1.jpg" alt="">
+								</div>
+							</div>
+							<p>호랑이</p>
+						</li>
+						<li>
+							<strong>ㅗ</strong>
+							<div role="button" class="btn-thumb on">
+								<div class="img-bind">
+									<img src="/static/image/sample/ani-sample2.jpg" alt="">
+								</div>
+								<a href="#change-character-popup" class="open-popup-link btn btn-yellow btn-change">변경</a>
+							</div>
+							<p>돌고래</p>
+						</li>
+						<li>
+							<strong>ㅇ</strong>
+							<div role="button" class="btn-thumb">
+								<div class="img-bind">
+									<img src="/static/image/sample/ani-sample3.jpg" alt="">
+								</div>
+							</div>
+							<p>오리</p>
+						</li>
+						<li>
+							<strong>ㅌ</strong>
+							<div role="button" class="btn-thumb">
+								<div class="img-bind">
+									<img src="/static/image/sample/ani-sample4.jpg" alt="">
+								</div>
+							</div>
+							<p>토끼</p>
+						</li>
+						<li>
+							<strong>ㅐ</strong>
+							<div role="button" class="btn-thumb">
+								<div class="img-bind">
+									<img src="/static/image/sample/ani-sample5.jpg" alt="">
+								</div>
+							</div>
+							<p>캥거루</p>
+						</li>
+						<li>
+							<strong>ㄱ</strong>
+							<div role="button" class="btn-thumb">
+								<div class="img-bind">
+									<img src="/static/image/sample/ani-sample6.jpg" alt="">
+								</div>
+							</div>
+							<p>기린</p>
+						</li>
+						<li>
+							<strong>홍택</strong>
+							<div role="button" class="btn-thumb">
+								<div class="img-bind">
+									<img src=" " alt="">
+								</div>
+							</div>
+							<p>&nbsp;</p>
+						</li>
+					</ul>
+
+					<div class="name-box">
+						<span>주인공 이름</span>
+						<strong>홍택</strong>
+					</div>
+
+				</div>
+			</section>
+			<section class="content tino-change">
+
+				<h2 class="title">아빠 공룡 티노 정체 바꾸기</h2>
+				<a href="#change-guide-popup" class="open-popup-link btn-more">설명 더보기</a>
+
+				<p class="text">
+					모험을 함께 할 조력자를 선택하고 사진을 추가하세요.<br>
+					<strong>*주문을 완료하면 사진 추가가 가능합니다.</strong>
+				</p>
+
+				<form action="" method="">
+					<ul class="tino-change-input">
+						<li class="list-block">
+							<input type="radio" name="tino" id="daddy" class="radio-tino" checked>
+							<label for="daddy" class="daddy">아빠</label>
+						</li>
+						<li class="list-block">
+						<input type="radio" name="tino" id="mom" class="radio-tino">
+						<label for="mom" class="mom">엄마</label>
+					</li>
+						<li class="list-block">
+							<input type="radio" name="tino" id="etc" class="radio-tino" onclick="etcTinoInput()" checked>
+							<label for="etc" class="etc">기타(이모, 할머니)</label>
+						</li>
+					</ul>
+					<label class="etc-tino-input" id="etc-tino-input">
+						<input type="text" name="etc-tino-input" placeholder="티노 정체 입력(이모, 할머니 등)" class="aws-input">
+					</label>
+				</form>
+
+				<script>
+          function etcTinoInput() {
+            var checkedEtc = document.getElementById("etc");
+            var text = document.getElementById("etc-tino-input");
+            if (checkedEtc.checked === true){
+              text.style.display = "block";
+            } else {
+              text.style.display = "none";
+            }
+          }
+				</script>
+			</section>
+
+			<section class="content print-letter">
+				<h2 class="title">책에 인쇄 될 편지</h2>
+				<div class="tab-container">
+					<ul class="tab-list">
+						<li rel="tab1" class="on"><span>기본</span></li>
+						<li rel="tab2"><span>BEST #1</span></li>
+						<li rel="tab3"><span>BEST #2</span></li>
+						<li rel="tab4"><span>BEST #3</span></li>
+						<li rel="tab2"><span>BEST #1</span></li>
+						<li rel="tab3"><span>BEST #2</span></li>
+						<li rel="tab4"><span>BEST #3</span></li>
+					</ul>
+
+					<div id="tab1" class="tab-content">
+						<textarea cols="20" rows="10" title="편지글 기본" placeholder="책에 남길 편지글을 입력해주세요." class="textarea">사랑하는 하이에게,
+
+이 동화책은 너의 소중한 이름을 담고 있단다.
+오직 너만을 위해 소중하게 만들어졌고, 너만의 이야기를
+담고있는 책이란다.</textarea>
+						<p class="txt-counter">
+							<span class="now-str">120</span>/<span class="total-str">200</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="content external-add-photo">
+				<h2 class="title">사진 추가</h2>
+				<div class="photo-guide">
+					<img src="/static/image/contents/photo-guide1.jpg" alt="">
+				</div>
+				<ul class="photo-box">
+					<li>
+						<div class="preview-image">
+							<input type="file" name="add-file" id="add-file-child" accept=".png, .jpg, .jpeg" class="upload-hidden">
+							<label for="add-file-child" class="user-editable"><span>윤호사진</span></label>
+						</div>
+					</li>
+					<li>
+						<div class="preview-image">
+							<input type="file" name="add-file" id="add-file-daddy" accept=".png, .jpg, .jpeg" class="upload-hidden">
+							<label for="add-file-daddy" class="user-editable"><span>아빠사진</span></label>
+						</div>
+					</li>
+				</ul>
+
+			</section>
+
+			<div class="btn-area">
+				<button type="button" class="btn btn-blue btn-large">입력 완료 하기</button>
+			</div>
+
+			<div class="btn-area">
+				<a role="button" href="external-site-myorder.html" class="btn-large-text">주문 목록으로 돌아가기</a>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+    $(function () {
+      $("ul.tab-list li").click(function () {
+        $("ul.tab-list li").removeClass("on");
+        $(this).addClass("on");
+      });
+    });
+
+    $('.open-popup-link').magnificPopup({
+      type:'inline',
+      midClick: true
+    });
+	</script>
+
+	<!-- 캐릭터 변경 팝업 -->
+	<div class="aws-popup mfp-hide" id="change-character-popup">
+		<div class="popup-wrap">
+			<div class="wrap">
+
+				<h1>‘ㅗ’의 스토리를 선택하세요.</h1>
+				<ul class="change-ani-list">
+					<li>
+						<div role="button" class="btn-thumb on">
+							<div class="img-bind">
+								<img src="/static/image/sample/ani-sample1.jpg" alt="">
+							</div>
+						</div>
+						<p>호랑이</p>
+					</li>
+					<li>
+						<div role="button" class="btn-thumb">
+							<div class="img-bind">
+								<img src="/static/image/sample/ani-sample2.jpg" alt="">
+							</div>
+						</div>
+						<p>돌고래</p>
+					</li>
+					<li>
+						<div role="button" class="btn-thumb">
+							<div class="img-bind">
+								<img src="/static/image/sample/ani-sample3.jpg" alt="">
+							</div>
+						</div>
+						<p>오리</p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="btn-area">
+				<button type="button" class="btn btn-blue btn-large">확인</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- 티노 정체 추가 설명 팝업 -->
+	<div class="aws-popup mfp-hide" id="change-guide-popup">
+		<div class="popup-wrap bg-white">
+			<div class="wrap">
+
+				<h1>책의 주인공이 나와 아빠였다니?</h1>
+				<div class="img-bind">
+					<img src="/static/image/contents/change-guide-popup.png" alt="">
+				</div>
+				<p>
+					엔딩에는 아이와 조력자 티노의 사진이 캐릭터에 합성 됩니다.<br>
+					나를 도와준 친구 티노가 바로 아빠(또는 엄마) 였어요!<br><br>
+
+					<strong>아빠가 이 책을 읽어준다면 아이가 얼마나 놀랄까요?</strong><br><br>
+
+					주문이 완료되면 사진 추가 링크를 보내드려요.<br>
+					휴대폰 속 예쁜 사진을 간편하게 추가하세요.<br>
+					(사진이 없으면 일러스트로 제작됩니다.)
+				</p>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

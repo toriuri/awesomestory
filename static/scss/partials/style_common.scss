@@ -321,6 +321,9 @@ p.caution{
   &:hover, &:focus{
     box-shadow: none;
   }
+  &[disabled]{
+    @include box-s(0,0,0, rgba(0,0,0,0));
+  }
 }
 .btn-large-text{
   display: inline-block;

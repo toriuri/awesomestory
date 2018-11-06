@@ -726,7 +726,7 @@
       position: relative;
       width: 45.5%; float: left; margin: 0 8px 16px;
 
-      .add-acce-chk[type="checkbox"] {
+      .add-acce-chk[type="radio"] {
         /* 라디오 버튼 숨김처리  */
         &:not(:checked), &:checked{position: absolute; left: -9999px;}
 
@@ -757,7 +757,7 @@
           }
           dl{
             position: relative; padding: 10px;
-            dt{font-size: 14px; margin-bottom: 4px;}
+            dt{font-size: 13px; margin-bottom: 4px;}
             dd{
               &.description{
                 font-size: 11px; color: #9b9b9b;
@@ -768,7 +768,7 @@
                 .sale-price{
                   float: right; display: inline-block;
                   font-family: "Noto Sans KR Bold", sans-serif;
-                  font-size: 14px; color: $color-blue;
+                  font-size: 13px; color: $color-blue;
                   padding-left: 8px;
                 }
                 .original-price{

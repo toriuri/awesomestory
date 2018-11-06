@@ -721,9 +721,10 @@
     margin: 32px 0 16px;
   }
   ul.book-acce-list{
-    padding: 0 16px;
+    overflow: hidden; padding: 0 8px;
     .list-block {
-      position: relative; margin-bottom: 16px;
+      position: relative;
+      width: 45.5%; float: left; margin: 0 8px 16px;
 
       .add-acce-chk[type="checkbox"] {
         /* 라디오 버튼 숨김처리  */
@@ -755,12 +756,15 @@
             }
           }
           dl{
-            position: relative; padding: 18px 14px 17px;
-            dt{font-size: 16px; margin-bottom: 13px;}
+            position: relative; padding: 10px;
+            dt{font-size: 14px; margin-bottom: 4px;}
             dd{
-              &.description{font-size: 13px; color: #9b9b9b;}
+              &.description{
+                font-size: 11px; color: #9b9b9b;
+                .notice{color: $color-red;}
+              }
               &.price{
-                position: absolute; right: 16px; top: 17px;
+                position: absolute; right: 10px; top: 9px;
                 .sale-price{
                   float: right; display: inline-block;
                   font-family: "Noto Sans KR Bold", sans-serif;
@@ -776,9 +780,9 @@
           }
 
           .img-chk{
-            overflow: hidden; width: 26px; height: 26px;
+            overflow: hidden; width: 20px; height: 20px;
             background: url(../image/common/ic-check-circle-26-normal@2x.png) no-repeat center center;
-            background-size: 26px;
+            background-size: 20px;
             position: absolute; right: 12px; top: 12px;
             @include box-sizing;
             @include border-radius(50%);
@@ -788,7 +792,7 @@
         &:checked + label{
           .img-chk{
             background-image: url(../image/common/ic-check-circle-26-select@2x.png);
-            background-size: 26px;
+            background-size: 20px;
             @include box-s(0, 2px, 6px, rgba(0,0,0,0.2));
           }
           &:after{
@@ -803,14 +807,11 @@
         }
       }
     }
-    @media (min-width: 500px) and (orientation: landscape){
-      overflow: hidden; text-align: left;
-      li{
+    @media screen and (max-width: 320px){
+      padding: 0 16px;
+      li.list-block{
         display: inline-block;
-        width: 47%; text-align: left; margin-right: 16px;
-        &:last-child{
-          margin-right: 0;
-        }
+        width: 100%; margin: 0 0 16px;
       }
     }
   }

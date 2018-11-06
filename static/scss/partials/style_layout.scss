@@ -114,6 +114,7 @@
   transition: all ease 1s;
 }
 .menu{
+  overflow: auto;
   position: fixed;
   top: 0; left: -100%; z-index: 10000;
   width: 260px; max-width: 90%; height: 100%;
@@ -154,5 +155,8 @@
   p.menu-bottom{
     position:absolute; bottom: 0;
     font-size: 12px; color: #fff; padding: 0 20px; margin-bottom:40px;
+    @media screen and (max-height: 500px) {
+      position: relative;
+    }
   }
 }

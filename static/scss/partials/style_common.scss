@@ -86,6 +86,13 @@ a{
   width: 0.1%; height: 0.1%;
   line-height: 0.1%; font-size: 0.1%;
 }
+.clear{
+  &::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
 
 /* 아이폰 초기화 */
 input[type=text],

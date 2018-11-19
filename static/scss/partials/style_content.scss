@@ -899,10 +899,10 @@
 
 /* 주문 절차 및 결재금액 */
 .order-information{
-  padding: 24px 16px 0;
+  padding: 24px 0 0;
   h2{padding: 0; margin-bottom: 5px;}
   .order-process{
-    padding-bottom: 46px;
+    padding: 0 16px 46px;
     p.text{font-size: 11px; color: $color-red; margin-bottom: 8px;}
     ul{
       overflow: hidden; padding-top: 15.76%;
@@ -919,10 +919,10 @@
     }
   }
   .coupon-input{
-    padding-bottom: 40px;
+    padding: 0 16px 40px;
     p.text{font-size: 12px; color: $color-blue;}
     .input-block{
-      overflow: hidden; margin: 18px 0 0;
+      margin: 18px 0 0;
       label{
         display: inline-block; float: left;
         width: 80%; padding-right: 9px;
@@ -939,9 +939,65 @@
         clear: both;
       }
     }
+
+    &.xmas{
+      position: relative;
+      padding: 25px 16px 20px; margin-bottom: 40px;
+      background: url(../image/contents/coupon-input-bg.png) repeat-x left top #ffeae9;
+      background-size: 100%;
+      h2.title{
+        font-family: "Noto Sans KR Bold", sans-serif; color: #008964;
+        & + p{
+          font-size: 12px; color: #000; letter-spacing: -0.05em;
+          strong{font-family: "Noto Sans KR Medium", sans-serif; font-size: 13px;}
+          position: absolute; z-index: 10;
+        }
+      }
+      .input-block{
+        margin-top: 64px;
+        .label-wrap{
+          padding-right: 80px;
+          label{
+            position: relative; display: inline-block; width: 100%; padding: 5px;
+            background: url(../image/contents/coupon-input-border.png) repeat-x left bottom;
+            background-size: auto 42px;
+            @include box-sizing;
+            .aws-input{
+              height: 32px; border: none;
+              @include border-radius(0);
+            }
+            &::before{
+              content: '';
+              display: block;
+              width: 48px; height: 38px;
+              background: url(../image/contents/coupon-input-border-deco.png) no-repeat right top;
+              background-size: auto 38px;
+              position: absolute; right: 0; top: -38px;
+            }
+          }
+        }
+        .btn-white{
+          position: relative;
+          display: inline-block; float: right;
+          width: 73px; height: 42px;
+          background: #fff;
+          font-family: "Noto Sans KR Bold", sans-serif;
+          font-size: 12px; color: #e6003d; line-height: 38px;
+          &::before{
+            content: '';
+            display: block;
+            width: 77px; height: 52px;
+            background: url(../image/contents/coupon-input-btn-deco.png) no-repeat left top;
+            background-size: auto 52px;
+            position: absolute; left: 0; top: -52px;
+          }
+        }
+      }
+    }
   }
+
   .total-payment{
-    padding-bottom: 38px;
+    padding: 0 16px 38px;
     .payment-details{
       margin-top: 14px;
       font-size: 12px; line-height: 2.0em;
@@ -986,6 +1042,7 @@
     }
   }
   .orderer-info{
+    padding: 0 16px;
     h2{
       margin-bottom: 16px;
       span{color: $color-red;}

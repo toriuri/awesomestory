@@ -58,15 +58,31 @@
 
 	<div id="wrapper">
 		<div class="header-banner">
-			<p>
+			<img src="/static/image/banner/2018_early_xmas.png" alt="성탄절 얼리버드 쿠 기본 20%, 3권이상 30% - 쿠폰창에 earlymas 입력!">
+			<p style="padding: 11px 15px 9px; display: none;">
 				한가위 에디션 180명 한정 할인 중<br>
 				2권 이상 10% 할인 코드 : <strong>BOOKBOOK</strong>
 			</p>
 		</div>
-		<header id="header" class="sticky-header">
+
+		<header id="header" class="sticky-header" style="display: none;">
 			<h1>
 				<a role="button" href="/">
 					<img src="/static/image/common/awesomestory-logo@2x.png" alt=어썸스토리">
+				</a>
+			</h1>
+			<a role="button" href="#" class="btn-menu menu-ham">Menu</a>
+			<a role="button" href="/order/cart.html" class="btn-cart">
+				장바구니
+				<strong class="count-circle">6</strong>
+			</a>
+		</header>
+
+		<!-- 2018 x-max season header-->
+		<header id="header" class="sticky-header xmas">
+			<h1>
+				<a role="button" href="/">
+					<img src="/static/image/common/awesomestory-logo-xmas.png" alt=어썸스토리">
 				</a>
 			</h1>
 			<a role="button" href="#" class="btn-menu menu-ham">Menu</a>
@@ -102,8 +118,9 @@
 
     <div id="container">
 	    <h1 class="main-slogan">
-		    하나 뿐인 동화책을 출판하세요.<br>
-		    우리 아이가 주인공이 되는 <strong>#자존감동화</strong>
+		    <img src="/static/image/contents/main-slogan-img.jpg" alt="국내 1등 주문제작 동화책">
+		    <!-- 하나 뿐인 동화책을 출판하세요.<br>
+		    우리 아이가 주인공이 되는 <strong>#자존감동화</strong> -->
 	    </h1>
 
 	    <section class="content about-book">

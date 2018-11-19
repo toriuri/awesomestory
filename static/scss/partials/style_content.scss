@@ -1,8 +1,9 @@
 /***** top banner *****/
 .header-banner{
   position: relative;
-  background: $color-blue; padding: 11px 15px 9px;
+  img{display: block; width: 100%;}
   p{
+    background: $color-blue;
     font-size: 14px; color: #fff; line-height: 20px;
     strong{font-family: "Noto Sans KR Bold", sans-serif; color:#ffe900;}
   }
@@ -12,8 +13,9 @@
 .main-slogan{
   font-size: 14px;
   line-height: 1.6em; text-align: center;
-  padding: 26px 0 25px;
+  /* padding: 26px 0 25px;*/ padding-bottom: 25px;
   strong{color: $color-blue;}
+  img{display: block; width: 100%;}
 }
 
 /***** 책소개 및 만들기 *****/

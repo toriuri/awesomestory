@@ -105,9 +105,10 @@
   h2.title{padding: 0;}
   .mov-bind-wrap{
     position: relative; z-index: 100;
-    padding-top: 47.25%;
+    padding-top: 45.25%;
     margin: 20px 27px;
     border: 10px solid #e5003d;
+    background: #000;
     @include box-s(0, 0, 20px, rgba(0, 0, 0, 0.3));
     @media screen and (orientation: landscape){
       margin: 20px 50px;
@@ -127,6 +128,22 @@
       margin-top: -75px;
     }
     h3, p{position: absolute; z-index: -1;}
+  }
+  &.xmas{
+    background: #f7f7f7;
+    .xmas-bg{
+      background: url(../image/events/unboxing-bg-xmas.png) no-repeat center top;
+      background-size: 100%;
+    }
+    .mov-bind-wrap{
+      margin: 0 27px;
+    }
+    .event-content{
+      margin-top: -20px;
+      @media screen and (orientation: landscape){
+        margin-top: -50px;
+      }
+    }
   }
 }
 
